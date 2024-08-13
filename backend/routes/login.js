@@ -15,13 +15,23 @@ routerLogin.post("/login", async (req, res) => {
     try{
         const usuario = await Usuario.findOne({ correo: correo });
 
+        if (!usuario) {
+            return res.json({ error: "CORREO Y/O CONTRASENA INCORRECTOS" });
+        }
+
+        const passwordMatch = usuario.contrasena === contrasena;
+
+        if (!passwordMatch) {
+            return res.json({ error: "CORREO Y/O CONTRASENA INCORRECTOS" });
+        }
+
         const token = jwt.sign({ usuario: usuario.correo, nivel: usuario.nivel }, SECRET_KEY, {
             expiresIn: EXPIRED,
         });
         res.cookie('sesion', token, { httpOnly: true, secure: false });
 
-        res.json({usuario: usuario.correo, nivel: usuario.nivel});
+        res.json({success: true, usuario: usuario.correo, nivel: usuario.nivel});
     }catch(err){
-        return res.status(404).json({error: "CORREO Y/O CONTRASENA INCORRECTOS"})
+        return res.json({error: "CORREO Y/O CONTRASENA INCORRECTOS"})
     }
 })

@@ -89,7 +89,8 @@ function Login({showLogin, handleCloseLogin}){
             })
     
             const data = await response.json();
-            if (response.ok){
+            
+            if (data.success){
                 setUsuario(data.usuario);
                 setNivel(data.nivel);
                 window.location.href = '/';
