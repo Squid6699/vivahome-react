@@ -16,6 +16,15 @@ function Navbar(){
                     </li>
                 </ul>
 
+                <div className = "main">
+                    <Link to={"/auth/login"} className="user">
+                        <i className="ri-user-fill"></i>INICIAR SESION
+                    </Link>
+                    <Link to={"/auth/register"}>
+                        <span>REGISTRARSE</span>
+                    </Link>
+                </div>
+
             </header>
 
         </>
