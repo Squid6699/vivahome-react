@@ -85,7 +85,7 @@ function Login({showLogin, handleCloseLogin}){
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({ correo: eInput.value, contrasena: pInput.value }),
-                // credentials: 'include'
+                credentials: 'include',
             })
     
             const data = await response.json();
