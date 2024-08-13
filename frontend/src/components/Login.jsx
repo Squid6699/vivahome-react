@@ -92,6 +92,7 @@ function Login({showLogin, handleCloseLogin}){
             if (response.ok){
                 setUsuario(data.usuario);
                 setNivel(data.nivel);
+                window.location.href = '/';
             }
         }catch(err){
             throw new Error("OCURRIO UN ERROR AL INTENTAR INICIAR SESION");

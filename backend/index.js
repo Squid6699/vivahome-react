@@ -31,7 +31,7 @@ app.post("/", (req, res) => {
         return res.json({usuario: verified.usuario, nivel: verified.nivel});
 
     } catch (error) {
-        return res.json({error: "TOKEN INVALIDO"})
+        return res.json({errorExpired: "TOKEN EXPIRADO"})
     }
 })
 
