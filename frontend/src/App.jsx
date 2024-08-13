@@ -1,10 +1,12 @@
-import Navbar from "./components/Navbar"
+import Catalogo from "./components/Catalogo"
 import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <Navbar/>
+      <Routes>
+        <Route path="/" element = {<Catalogo/>}/>
+      </Routes>
     </>
   )
 }
