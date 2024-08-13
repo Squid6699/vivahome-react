@@ -16,7 +16,7 @@ routerLogin.post("/login", async (req, res) => {
         const usuario = await Usuario.findOne({ correo: correo });
 
         const token = jwt.sign({ usuario: usuario.correo, nivel: usuario.nivel }, SECRET_KEY, {
-            expiresIn: '1h',
+            expiresIn: '1m',
         });
         res.cookie('sesion', token, { httpOnly: true, secure: false });
 
