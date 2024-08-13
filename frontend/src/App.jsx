@@ -5,13 +5,14 @@ import { SesionProvider } from "./context/sesion";
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <SesionProvider>
+      <SesionProvider>
+        <BrowserRouter>
           <Routes>
             <Route path="/" element = {<Catalogo/>}/>
           </Routes>
-        </SesionProvider>
-      </BrowserRouter>
+        </BrowserRouter>
+      </SesionProvider>
+
     </>
   )
 }

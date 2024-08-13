@@ -6,7 +6,10 @@ import { routerRegister } from "./routes/register.js";
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+    origin: '*', // Permitir todas las solicitudes (no recomendable en producción)
+    credentials: true
+}));
 app.use(express.json()); //MIDDLEWARE
 
 connectDB();

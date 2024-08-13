@@ -7,7 +7,7 @@ import {useSesion} from "../hook/useSesion"
 
 function Navbar(){
 
-    const {user} = useSesion();
+    const {usuario} = useSesion();
     const [showLogin, setShowLogin] = useState(false);
     const [showRegister, setShowRegister] = useState(false);
 
@@ -18,6 +18,7 @@ function Navbar(){
     const handleCloseRegister = () => {
         setShowRegister(false);
     }
+
     
     return(
         <>
@@ -31,9 +32,9 @@ function Navbar(){
                         <Link to={"/"}>INICIO</Link>
                     </li>
                 </ul>
-
+                
                 <div className = "main">
-                    {user ? "INICIASTE SESION" : 
+                    {usuario ? "INICIASTE SESION" : 
                         <>
                             <a className="user" onClick={() => setShowLogin(true)}><i className="ri-user-fill"></i>INICIAR SESION</a>
                             <a className="user" onClick={() => setShowRegister(true)}>REGISTRARSE</a>
