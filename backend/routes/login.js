@@ -1,5 +1,4 @@
 import express from "express"
-import mongoose from "mongoose";
 import { Usuario } from "../schemas/usuarios.js";
 
 
@@ -16,7 +15,6 @@ routerLogin.post("/login", async (req, res) => {
         const usuario = await Usuario.findOne({ correo: correo });
         res.json({usuario});
     }catch(err){
-        console.log(err)
         return res.status(404).json({error: "CORREO Y/O CONTRASENA INCORRECTOS"})
     }
 })
