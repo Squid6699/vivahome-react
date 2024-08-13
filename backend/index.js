@@ -8,9 +8,10 @@ import cookieParser from "cookie-parser";
 const app = express();
 
 app.use(cors({
-    origin: '*',
-    credentials: true
+    origin: 'http://localhost:3000',  // Reemplaza con la URL de tu frontend
+    credentials: true                 // Permite las credenciales
 }));
+
 app.use(express.json()); //MIDDLEWARE
 app.use(cookieParser());
 
