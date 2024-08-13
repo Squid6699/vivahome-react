@@ -3,9 +3,11 @@ import "../css/Navbar.css"
 import { Link } from 'react-router-dom';
 import Login from './Login';
 import Register from './Register';
+import {useSesion} from "../hook/useSesion"
 
 function Navbar(){
 
+    const {user} = useSesion();
     const [showLogin, setShowLogin] = useState(false);
     const [showRegister, setShowRegister] = useState(false);
 
