@@ -4,6 +4,8 @@ import { connectDB } from "./db.js";
 import { routerLogin } from "./routes/login.js";
 import { routerRegister } from "./routes/register.js";
 import cookieParser from "cookie-parser";
+import { SECRET_KEY } from "./config.js";
+import jwt from "jsonwebtoken";
 
 const app = express();
 
@@ -16,6 +18,22 @@ app.use(express.json()); //MIDDLEWARE
 app.use(cookieParser());
 
 connectDB();
+
+app.post("/", (req, res) => {
+    const token = req.cookies.sesion;
+
+    if (!token) {
+        return res.json({error: "TOKEN INVALIDO"})
+    }
+    
+    try {
+        const verified = jwt.verify(token, SECRET_KEY);
+        return res.json({usuario: verified.usuario, nivel: verified.nivel});
+
+    } catch (error) {
+        return res.json({error: "TOKEN INVALIDO"})
+    }
+})
 
 app.use("/auth", routerLogin);
 app.use("/auth", routerRegister);

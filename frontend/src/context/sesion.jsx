@@ -1,10 +1,38 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 
 export const SesionContext = createContext();
 
 export function SesionProvider({children}){
     const [usuario, setUsuario] = useState(null);
     const [nivel, setNivel] = useState(null);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await fetch("http://localhost:3001/", {
+                    method: "POST",
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    credentials: 'include',
+                })
+
+                const data = await response.json();
+
+                if (data.error){
+                    //HACER PARA QUE SE REFRESQUE EL TOKEN
+
+                }
+
+                if (response.ok){
+                    setUsuario(data.usuario);
+                    setNivel(data.nivel);
+                }
+
+            } catch (error) {}
+        };
+        fetchData();
+    }, []);
 
     return(
         <SesionContext.Provider value={{
