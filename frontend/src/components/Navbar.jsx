@@ -33,8 +33,12 @@ function Navbar(){
                 </ul>
 
                 <div className = "main">
-                    <a className="user" onClick={() => setShowLogin(true)}><i className="ri-user-fill"></i>INICIAR SESION</a>
-                    <a className="user" onClick={() => setShowRegister(true)}>REGISTRARSE</a>
+                    {user ? "INICIASTE SESION" : 
+                        <>
+                            <a className="user" onClick={() => setShowLogin(true)}><i className="ri-user-fill"></i>INICIAR SESION</a>
+                            <a className="user" onClick={() => setShowRegister(true)}>REGISTRARSE</a>
+                        </>
+                    }
                 </div>
 
             </header>
