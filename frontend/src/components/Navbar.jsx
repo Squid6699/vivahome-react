@@ -1,8 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "../css/Navbar.css"
 import { Link } from 'react-router-dom';
+import Login from './Login';
+import Register from './Register';
 
 function Navbar(){
+
+    const [showLogin, setShowLogin] = useState(false);
+    const [showRegister, setShowRegister] = useState(false);
+
+    const handleCloseLogin = () => {
+        setShowLogin(false);
+    }
+
+    const handleCloseRegister = () => {
+        setShowRegister(false);
+    }
+    
     return(
         <>
             <header>
@@ -17,15 +31,13 @@ function Navbar(){
                 </ul>
 
                 <div className = "main">
-                    <Link to={"/auth/login"} className="user">
-                        <i className="ri-user-fill"></i>INICIAR SESION
-                    </Link>
-                    <Link to={"/auth/register"}>
-                        <span>REGISTRARSE</span>
-                    </Link>
+                    <a className="user" onClick={() => setShowLogin(true)}><i className="ri-user-fill"></i>INICIAR SESION</a>
+                    <a className="user" onClick={() => setShowRegister(true)}>REGISTRARSE</a>
                 </div>
 
             </header>
+            {showLogin && <Login showLogin={showLogin} handleCloseLogin={handleCloseLogin}/>}
+            {showRegister && <Register showRegister={showRegister} handleCloseRegister={handleCloseRegister}/>}
 
         </>
     );

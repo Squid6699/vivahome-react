@@ -33,3 +33,16 @@ body{
 ::-webkit-scrollbar:hover{
     width: 8px;
 }
+
+.modal-content{
+    background-color: var(--bg-color);
+}
+
+.btnFormularios{
+    background-color: var(--main-color) !important;
+}
+
+.btnFormularios:hover{
+    background-color: var(--bg-color) !important;
+    border: var(--main-color) 1px solid !important;
+}

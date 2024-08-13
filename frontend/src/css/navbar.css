@@ -73,7 +73,8 @@ header{
 }
 
 .main a:hover{
-    color: var(--main-color)
+    color: var(--main-color);
+    cursor: pointer;
 }
 
 @media (max-width: 1280px){
