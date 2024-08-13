@@ -1,6 +1,6 @@
 import express from "express"
 import { Usuario } from "../schemas/usuarios.js";
-import { SECRET_KEY } from "../config.js";
+import { SECRET_KEY, EXPIRED } from "../config.js";
 import jwt from "jsonwebtoken";
 
 export const routerLogin = express.Router();
@@ -16,7 +16,7 @@ routerLogin.post("/login", async (req, res) => {
         const usuario = await Usuario.findOne({ correo: correo });
 
         const token = jwt.sign({ usuario: usuario.correo, nivel: usuario.nivel }, SECRET_KEY, {
-            expiresIn: '1m',
+            expiresIn: EXPIRED,
         });
         res.cookie('sesion', token, { httpOnly: true, secure: false });
 
