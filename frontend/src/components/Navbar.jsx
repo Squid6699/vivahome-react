@@ -30,6 +30,7 @@ function Navbar(){
                 <ul className="navbar">
                     <li>
                         <Link to={"/"}>INICIO</Link>
+        
                     </li>
                 </ul>
                 
