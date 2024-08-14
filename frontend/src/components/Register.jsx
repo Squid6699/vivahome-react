@@ -175,6 +175,7 @@ function Register({ showRegister, handleCloseRegister }) {
                             <div className="error error-txt">LA CONTRASEÑA NO PUEDE ESTAR VACIA</div>
                             <div id="mensajeErrorCorreo" className="error error-txt" style={{display: "none"}}>ESE CORREO YA SE ENCUENTRA REGISTRADO</div>
                         </div>
+                        {error && <span style={{color: "red"}}>{error}</span>}
                         <input type="submit" name="iniciarRegistro" value="REGISTRAR"/>
                     </form>
                 </Modal.Body>
