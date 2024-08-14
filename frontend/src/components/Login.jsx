@@ -104,7 +104,7 @@ function Login({showLogin, handleCloseLogin}){
                 window.location.href = '/';
             }
         }catch(err){
-            setError(data.error);
+            setError("OCURRIO UN ERROR AL INTENTAR INICIAR SESION");
             throw new Error("OCURRIO UN ERROR AL INTENTAR INICIAR SESION");
         }
     }

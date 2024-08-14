@@ -1,6 +1,7 @@
 import express from "express"
 import { Usuario } from "../schemas/usuarios.js";
-
+import { SECRET_KEY, EXPIRED } from "../config.js";
+import jwt from "jsonwebtoken";
 
 export const routerRegister = express.Router();
 
@@ -18,9 +19,19 @@ routerRegister.post("/register", async (req, res) => {
             contrasena: contrasena,
             telefono: telefono
         });
-        await insertarUsuario.save();
-        return res.status(201).json({ message: "USUARIO REGISTRADO CON EXITO" });
+        const registrado = await insertarUsuario.save();
+
+        if (registrado){
+            const token = jwt.sign({ usuario: registrado.correo, nivel: registrado.nivel }, SECRET_KEY, {
+                expiresIn: EXPIRED,
+            });
+            res.cookie('sesion', token, { httpOnly: true, secure: false });
+    
+            res.json({success: true, usuario: registrado.correo, nivel: registrado.nivel});
+        }else{
+            return res.json({error: "OCURRIO UN ERROR AL REGISTRARSE"})
+        }
     }catch(err){
-        return res.status(404).json({error: "OCURRIO UN ERROR AL REGISTRARSE"})
+        return res.json({error: "OCURRIO UN ERROR AL REGISTRARSE"})
     }
 })
