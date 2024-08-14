@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {Modal} from "react-bootstrap"
 
 import {useSesion} from "../hook/useSesion.js"
@@ -6,6 +6,7 @@ import {useSesion} from "../hook/useSesion.js"
 
 function Login({showLogin, handleCloseLogin}){
     const {setUsuario, setNivel} = useSesion();
+    const [error, setError] = useState(null);
 
     const handleSubmitLogin = async (e) => {
         e.preventDefault();
@@ -90,12 +91,20 @@ function Login({showLogin, handleCloseLogin}){
     
             const data = await response.json();
             
+            if (data.error){
+                setError(data.error);
+                setTimeout(() =>{
+                    setError(null)
+                }, 5000)
+            }
+
             if (data.success){
                 setUsuario(data.usuario);
                 setNivel(data.nivel);
                 window.location.href = '/';
             }
         }catch(err){
+            setError(data.error);
             throw new Error("OCURRIO UN ERROR AL INTENTAR INICIAR SESION");
         }
     }
@@ -124,6 +133,7 @@ function Login({showLogin, handleCloseLogin}){
                             <div id="mensajeErrorCred" className="error error-txt" style={{display: "none"}}>CORREO ELECTRONICO Y/O CONTRASEÑA INVALIDOS</div>
                         </div>
                         <div className="pass-txt"><a href="#">OLVIDASTE LA CONTRASEÑA?</a></div>
+                        {error && <span style={{color: "red"}}>{error}</span>}
                         <input type="submit" name="iniciar" value="INICIAR"/>
                     </form>
                 </Modal.Body>
