@@ -6,7 +6,9 @@ function Catalogo(){
     return(
         <>
             <Navbar/>
-
+            <section className='catalogo'>
+                <span>dwdwdwds</span>
+            </section>
         </>
     );
 }

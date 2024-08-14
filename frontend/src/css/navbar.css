@@ -6,16 +6,11 @@ header{
     right: 0;
     z-index: 10;
     display: flex;
-    /* align-items: center; */
     justify-content: space-between;
     padding: 18px 5%;
     transition: all .50s ease;
     text-decoration: none !important;
     list-style: none !important;
-}
-
-header .navbar{
-    margin-bottom: 0 !important;
 }
 
 .logo{
@@ -35,6 +30,10 @@ header .navbar{
     font-weight: 600;
 }
 
+.navbar{
+    display: block;
+    margin-bottom: 0 !important;
+}
 
 .navbar a{
     color: var(--text-color);
@@ -56,10 +55,6 @@ header .navbar{
     font-size: 1.1rem;
     font-weight: 500;
     transition: all .50s ease;
-}
-
-.user{
-    align-items: center;
 }
 
 .user i{
