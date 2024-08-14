@@ -5,7 +5,7 @@ import {useSesion} from "../hook/useSesion.js"
 
 
 function Login({showLogin, handleCloseLogin}){
-    const {setUsuario, setNivel} = useSesion();
+    const {setUsuario, setCorreo, setNivel} = useSesion();
     const [error, setError] = useState(null);
 
     const handleSubmitLogin = async (e) => {
@@ -100,6 +100,7 @@ function Login({showLogin, handleCloseLogin}){
 
             if (data.success){
                 setUsuario(data.usuario);
+                setCorreo(data.correo);
                 setNivel(data.nivel);
                 window.location.href = '/';
             }

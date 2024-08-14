@@ -28,7 +28,7 @@ app.post("/", (req, res) => {
     
     try {
         const verified = jwt.verify(token, SECRET_KEY);
-        return res.json({usuario: verified.usuario, nivel: verified.nivel});
+        return res.json({usuario: verified.usuario, correo: verified.correo, nivel: verified.nivel});
 
     } catch (error) {
         return res.json({errorExpired: "TOKEN EXPIRADO"})

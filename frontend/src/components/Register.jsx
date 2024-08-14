@@ -3,7 +3,7 @@ import { Modal } from "react-bootstrap"
 import { useSesion } from '../hook/useSesion';
 
 function Register({ showRegister, handleCloseRegister }) {
-    const {setUsuario, setNivel} = useSesion();
+    const {setUsuario, setCorreo, setNivel} = useSesion();
     const [error, setError] = useState(null);
 
     const handleSubmitRegister = async (e) => {
@@ -126,6 +126,7 @@ function Register({ showRegister, handleCloseRegister }) {
 
             if (data.success){
                 setUsuario(data.usuario);
+                setCorreo(data.correo);
                 setNivel(data.nivel);
                 window.location.href = '/';
             }

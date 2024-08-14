@@ -14,7 +14,7 @@ routerLogin.post("/login", async (req, res) => {
 
     try{
         const usuario = await Usuario.findOne({ correo: correo });
-
+        console.log(usuario);
         if (!usuario) {
             return res.json({ error: "CORREO Y/O CONTRASENA INCORRECTOS" });
         }
@@ -25,12 +25,12 @@ routerLogin.post("/login", async (req, res) => {
             return res.json({ error: "CORREO Y/O CONTRASENA INCORRECTOS" });
         }
 
-        const token = jwt.sign({ usuario: usuario.correo, nivel: usuario.nivel }, SECRET_KEY, {
+        const token = jwt.sign({ usuario: usuario.nombreCompleto, correo: usuario.correo , nivel: usuario.nivel }, SECRET_KEY, {
             expiresIn: EXPIRED,
         });
         res.cookie('sesion', token, { httpOnly: true, secure: false });
 
-        res.json({success: true, usuario: usuario.correo, nivel: usuario.nivel});
+        res.json({success: true, usuario: usuario.nombreCompleto, correo: usuario.correo , nivel: usuario.nivel});
     }catch(err){
         return res.json({error: "CORREO Y/O CONTRASENA INCORRECTOS"})
     }

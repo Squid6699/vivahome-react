@@ -20,14 +20,14 @@ routerRegister.post("/register", async (req, res) => {
             telefono: telefono
         });
         const registrado = await insertarUsuario.save();
-
+        
         if (registrado){
-            const token = jwt.sign({ usuario: registrado.correo, nivel: registrado.nivel }, SECRET_KEY, {
+            const token = jwt.sign({ usuario: registrado.nombreCompleto, correo: registrado.correo, nivel: registrado.nivel }, SECRET_KEY, {
                 expiresIn: EXPIRED,
             });
             res.cookie('sesion', token, { httpOnly: true, secure: false });
     
-            res.json({success: true, usuario: registrado.correo, nivel: registrado.nivel});
+            res.json({success: true, usuario: registrado.nombreCompleto, correo: registrado.correo, nivel: registrado.nivel});
         }else{
             return res.json({error: "OCURRIO UN ERROR AL REGISTRARSE"})
         }

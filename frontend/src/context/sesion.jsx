@@ -4,6 +4,7 @@ export const SesionContext = createContext();
 
 export function SesionProvider({children}){
     const [usuario, setUsuario] = useState(null);
+    const [correo, setCorreo] = useState(null)
     const [nivel, setNivel] = useState(null);
 
     useEffect(() => {
@@ -19,13 +20,14 @@ export function SesionProvider({children}){
 
                 const data = await response.json();
 
-                if (data.error){
+                if (data.errorExpired){
                     //HACER PARA QUE SE REFRESQUE EL TOKEN
 
                 }
 
                 if (response.ok){
                     setUsuario(data.usuario);
+                    setCorreo(data.correo);
                     setNivel(data.nivel);
                 }
 
@@ -38,6 +40,8 @@ export function SesionProvider({children}){
         <SesionContext.Provider value={{
             usuario,
             setUsuario,
+            correo,
+            setCorreo,
             nivel,
             setNivel
         }}>{children}</SesionContext.Provider>
