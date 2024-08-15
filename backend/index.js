@@ -8,6 +8,7 @@ import jwt from "jsonwebtoken";
 import { routerLogin } from "./routes/login.js";
 import { routerRegister } from "./routes/register.js";
 import { routerObtenerPropiedades } from "./routes/obtenerPropiedades.js";
+import { routerLogout } from "./routes/logout.js";
 
 const app = express();
 
@@ -40,6 +41,7 @@ app.post("/", (req, res) => {
 app.use("/auth", routerLogin);
 app.use("/auth", routerRegister);
 app.use("/obtenerpropiedades", routerObtenerPropiedades);
+app.use("/logout", routerLogout);
 
 
 app.listen(3001, () => {

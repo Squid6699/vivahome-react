@@ -23,8 +23,17 @@ function Navbar(){
         setShowRegister(false);
     }
 
-    const handleCerrarSesion = () => {
+    const handleCerrarSesion = async () => {
+        try {
+            const response = await fetch("http://localhost:3001/logout", {
+                credentials: 'include'
+            });
+            const data = await response.json();
 
+            if (data.success){
+                window.location.href = "/";
+            }
+        } catch (error) {}
     }
 
     
