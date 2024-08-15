@@ -9,7 +9,7 @@ function Catalogo(){
 
     useEffect(() => {
         refetch();
-    },[]);
+    },[refetch]);
 
     async function obtenerPropiedades() {
         try {
@@ -28,9 +28,24 @@ function Catalogo(){
 
     return(
         <>
-            <Navbar/>
+            <Navbar />
             <section className='catalogo'>
-                <span>dwdwdwds</span>
+                {isLoading ? (
+                    <p>Cargando propiedades...</p>
+                ) : (
+                    propiedades && propiedades.length > 0 ? (
+                        propiedades.map((item) => (
+                            <div key={item._id} className='card'>
+                                <img src={item.fotoPrincipal} className="card-img-top" alt="Propiedad"></img>
+                                <div className='card-body'>
+                                    {/* Detalles de la propiedad */}
+                                </div>
+                            </div>
+                        ))
+                    ) : (
+                        <p>No hay propiedades disponibles.</p>
+                    )
+                )}
             </section>
         </>
     );
