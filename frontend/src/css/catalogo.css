@@ -1,5 +1,19 @@
 .catalogo{
-    background-color: red;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 300px));
+    gap: 16px;
+    justify-content: center;
+    text-align: center;
+    padding-top: 120px;
+}
+
+.catalogo img{
+    height: 234px;
+    width: 298px;
+}
+
+.card{
+    background-color: var(--bg-color) !important;
+    color: var(--text-color) !important;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
