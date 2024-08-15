@@ -37,7 +37,7 @@ function Catalogo(){
                     <span>CARGANDO PROPIEDADES...</span>
                 ) : (
                 <>
-                    {propiedades && propiedades.length > 0 ? (
+                    {propiedades && propiedades.length > 0 ? 
                         <div className='catalogo'>
                             {propiedades.map((item) => (
                                 <div key={item._id} className='card'>
@@ -88,9 +88,9 @@ function Catalogo(){
                                 </div>
                             ))}
                         </div>
-                    ) : (
+                        : 
                         <span>NO HAY PROPIEDADES DISPONIBLES.</span>
-                    )}
+                    }
                 </>
                 )}
             </section>
