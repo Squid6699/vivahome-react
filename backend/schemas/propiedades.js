@@ -27,7 +27,7 @@ const PropiedadesSchema = mongoose.Schema({
         default: '0'
     },
     precio: {
-        type: Schema.Types.Decimal128,
+        type: mongoose.Schema.Types.Decimal128,
         default: 0.00
     },
     descripcion: {
@@ -54,6 +54,6 @@ const PropiedadesSchema = mongoose.Schema({
         ref: 'Usuario',
         required: true
     }
-});
+}, { versionKey: false });
 
 export const Propiedades = mongoose.model("Propiedades", PropiedadesSchema);

@@ -14,7 +14,7 @@ routerLogin.post("/login", async (req, res) => {
 
     try{
         const usuario = await Usuario.findOne({ correo: correo });
-        console.log(usuario);
+        
         if (!usuario) {
             return res.json({ error: "CORREO Y/O CONTRASENA INCORRECTOS" });
         }

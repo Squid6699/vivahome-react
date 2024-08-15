@@ -1,11 +1,13 @@
 import cors from "cors"
 import express from "express"
 import { connectDB } from "./db.js"; 
-import { routerLogin } from "./routes/login.js";
-import { routerRegister } from "./routes/register.js";
 import cookieParser from "cookie-parser";
 import { SECRET_KEY } from "./config.js";
 import jwt from "jsonwebtoken";
+
+import { routerLogin } from "./routes/login.js";
+import { routerRegister } from "./routes/register.js";
+import { routerObtenerPropiedades } from "./routes/obtenerPropiedades.js";
 
 const app = express();
 
@@ -37,6 +39,8 @@ app.post("/", (req, res) => {
 
 app.use("/auth", routerLogin);
 app.use("/auth", routerRegister);
+app.use("/obtenerpropiedades", routerObtenerPropiedades);
+
 
 app.listen(3001, () => {
     console.log("Conectado backend");
