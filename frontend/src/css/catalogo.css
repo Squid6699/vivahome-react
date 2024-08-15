@@ -24,3 +24,30 @@
     text-align: center;
     padding-top: 120px;
 }
+
+.container .catalogo .card-text .icons{
+    display: flex;
+    justify-content: space-between
+}
+
+.container .catalogo .card-text .texts{
+    display: flex;
+    justify-content: space-between
+}
+
+.container .catalogo .card-text .tipo{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center
+}
+
+.container .catalogo .card-text .precio{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center
+}
+
+
+.container .catalogo i{
+    color: var(--main-color) !important;
+}
