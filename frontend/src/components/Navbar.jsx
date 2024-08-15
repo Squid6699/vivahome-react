@@ -4,10 +4,14 @@ import { Link } from 'react-router-dom';
 import Login from './Login';
 import Register from './Register';
 import {useSesion} from "../hook/useSesion"
+import { Dropdown } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser, faPowerOff } from '@fortawesome/free-solid-svg-icons';
+import Cookies from 'js-cookie';
 
 function Navbar(){
 
-    const {usuario} = useSesion();
+    const {usuario, nivel} = useSesion();
     const [showLogin, setShowLogin] = useState(false);
     const [showRegister, setShowRegister] = useState(false);
 
@@ -17,6 +21,10 @@ function Navbar(){
 
     const handleCloseRegister = () => {
         setShowRegister(false);
+    }
+
+    const handleCerrarSesion = () => {
+
     }
 
     
@@ -35,11 +43,24 @@ function Navbar(){
                 </ul>
                 
                 <div className = "main">
-                    {usuario ? <span>Bienvenido/a {usuario}</span>  : 
-                        <>
-                            <a className="user" onClick={() => setShowLogin(true)}><i className="ri-user-fill"></i>INICIAR SESION</a>
-                            <a className="user" onClick={() => setShowRegister(true)}>REGISTRARSE</a>
-                        </>
+                    {usuario ? 
+                    <>
+                        <Dropdown>
+                            <span>Bienvenido/a {usuario} </span>  
+                            <Dropdown.Toggle variant="success">
+                                <FontAwesomeIcon icon={faUser}/>
+                            </Dropdown.Toggle>
+
+                            <Dropdown.Menu>
+                                <Dropdown.Item onClick={() => handleCerrarSesion()}><FontAwesomeIcon icon={faPowerOff}/> CERRAR SESION</Dropdown.Item>
+                            </Dropdown.Menu>
+                        </Dropdown>
+                    </>
+                    : 
+                    <>
+                        <a className="user" onClick={() => setShowLogin(true)}><i className="ri-user-fill"></i>INICIAR SESION</a>
+                        <a className="user" onClick={() => setShowRegister(true)}>REGISTRARSE</a>
+                    </>
                     }
                 </div>
 

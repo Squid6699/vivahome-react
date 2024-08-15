@@ -67,6 +67,30 @@ header{
     cursor: pointer;
 }
 
+.dropdown button{
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgba(240, 248, 255, 0);
+}
+
+.dropdown button:hover{
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgba(240, 248, 255, 0);
+}
+
+.dropdown .dropdown-menu {
+    background-color: var(--bg-color);
+}
+
+.dropdown-menu a{
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.dropdown-item:hover{
+    color: var(--text-color) !important;
+	background-color: var(--main-color) !important;
+}
+
 /* @media (width > 1160px){
     header{
         padding: 14px 2%;

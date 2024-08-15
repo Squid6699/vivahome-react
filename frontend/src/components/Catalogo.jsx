@@ -4,7 +4,6 @@ import { faCar, faBath, faBed, faStairs, faRuler, faEye } from '@fortawesome/fre
 import Navbar from "../components/Navbar.jsx"
 import "../css/catalogo.css"
 import { useQuery } from "react-query";
-import { Link } from 'react-router-dom';
 
 function Catalogo(){
 

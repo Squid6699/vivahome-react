@@ -16,6 +16,7 @@
     "bootstrap": "5.3.3",
     "react-bootstrap": "2.10.4",
     "react-query": "3.39.3",
+    "js-cookie": "3.0.5",
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
     "@fortawesome/free-brands-svg-icons": "^6.5.2",
     "@fortawesome/free-solid-svg-icons": "^6.5.2",
