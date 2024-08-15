@@ -7,7 +7,6 @@ import {useSesion} from "../hook/useSesion"
 import { Dropdown } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faPowerOff } from '@fortawesome/free-solid-svg-icons';
-import Cookies from 'js-cookie';
 
 function Navbar(){
 
@@ -46,7 +45,7 @@ function Navbar(){
 
                 <ul className="navbar">
                     <li>
-                        <Link to={"/"}>INICIO</Link>
+                        <Link to={"/"}>CATALOGO</Link>
         
                     </li>
                 </ul>
