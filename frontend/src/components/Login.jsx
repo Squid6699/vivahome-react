@@ -134,7 +134,7 @@ function Login({showLogin, handleCloseLogin}){
                             <div id="mensajeErrorCred" className="error error-txt" style={{display: "none"}}>CORREO ELECTRONICO Y/O CONTRASEÑA INVALIDOS</div>
                         </div>
                         <div className="pass-txt"><a href="#">OLVIDASTE LA CONTRASEÑA?</a></div>
-                        {error && <span style={{color: "red"}}>{error}</span>}
+                        {error && <b style={{color: "red", display: "flex", justifyContent: "center"}}>{error}</b>}
                         <input type="submit" name="iniciar" value="INICIAR"/>
                     </form>
                 </Modal.Body>
