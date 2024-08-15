@@ -1,0 +1,74 @@
+[
+    {
+        "direccion": "Av Dr Ruperto Paliza 1029, Guadalupe, 80220 Culiacán Rosales, Sin.", 
+        "nAutos": 2, 
+        "nBanos": 4, 
+        "nRecamaras": 3, 
+        "nEscaleras": 1, 
+        "tipo": "Venta", 
+        "metros": "55", 
+        "precio": 3.00, 
+        "descripcion": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore rerum molestias quis distinctio quia dignissimm dolorum?", 
+        "fotoPrincipal": "principal.jpg", 
+        "fotos": {
+            "Habitaciones": [
+                {
+                    "nameHabitacion": "Habitacion 1",
+                    "img1": "Captura de pantalla 2024-05-05 134652.jpg",
+                    "img2": "Captura de pantalla 2024-05-05 134652.jpg"
+                },
+                {
+                    "nameHabitacion": "Habitacion 2",
+                    "img1": "Captura de pantalla 2024-05-05 134652.jpg",
+                    "img2": "Captura de pantalla 2024-05-05 134652.jpg"
+                },
+                {
+                    "nameHabitacion": "Habitacion 3",
+                    "img1": "Captura de pantalla 2024-05-05 134652.jpg",
+                    "img2": "Captura de pantalla 2024-05-05 134652.jpg"
+                }
+            ]
+        },
+        "fechaPublicacion": "2024-03-16T00:00:00.000+00:00",
+        "autorizada": true, 
+        "disponible": "DISPONIBLE", 
+        "ayudaVendedor": true, 
+        "idUsuario": "ObjectId(66bae8808f484ab553e9193e)"
+    },
+    {
+        "direccion": "Bouelvard Sta. Fe 2457, Santa Fe, Sta Fe, 80029 Culiacán Rosales, Sin.", 
+        "nAutos": 2, 
+        "nBanos": 2, 
+        "nRecamaras": 3, 
+        "nEscaleras": 1, 
+        "tipo": "Renta", 
+        "metros": "32", 
+        "precio": 1.00, 
+        "descripcion": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore rerum molestias quis distinctio quia dignissimos reiciendis, voluptas amet consequatur hic modi impedit dicta facilis ipsum tenetur consequuntur voluptatem quam dolorum? Lorem, ipsum dolo Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore rerum molestias quis distinctio quia dignissimos reiciendis, voluptas amet consequatur hic modi impedit dicta facilis ipsum tenetur consequuntur voluptatem quam dolorum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore rerum molestias quis distinctio quia dignissimos reiciendis, voluptas amet consequatur hic modi impedit dicta facilis ipsum tenetur consequuntur voluptatem quam dolorum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore rerum molestias quis distinctio quia dignissimos reiciendis, voluptas amet consequatur hic modi impedit dicta facilis ipsum tenetur consequuntur voluptatem quam dolorum?", 
+        "fotoPrincipal": "principal.jpg", 
+        "fotos": {
+            "Habitaciones": [
+                {
+                    "nameHabitacion": "Habitacion 1",
+                    "img1": "Captura de pantalla 2024-05-05 134652.jpg",
+                    "img2": "Captura de pantalla 2024-05-05 134652.jpg"
+                },
+                {
+                    "nameHabitacion": "Habitacion 2",
+                    "img1": "Captura de pantalla 2024-05-05 134652.jpg",
+                    "img2": "Captura de pantalla 2024-05-05 134652.jpg"
+                },
+                {
+                    "nameHabitacion": "Habitacion 3",
+                    "img1": "Captura de pantalla 2024-05-05 134652.jpg",
+                    "img2": "Captura de pantalla 2024-05-05 134652.jpg"
+                }
+            ]
+        },
+        "fechaPublicacion": "2024-03-16T00:00:00.000+00:00",
+        "autorizada": true, 
+        "disponible": "DISPONIBLE", 
+        "ayudaVendedor": true, 
+        "idUsuario": "ObjectId(66bae8808f484ab553e9193e)"
+    }
+]
