@@ -9,26 +9,24 @@
         "metros": "55", 
         "precio": 3.00, 
         "descripcion": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore rerum molestias quis distinctio quia dignissimm dolorum?", 
-        "fotoPrincipal": "principal.jpg", 
-        "fotos": {
-            "Habitaciones": [
-                {
-                    "nameHabitacion": "Habitacion 1",
-                    "img1": "Captura de pantalla 2024-05-05 134652.jpg",
-                    "img2": "Captura de pantalla 2024-05-05 134652.jpg"
-                },
-                {
-                    "nameHabitacion": "Habitacion 2",
-                    "img1": "Captura de pantalla 2024-05-05 134652.jpg",
-                    "img2": "Captura de pantalla 2024-05-05 134652.jpg"
-                },
-                {
-                    "nameHabitacion": "Habitacion 3",
-                    "img1": "Captura de pantalla 2024-05-05 134652.jpg",
-                    "img2": "Captura de pantalla 2024-05-05 134652.jpg"
-                }
-            ]
-        },
+        "fotoPrincipal": "https://img10.naventcdn.com/avisos/resize/18/00/90/61/35/83/1200x1200/1100580205.jpg", 
+        "fotos": [
+            {
+                "nameHabitacion": "Habitacion 1",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/00/90/61/35/83/1200x1200/1100580191.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/00/90/61/35/83/1200x1200/1100580195.jpg"
+            },
+            {
+                "nameHabitacion": "Habitacion 2",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/00/90/61/35/83/1200x1200/1100580208.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/00/90/61/35/83/1200x1200/1100580198.jpg"
+            },
+            {
+                "nameHabitacion": "Habitacion 3",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/00/90/61/35/83/1200x1200/1100580206.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/00/90/61/35/83/1200x1200/1100580192.jpg"
+            }
+        ],
         "fechaPublicacion": "2024-03-16T00:00:00.000+00:00",
         "autorizada": true, 
         "disponible": "DISPONIBLE", 
@@ -45,26 +43,24 @@
         "metros": "32", 
         "precio": 1.00, 
         "descripcion": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore rerum molestias quis distinctio quia dignissimos reiciendis, voluptas amet consequatur hic modi impedit dicta facilis ipsum tenetur consequuntur voluptatem quam dolorum? Lorem, ipsum dolo Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore rerum molestias quis distinctio quia dignissimos reiciendis, voluptas amet consequatur hic modi impedit dicta facilis ipsum tenetur consequuntur voluptatem quam dolorum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore rerum molestias quis distinctio quia dignissimos reiciendis, voluptas amet consequatur hic modi impedit dicta facilis ipsum tenetur consequuntur voluptatem quam dolorum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore rerum molestias quis distinctio quia dignissimos reiciendis, voluptas amet consequatur hic modi impedit dicta facilis ipsum tenetur consequuntur voluptatem quam dolorum?", 
-        "fotoPrincipal": "principal.jpg", 
-        "fotos": {
-            "Habitaciones": [
-                {
-                    "nameHabitacion": "Habitacion 1",
-                    "img1": "Captura de pantalla 2024-05-05 134652.jpg",
-                    "img2": "Captura de pantalla 2024-05-05 134652.jpg"
-                },
-                {
-                    "nameHabitacion": "Habitacion 2",
-                    "img1": "Captura de pantalla 2024-05-05 134652.jpg",
-                    "img2": "Captura de pantalla 2024-05-05 134652.jpg"
-                },
-                {
-                    "nameHabitacion": "Habitacion 3",
-                    "img1": "Captura de pantalla 2024-05-05 134652.jpg",
-                    "img2": "Captura de pantalla 2024-05-05 134652.jpg"
-                }
-            ]
-        },
+        "fotoPrincipal": "https://img10.naventcdn.com/avisos/resize/18/00/91/40/26/37/1200x1200/1121033945.jpg", 
+        "fotos": [
+            {
+                "nameHabitacion": "Habitacion 1",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/00/91/40/26/37/1200x1200/1121033933.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/00/91/40/26/37/1200x1200/1121033948.jpg"
+            },
+            {
+                "nameHabitacion": "Habitacion 2",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/00/91/40/26/37/1200x1200/1121033946.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/00/91/40/26/37/1200x1200/1121033951.jpg"
+            },
+            {
+                "nameHabitacion": "Habitacion 3",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/00/91/40/26/37/1200x1200/1121033950.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/00/91/40/26/37/1200x1200/1121033943.jpg"
+            }
+        ],
         "fechaPublicacion": "2024-03-16T00:00:00.000+00:00",
         "autorizada": true, 
         "disponible": "DISPONIBLE", 

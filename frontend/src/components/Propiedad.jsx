@@ -10,7 +10,6 @@ function Propiedad(){
     const navigate = useNavigate();
     const [showModalPropiedades, setShowModalPropiedades] = useState(true);
     const { data: propiedad, isLoading, refetch } = useQuery("propiedad", obtenerPropiedad);
-    console.log(propiedad);
     const [index, setIndex] = useState(0);
 
     const handleSelect = (selectedIndex) => {

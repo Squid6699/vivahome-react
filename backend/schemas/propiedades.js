@@ -35,7 +35,7 @@ const PropiedadesSchema = mongoose.Schema({
         required: true
     },
     fotoPrincipal: String, // URL o base64
-    fotos: [String], // Array de URLs o base64
+    fotos: [Object], // Array de URLs o base64
     fechaPublicacion: Date,
     autorizada: {
         type: Boolean,
