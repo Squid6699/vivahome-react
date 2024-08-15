@@ -4,6 +4,7 @@ import { faCar, faBath, faBed, faStairs, faRuler, faEye } from '@fortawesome/fre
 import Navbar from "../components/Navbar.jsx"
 import "../css/catalogo.css"
 import { useQuery } from "react-query";
+import { Link } from 'react-router-dom';
 
 function Catalogo(){
 
@@ -80,7 +81,9 @@ function Catalogo(){
                                         </div>
                                     </div>
                                     <div className='card-footer'>
-                                        <a style={{cursor: "pointer"}}><i><FontAwesomeIcon icon={faEye}/></i> VER</a>
+                                        <Link to={"/propiedad/"+item._id} style={{cursor: "pointer"}}>
+                                            <span><i><FontAwesomeIcon icon={faEye}/></i> VER</span>
+                                        </Link>
                                     </div>
                                 </div>
                             ))}
