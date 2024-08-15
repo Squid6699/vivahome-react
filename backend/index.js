@@ -9,6 +9,7 @@ import { routerLogin } from "./routes/login.js";
 import { routerRegister } from "./routes/register.js";
 import { routerObtenerPropiedades } from "./routes/obtenerPropiedades.js";
 import { routerLogout } from "./routes/logout.js";
+import { routePropiedad } from "./routes/propiedad.js";
 
 const app = express();
 
@@ -42,6 +43,7 @@ app.use("/auth", routerLogin);
 app.use("/auth", routerRegister);
 app.use("/obtenerpropiedades", routerObtenerPropiedades);
 app.use("/logout", routerLogout);
+app.use("/propiedad", routePropiedad);
 
 
 app.listen(3001, () => {
