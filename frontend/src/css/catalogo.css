@@ -17,3 +17,10 @@
     color: var(--text-color) !important;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
+
+.container span{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 120px;
+}

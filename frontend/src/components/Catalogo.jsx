@@ -30,24 +30,26 @@ function Catalogo(){
         <>
             <Navbar />
             <section className='container'>
-                <div className='catalogo'>
-                    {isLoading ? (
-                        <p>Cargando propiedades...</p>
-                    ) : (
-                        propiedades && propiedades.length > 0 ? (
-                            propiedades.map((item) => (
+                {isLoading ? (
+                    <span>CARGANDO PROPIEDADES...</span>
+                ) : (
+                <>
+                    {propiedades && propiedades.length > 0 ? (
+                        <div className='catalogo'>
+                            {propiedades.map((item) => (
                                 <div key={item._id} className='card'>
                                     <img src={item.fotoPrincipal} className="card-img-top" alt="Propiedad"></img>
                                     <div className='card-body'>
-                                        <h8>{item.direccion}</h8>
+                                        <h6>{item.direccion}</h6>
                                     </div>
                                 </div>
-                            ))
-                        ) : (
-                            <p>No hay propiedades disponibles.</p>
-                        )
+                            ))}
+                        </div>
+                    ) : (
+                        <span>NO HAY PROPIEDADES DISPONIBLES.</span>
                     )}
-                </div>
+                </>
+                )}
             </section>
         </>
     );
