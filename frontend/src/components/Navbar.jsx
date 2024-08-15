@@ -35,7 +35,7 @@ function Navbar(){
                 </ul>
                 
                 <div className = "main">
-                    {usuario ? "INICIASTE SESION" : 
+                    {usuario ? <span>Bienvenido/a {usuario}</span>  : 
                         <>
                             <a className="user" onClick={() => setShowLogin(true)}><i className="ri-user-fill"></i>INICIAR SESION</a>
                             <a className="user" onClick={() => setShowRegister(true)}>REGISTRARSE</a>
