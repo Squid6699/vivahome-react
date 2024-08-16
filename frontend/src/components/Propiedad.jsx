@@ -80,16 +80,16 @@ function Propiedad(){
                                     <Modal.Body>
                                         <Carousel activeIndex={index} onSelect={handleSelect}>
                                             {
-                                                propiedad.fotos.map((item) => (
-                                                    <Carousel.Item>
+                                                propiedad.fotos.map((item, index) => (
+                                                    <Carousel.Item key={index}>
                                                         <img src={item.img1} alt="" />
                                                     </Carousel.Item>
                                                     
                                                 ))
                                             }
                                             {
-                                                propiedad.fotos.map((item) => (
-                                                    <Carousel.Item>
+                                                propiedad.fotos.map((item, index) => (
+                                                    <Carousel.Item key={index}>
                                                         <img src={item.img2} alt="" />
                                                     </Carousel.Item>
                                                     
