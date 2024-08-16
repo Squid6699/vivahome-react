@@ -7,3 +7,7 @@
     height: 400px; 
     width: 766px;
 }
+
+.modal-footer{
+    justify-content: center !important;
+}

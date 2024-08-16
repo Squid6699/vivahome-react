@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import "../css/propiedad.css";
 import Catalogo from "./Catalogo"
-import { Button, Carousel, Modal, Placeholder } from 'react-bootstrap';
+import { Button, Carousel, Modal } from 'react-bootstrap';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useQuery } from "react-query";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCalendarDays } from '@fortawesome/free-solid-svg-icons';
+import { useSesion } from '../hook/useSesion';
 
 function Propiedad(){
+    const {correo} = useSesion();
     const { id } = useParams();
     const navigate = useNavigate();
     const [showModalPropiedades, setShowModalPropiedades] = useState(true);
@@ -15,6 +19,16 @@ function Propiedad(){
     const handleSelect = (selectedIndex) => {
       setIndex(selectedIndex);
     };
+
+    const handleOpenModalCitas = () => {
+        if (correo){
+            
+        }
+    }
+
+    const handleCloseModalCitas = () => {
+
+    }
 
     useEffect(() => {
         refetch();
@@ -64,10 +78,7 @@ function Propiedad(){
                             </Modal.Body>
                             <Modal.Footer>
                                 <Button variant="secondary" onClick={handleClose}>
-                                    Close
-                                </Button>
-                                <Button variant="primary" onClick={handleClose}>
-                                    Save Changes
+                                    CERRAR
                                 </Button>
                             </Modal.Footer>
                         </Modal>
@@ -103,11 +114,8 @@ function Propiedad(){
                                         <div className='container'>{propiedad.descripcion}</div>
                                     </Modal.Body>
                                     <Modal.Footer>
-                                        <Button variant="secondary" onClick={handleClose}>
-                                            Close
-                                        </Button>
-                                        <Button variant="primary" onClick={handleClose}>
-                                            Save Changes
+                                        <Button className='botonesStyle'>
+                                            <FontAwesomeIcon icon={faCalendarDays}/> AGENDAR CITA
                                         </Button>
                                     </Modal.Footer>
                                 </Modal>
@@ -121,14 +129,6 @@ function Propiedad(){
                                     <Modal.Body>
                                         OCURRIO UN ERROR!!
                                     </Modal.Body>
-                                    <Modal.Footer>
-                                        <Button variant="secondary" onClick={handleClose}>
-                                            Cerrar
-                                        </Button>
-                                        <Button variant="primary" onClick={handleClose}>
-                                            Save Changes
-                                        </Button>
-                                    </Modal.Footer>
                                 </Modal>
                             </>
                         }
