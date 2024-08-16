@@ -28,7 +28,10 @@ function Navbar(){
         } catch (error) {}
     }
 
-    
+    const click = () => {
+
+    }
+
     return(
         <>
             <header>
@@ -58,21 +61,23 @@ function Navbar(){
                                 <Dropdown.Item onClick={() => handleCerrarSesion()}><FontAwesomeIcon icon={faPowerOff}/> CERRAR SESION</Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown>
-                        {/* <div className="bx bx-menu" id = "menu-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarTresP" aria-controls="staticBackdrop"></div> */}
                     </>
                     : 
                     <>
                         <a onClick={() => modalLogin.openModal()}><i><FontAwesomeIcon icon={faUser}/></i>INICIAR SESION</a>
                         <a onClick={() => modalRegister.openModal()}>REGISTRARSE</a>
-                        <div className='bars'>
-                            <input type="checkbox" />
-                            <FontAwesomeIcon icon={faBars}/>
-                        </div>
+                        
                     </>
                     }
+                    <FontAwesomeIcon icon={faBars} className = "bars-btn" onClick={() => click()}/>
                 </div>
 
             </header>
+
+            <aside className="listaLectura">
+                <h1>LISTA DE LECTURA</h1>
+
+            </aside>
             
             {modalLogin.isOpenModal() && <Login showLogin={modalLogin.isOpenModal} handleCloseLogin={modalLogin.closeModal}/>}
             {modalRegister.isOpenModal() && <Register showRegister={modalRegister.isOpenModal} handleCloseRegister={modalRegister.closeModal}/>}
