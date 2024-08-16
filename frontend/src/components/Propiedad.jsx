@@ -59,7 +59,7 @@ function Propiedad(){
             {
                 isLoading ? (
                     <>
-                        <Modal show={showModalPropiedad} onHide={handleClose}>
+                        <Modal show={showModalPropiedad} onHide={handleClose} backdrop="static" keyboard={false}>
                             <Modal.Header closeButton>
                                 <Modal.Title>CARGANDO...</Modal.Title>
                             </Modal.Header>
@@ -87,7 +87,7 @@ function Propiedad(){
                         {
                             propiedad ?
                             <>
-                                <Modal show={showModalPropiedad} onHide={handleClose} size='lg' dialogClassName='modal-dialog-scrollable'>
+                                <Modal show={showModalPropiedad} onHide={handleClose} size='lg' dialogClassName='modal-dialog-scrollable' backdrop="static" keyboard={false}>
                                     <Modal.Header closeButton>
                                         <Modal.Title><h5>{propiedad.direccion}</h5></Modal.Title>
                                     </Modal.Header>
@@ -129,7 +129,7 @@ function Propiedad(){
                             </>
                             :
                             <>
-                                <Modal show={showModalPropiedad} onHide={handleClose}>
+                                <Modal show={showModalPropiedad} onHide={handleClose} backdrop="static" keyboard={false}>
                                     <Modal.Header closeButton>
                                         <Modal.Title className='fs-5'>SIN INFORMACION</Modal.Title>
                                     </Modal.Header>
