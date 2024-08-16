@@ -110,7 +110,7 @@ function Propiedad(){
                                                 ))
                                             }
                                         </Carousel>
-                                        <div className='container'>{propiedad.descripcion}</div>
+                                        <div className='container' style={{marginTop: "20px", textAlign: "justify"}}>{propiedad.descripcion}</div>
                                     </Modal.Body>
                                     <Modal.Footer>
                                         {
