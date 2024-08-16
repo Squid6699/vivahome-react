@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import "../css/propiedad.css";
 import Catalogo from "./Catalogo"
-import { Button, Card, Carousel, Modal, Placeholder } from 'react-bootstrap';
+import { Button, Carousel, Modal, Placeholder } from 'react-bootstrap';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useQuery } from "react-query";
 
@@ -51,12 +51,16 @@ function Propiedad(){
                                 <Modal.Title>CARGANDO...</Modal.Title>
                             </Modal.Header>
                             <Modal.Body>
-                                <Carousel activeIndex={index} onSelect={handleSelect}>
-                                    <Carousel.Item>
-                                        <Card.Img variant="top" src="holder.js/100px180" />
-                                    </Carousel.Item>
-                                </Carousel>
-                                <Placeholder xs={6} />
+                            <h5 class="card-title placeholder-glow">
+                                <span class="placeholder col-6"></span>
+                            </h5>
+                            <p class="card-text placeholder-glow">
+                                <span class="placeholder col-7"></span>
+                                <span class="placeholder col-4"></span>
+                                <span class="placeholder col-4"></span>
+                                <span class="placeholder col-6"></span>
+                                <span class="placeholder col-8"></span>
+                            </p>
                             </Modal.Body>
                             <Modal.Footer>
                                 <Button variant="secondary" onClick={handleClose}>
