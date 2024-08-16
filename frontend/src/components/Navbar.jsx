@@ -6,7 +6,7 @@ import Register from './Register';
 import {useSesion} from "../hook/useSesion"
 import { Dropdown } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faPowerOff } from '@fortawesome/free-solid-svg-icons';
+import { faUser, faPowerOff, faBars } from '@fortawesome/free-solid-svg-icons';
 import { useModal } from '../hook/useModal';
 
 function Navbar(){
@@ -36,7 +36,7 @@ function Navbar(){
                     <i className="ri-home-heart-fill"></i> <span>VIVAHOME</span>
                 </Link>
 
-                <ul className="navbar">
+                <ul className="navbarApp">
                     <li>
                         <Link to={"/"}>CATALOGO</Link>
         
@@ -56,11 +56,13 @@ function Navbar(){
                                 <Dropdown.Item onClick={() => handleCerrarSesion()}><FontAwesomeIcon icon={faPowerOff}/> CERRAR SESION</Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown>
+                        {/* <div className="bx bx-menu" id = "menu-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarTresP" aria-controls="staticBackdrop"></div> */}
                     </>
                     : 
                     <>
-                        <a className="user" onClick={() => modalLogin.openModal()}><i className="ri-user-fill"></i>INICIAR SESION</a>
-                        <a className="user" onClick={() => modalRegister.openModal()}>REGISTRARSE</a>
+                        <a onClick={() => modalLogin.openModal()}><i><FontAwesomeIcon icon={faUser}/></i>INICIAR SESION</a>
+                        <a onClick={() => modalRegister.openModal()}>REGISTRARSE</a>
+                        <div><FontAwesomeIcon icon={faBars}/></div>
                     </>
                     }
                 </div>

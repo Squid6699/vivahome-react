@@ -7,10 +7,17 @@ header{
     z-index: 10;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 18px 5%;
     transition: all .50s ease;
     text-decoration: none !important;
     list-style: none !important;
+}
+
+header .main{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 
 .logo{
@@ -24,46 +31,36 @@ header{
     margin-right: 3px;
 }
 
+
 .logo span{
     color: var(--text-color);
     font-size: 1.7rem;
-    font-weight: 600;
 }
 
-.navbar{
-    margin-bottom: 0 !important;
-}
-
-.navbar a{
+.navbarApp a{
     color: var(--text-color);
     font-size: 1.1rem;
-    font-weight: 500;
-    padding: 5px 0;
-    margin: 0px 30px 0 100px;
     transition: all .50s ease;
 }
 
-.navbar a:hover{
+.navbarApp a:hover{
     color: var(--main-color);
 }
 
 .main a{
     margin-right: 25px;
-    margin-left: 10px;
     color: var(--text-color);
-    font-size: 1.1rem;
-    font-weight: 500;
+    font-size: 1.2rem;
     transition: all .50s ease;
 }
 
-.user i{
+.main i{
     color: var(--main-color);
-    font-size: 28px;
     margin-right: 7px;
 }
 
 .main a:hover{
-    color: var(--main-color);
+    color: var(--main-color) !important;
     cursor: pointer;
 }
 
