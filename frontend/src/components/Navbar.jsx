@@ -39,6 +39,8 @@ function Navbar(){
                 <ul className="navbarApp">
                     <li>
                         <Link to={"/"}>CATALOGO</Link>
+                        <Link to={"/"}>CATALOGO</Link>
+                        <Link to={"/"}>CATALOGO</Link>
         
                     </li>
                 </ul>
@@ -62,7 +64,10 @@ function Navbar(){
                     <>
                         <a onClick={() => modalLogin.openModal()}><i><FontAwesomeIcon icon={faUser}/></i>INICIAR SESION</a>
                         <a onClick={() => modalRegister.openModal()}>REGISTRARSE</a>
-                        <div><FontAwesomeIcon icon={faBars}/></div>
+                        <div className='bars'>
+                            <input type="checkbox" />
+                            <FontAwesomeIcon icon={faBars}/>
+                        </div>
                     </>
                     }
                 </div>
