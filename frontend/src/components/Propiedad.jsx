@@ -121,7 +121,7 @@ function Propiedad(){
                                             </Button>
                                             :
                                             <Button className='botonesStyle'>
-                                                <FontAwesomeIcon icon={faCalendarDays}/> INICIA SESION PARA GENERAR UNA CITA
+                                                <FontAwesomeIcon icon={faCalendarDays}/> INICIA SESION PARA AGENDAR UNA CITA
                                             </Button>
                                         }
                                     </Modal.Footer>

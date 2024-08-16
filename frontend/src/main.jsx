@@ -6,7 +6,7 @@ import "./index.css";
 import { SesionProvider } from "./context/sesion";
 
 import { QueryClient, QueryClientProvider } from "react-query";
-import { ReactQueryDevtools } from "react-query/devtools";
+// import { ReactQueryDevtools } from "react-query/devtools";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -21,7 +21,7 @@ createRoot(document.getElementById("root")).render(
     <SesionProvider>
       <QueryClientProvider client={queryClient}>
         <App />
-        <ReactQueryDevtools/>
+        {/* <ReactQueryDevtools/> */}
       </QueryClientProvider>
     </SesionProvider>
   </StrictMode>
