@@ -7,20 +7,14 @@ import {useSesion} from "../hook/useSesion"
 import { Dropdown } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faPowerOff } from '@fortawesome/free-solid-svg-icons';
+import { useModal } from '../hook/useModal';
 
 function Navbar(){
 
     const {usuario, nivel} = useSesion();
-    const [showLogin, setShowLogin] = useState(false);
+    const modalLogin = useModal();
+    const modalRegister = useModal();
     const [showRegister, setShowRegister] = useState(false);
-
-    const handleCloseLogin = () => {
-        setShowLogin(false);
-    }
-
-    const handleCloseRegister = () => {
-        setShowRegister(false);
-    }
 
     const handleCerrarSesion = async () => {
         try {
@@ -66,15 +60,16 @@ function Navbar(){
                     </>
                     : 
                     <>
-                        <a className="user" onClick={() => setShowLogin(true)}><i className="ri-user-fill"></i>INICIAR SESION</a>
-                        <a className="user" onClick={() => setShowRegister(true)}>REGISTRARSE</a>
+                        <a className="user" onClick={() => modalLogin.openModal()}><i className="ri-user-fill"></i>INICIAR SESION</a>
+                        <a className="user" onClick={() => modalRegister.openModal()}>REGISTRARSE</a>
                     </>
                     }
                 </div>
 
             </header>
-            {showLogin && <Login showLogin={showLogin} handleCloseLogin={handleCloseLogin}/>}
-            {showRegister && <Register showRegister={showRegister} handleCloseRegister={handleCloseRegister}/>}
+            
+            {modalLogin.isOpenModal() && <Login showLogin={modalLogin.isOpenModal} handleCloseLogin={modalLogin.closeModal}/>}
+            {modalRegister.isOpenModal() && <Register showRegister={modalRegister.isOpenModal} handleCloseRegister={modalRegister.closeModal}/>}
 
         </>
     );
