@@ -7,27 +7,26 @@ import { useQuery } from "react-query";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarDays } from '@fortawesome/free-solid-svg-icons';
 import { useSesion } from '../hook/useSesion';
+import { useModal } from "../hook/useModal";
+import  Cita  from "../components/Cita";
 
 function Propiedad(){
     const {correo} = useSesion();
     const { id } = useParams();
     const navigate = useNavigate();
-    const [showModalPropiedades, setShowModalPropiedades] = useState(true);
+    const [showModalPropiedad, setShowModalPropiedad] = useState(true);
+    const modalCita = useModal();
     const { data: propiedad, isLoading, refetch } = useQuery("propiedad", obtenerPropiedad);
-    const [index, setIndex] = useState(0);
+    const [indexCarrusel, setIndexCarrusel] = useState(0);
 
     const handleSelect = (selectedIndex) => {
-      setIndex(selectedIndex);
+        setIndexCarrusel(selectedIndex);
     };
 
     const handleOpenModalCitas = () => {
         if (correo){
-            
+            modalCita.openModal();
         }
-    }
-
-    const handleCloseModalCitas = () => {
-
     }
 
     useEffect(() => {
@@ -50,7 +49,7 @@ function Propiedad(){
     }
 
     const handleClose = () => {
-        setShowModalPropiedades(false);
+        setShowModalPropiedad(false);
         navigate(`/`);
     }
 
@@ -60,20 +59,20 @@ function Propiedad(){
             {
                 isLoading ? (
                     <>
-                        <Modal show={showModalPropiedades} onHide={handleClose}>
+                        <Modal show={showModalPropiedad} onHide={handleClose}>
                             <Modal.Header closeButton>
                                 <Modal.Title>CARGANDO...</Modal.Title>
                             </Modal.Header>
                             <Modal.Body>
-                            <h5 class="card-title placeholder-glow">
-                                <span class="placeholder col-6"></span>
+                            <h5 className="card-title placeholder-glow">
+                                <span className="placeholder col-6"></span>
                             </h5>
-                            <p class="card-text placeholder-glow">
-                                <span class="placeholder col-7"></span>
-                                <span class="placeholder col-4"></span>
-                                <span class="placeholder col-4"></span>
-                                <span class="placeholder col-6"></span>
-                                <span class="placeholder col-8"></span>
+                            <p className="card-text placeholder-glow">
+                                <span className="placeholder col-7"></span>
+                                <span className="placeholder col-4"></span>
+                                <span className="placeholder col-4"></span>
+                                <span className="placeholder col-6"></span>
+                                <span className="placeholder col-8"></span>
                             </p>
                             </Modal.Body>
                             <Modal.Footer>
@@ -88,12 +87,12 @@ function Propiedad(){
                         {
                             propiedad ?
                             <>
-                                <Modal show={showModalPropiedades} onHide={handleClose} size='lg' dialogClassName='modal-dialog-scrollable'>
+                                <Modal show={showModalPropiedad} onHide={handleClose} size='lg' dialogClassName='modal-dialog-scrollable'>
                                     <Modal.Header closeButton>
                                         <Modal.Title><h5>{propiedad.direccion}</h5></Modal.Title>
                                     </Modal.Header>
                                     <Modal.Body>
-                                        <Carousel activeIndex={index} onSelect={handleSelect}>
+                                        <Carousel activeIndex={indexCarrusel} onSelect={handleSelect}>
                                             {
                                                 propiedad.fotos.map((item, index) => (
                                                     <Carousel.Item key={index}>
@@ -114,15 +113,23 @@ function Propiedad(){
                                         <div className='container'>{propiedad.descripcion}</div>
                                     </Modal.Body>
                                     <Modal.Footer>
-                                        <Button className='botonesStyle'>
-                                            <FontAwesomeIcon icon={faCalendarDays}/> AGENDAR CITA
-                                        </Button>
+                                        {
+                                            correo
+                                            ?
+                                            <Button className='botonesStyle' onClick={() => handleOpenModalCitas()}>
+                                                <FontAwesomeIcon icon={faCalendarDays}/> AGENDAR CITA
+                                            </Button>
+                                            :
+                                            <Button className='botonesStyle'>
+                                                <FontAwesomeIcon icon={faCalendarDays}/> INICIA SESION PARA GENERAR UNA CITA
+                                            </Button>
+                                        }
                                     </Modal.Footer>
                                 </Modal>
                             </>
                             :
                             <>
-                                <Modal show={showModalPropiedades} onHide={handleClose}>
+                                <Modal show={showModalPropiedad} onHide={handleClose}>
                                     <Modal.Header closeButton>
                                         <Modal.Title className='fs-5'>SIN INFORMACION</Modal.Title>
                                     </Modal.Header>
@@ -137,8 +144,7 @@ function Propiedad(){
                 )
 
             }
-
-
+            {modalCita.isOpenModal() && <Cita showModalCita = {modalCita.isOpenModal()} handleCloseModalCita = {modalCita.closeModal}/>}
 
             
         </>
