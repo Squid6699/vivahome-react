@@ -55,8 +55,6 @@ function Catalogo(){
                                                         <div><i><FontAwesomeIcon icon={faBed}/></i></div>
                                                         <div><i><FontAwesomeIcon icon={faStairs}/></i></div>
                                                         <div><i><FontAwesomeIcon icon={faRuler}/></i></div>
-                                                    </div>
-                                                    <div className='texts'>
                                                         <div>{item.nAutos}</div>
                                                         <div>{item.nBanos}</div>
                                                         <div>{item.nRecamaras}</div>
