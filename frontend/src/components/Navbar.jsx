@@ -14,7 +14,6 @@ function Navbar(){
     const {usuario, nivel} = useSesion();
     const modalLogin = useModal();
     const modalRegister = useModal();
-    const [showRegister, setShowRegister] = useState(false);
 
     const handleCerrarSesion = async () => {
         try {
