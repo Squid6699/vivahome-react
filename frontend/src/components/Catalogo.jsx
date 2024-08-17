@@ -36,13 +36,13 @@ function Catalogo(){
         setPropiedad(propiedad);
         modalPropiedad.openModal();
     }
-
+    
     return(
         <>
             <Navbar />
             <section className='container'>
                 {isLoading ? (
-                    <span>CARGANDO PROPIEDADES...</span>
+                    <span className='textCatalogo'>CARGANDO PROPIEDADES...</span>
                 ) : (
                 <>
                     {propiedades && propiedades.length > 0 ? 
@@ -93,12 +93,12 @@ function Catalogo(){
                             ))}
                         </div>
                         : 
-                        <span>NO HAY PROPIEDADES DISPONIBLES.</span>
+                        <span className='textCatalogo'>NO HAY PROPIEDADES DISPONIBLES.</span>
                     }
                 </>
                 )}
             </section>
-            {modalPropiedad.isOpenModal() && <Propiedad showModalPropiedad={modalPropiedad.openModal} handleCloseMOdalPropiedad={modalPropiedad.closeModal()} propiedad={propiedad}/>}
+            {modalPropiedad.isOpenModal() && <Propiedad showModalPropiedad={modalPropiedad.openModal} handleCloseMOdalPropiedad={modalPropiedad.closeModal} propiedad={propiedad}/>}
         </>
     );
 }
