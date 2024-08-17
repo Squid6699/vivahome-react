@@ -10,7 +10,7 @@ routeAgendarCita.post("/", async (req, res) => {
         const { correoUsuario, idPropiedad , direccion, nombreCompleto, correo, telefono, fecha} = req.body;
 
         if (!correoUsuario || !idPropiedad || !direccion || !nombreCompleto || !correo || !fecha){
-            return res.json({success: false, error: "OCURRIO UN ERROR"});
+            return res.json({success: false, error: "OCURRIO UN ERROR AL AGENDAR LA CITA"});
         }
 
         const idPropiedadCorrecta = await Propiedades.findOne({ _id: idPropiedad });
