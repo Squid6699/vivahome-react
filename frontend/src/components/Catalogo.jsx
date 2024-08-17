@@ -1,17 +1,14 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCar, faBath, faBed, faStairs, faRuler, faEye } from '@fortawesome/free-solid-svg-icons';
 import Navbar from "../components/Navbar.jsx"
 import "../css/catalogo.css"
 import { useQuery } from "react-query";
-import { useModal } from '../hook/useModal.js';
-import Propiedad from './Propiedad.jsx';
+import { Link } from 'react-router-dom';
 
 function Catalogo(){
 
     const { data: propiedades, isLoading, refetch } = useQuery("propiedades", obtenerPropiedades);
-    const modalPropiedad = useModal();
-    const [propiedad, setPropiedad] = useState([]);
 
     useEffect(() => {
         refetch();
@@ -32,17 +29,12 @@ function Catalogo(){
         }
     }
 
-    const handleVerPropiedad = (propiedad) => {
-        setPropiedad(propiedad);
-        modalPropiedad.openModal();
-    }
-    
     return(
         <>
             <Navbar />
             <section className='container'>
                 {isLoading ? (
-                    <span className='textCatalogo'>CARGANDO PROPIEDADES...</span>
+                    <span>CARGANDO PROPIEDADES...</span>
                 ) : (
                 <>
                     {propiedades && propiedades.length > 0 ? 
@@ -87,18 +79,19 @@ function Catalogo(){
                                         </div>
                                     </div>
                                     <div className='card-footer'>
-                                        <span style={{cursor: "pointer"}} onClick={() => handleVerPropiedad(item)}><i><FontAwesomeIcon icon={faEye}/></i> VER</span>
+                                        <Link to={"/propiedad/"+item._id} style={{cursor: "pointer"}}>
+                                            <span><i><FontAwesomeIcon icon={faEye}/></i> VER</span>
+                                        </Link>
                                     </div>
                                 </div>
                             ))}
                         </div>
                         : 
-                        <span className='textCatalogo'>NO HAY PROPIEDADES DISPONIBLES.</span>
+                        <span>NO HAY PROPIEDADES DISPONIBLES.</span>
                     }
                 </>
                 )}
             </section>
-            {modalPropiedad.isOpenModal() && <Propiedad showModalPropiedad={modalPropiedad.openModal} handleCloseMOdalPropiedad={modalPropiedad.closeModal} propiedad={propiedad}/>}
         </>
     );
 }
