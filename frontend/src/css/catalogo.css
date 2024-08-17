@@ -19,7 +19,10 @@
 }
 
 .container span{
-    color: var(--main-color) !important;
+    display: flex;
+    color: var(--text-color) !important;
+    justify-content: center;
+    padding-top: 20%;
 }
 
 .container .catalogo .card-text .icons{

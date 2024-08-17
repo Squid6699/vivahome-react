@@ -1,14 +1,17 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCar, faBath, faBed, faStairs, faRuler, faEye } from '@fortawesome/free-solid-svg-icons';
 import Navbar from "../components/Navbar.jsx"
 import "../css/catalogo.css"
 import { useQuery } from "react-query";
-import { Link } from 'react-router-dom';
+import { useModal } from '../hook/useModal.js';
+import Propiedad from './Propiedad.jsx';
 
 function Catalogo(){
 
     const { data: propiedades, isLoading, refetch } = useQuery("propiedades", obtenerPropiedades);
+    const modalPropiedad = useModal();
+    const [propiedad, setPropiedad] = useState([]);
 
     useEffect(() => {
         refetch();
@@ -27,6 +30,11 @@ function Catalogo(){
         } catch (error) {
             throw new Error("OCURRIO UN ERROR");
         }
+    }
+
+    const handleVerPropiedad = (propiedad) => {
+        setPropiedad(propiedad);
+        modalPropiedad.openModal();
     }
 
     return(
@@ -79,9 +87,7 @@ function Catalogo(){
                                         </div>
                                     </div>
                                     <div className='card-footer'>
-                                        <Link to={"/propiedad/"+item._id} style={{cursor: "pointer"}}>
-                                            <span><i><FontAwesomeIcon icon={faEye}/></i> VER</span>
-                                        </Link>
+                                        <span style={{cursor: "pointer"}} onClick={() => handleVerPropiedad(item)}><i><FontAwesomeIcon icon={faEye}/></i> VER</span>
                                     </div>
                                 </div>
                             ))}
@@ -92,6 +98,7 @@ function Catalogo(){
                 </>
                 )}
             </section>
+            {modalPropiedad.isOpenModal() && <Propiedad showModalPropiedad={modalPropiedad.openModal} handleCloseMOdalPropiedad={modalPropiedad.closeModal()} propiedad={propiedad}/>}
         </>
     );
 }

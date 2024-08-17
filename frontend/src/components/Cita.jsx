@@ -1,12 +1,12 @@
 import React from 'react'
 import { Button, Modal } from 'react-bootstrap';
 
-function Cita({showModalCita, handleCloseModalCita}){
+function Cita({showModalCita, handleCloseModalCita, propiedad}){
     return(
         <>
             <Modal show={showModalCita} onHide={handleCloseModalCita} size='lg'>
                 <Modal.Header closeButton>
-                    <Modal.Title>Modal heading</Modal.Title>
+                    <Modal.Title>AGENDAR CITA</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     Woohoo, you are reading this text in a modal!
