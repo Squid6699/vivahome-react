@@ -2,7 +2,7 @@ import cors from "cors"
 import express from "express"
 import { connectDB } from "./db.js"; 
 import cookieParser from "cookie-parser";
-import { SECRET_KEY } from "./config.js";
+import { HOST, SECRET_KEY } from "./config.js";
 import jwt from "jsonwebtoken";
 
 import { routerLogin } from "./routes/login.js";
@@ -10,11 +10,12 @@ import { routerRegister } from "./routes/register.js";
 import { routerObtenerPropiedades } from "./routes/obtenerPropiedades.js";
 import { routerLogout } from "./routes/logout.js";
 import { routePropiedad } from "./routes/propiedad.js";
+import { routeAgendarCita } from "./routes/agendarCita.js";
 
 const app = express();
 
 app.use(cors({
-    origin: 'http://localhost:3000',  // Reemplaza con la URL de tu frontend
+    origin: HOST,  // Reemplaza con la URL de tu frontend
     credentials: true                 // Permite las credenciales
 }));
 
@@ -44,6 +45,7 @@ app.use("/auth", routerRegister);
 app.use("/obtenerpropiedades", routerObtenerPropiedades);
 app.use("/logout", routerLogout);
 app.use("/propiedad", routePropiedad);
+app.use("/agendarcita", routeAgendarCita);
 
 
 app.listen(3001, () => {
