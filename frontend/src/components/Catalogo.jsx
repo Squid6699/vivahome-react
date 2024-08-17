@@ -31,7 +31,7 @@ function Catalogo(){
 
     return(
         <>
-            {/* <Navbar /> */}
+            <Navbar />
             <section className='container'>
                 {isLoading ? (
                     <span className='textCatalogo'>CARGANDO PROPIEDADES...</span>
