@@ -20,7 +20,7 @@ const citasSchema = mongoose.Schema({
     },
     idPropiedad: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: 'Propiedad',
+      ref: 'Propiedades',
       required: true
     },
     idComprador: {
@@ -33,6 +33,6 @@ const citasSchema = mongoose.Schema({
       ref: 'Vendedor',
       default: null
     }
-})
+}, { versionKey: false });
 
 export const Cita = mongoose.model("Cita", citasSchema);
