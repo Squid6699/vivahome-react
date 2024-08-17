@@ -144,7 +144,7 @@ function Propiedad(){
                 )
 
             }
-            {modalCita.isOpenModal() && <Cita showModalCita = {modalCita.isOpenModal} handleCloseModalCita = {modalCita.closeModal}/>}
+            {modalCita.isOpenModal() && <Cita showModalCita = {modalCita.isOpenModal} handleCloseModalCita = {modalCita.closeModal} propiedad={propiedad}/>}
             
         </>
     );
