@@ -43,3 +43,7 @@
 .container .catalogo i{
     color: var(--main-color) !important;
 }
+
+.card-footer span{
+    color: var(--main-color) !important;
+}
