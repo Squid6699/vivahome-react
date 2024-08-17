@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Login from './Login';
 import Register from './Register';
 import {useSesion} from "../hook/useSesion"
-import { Dropdown } from 'react-bootstrap';
+import { Dropdown, Offcanvas } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faPowerOff, faBars } from '@fortawesome/free-solid-svg-icons';
 import { useModal } from '../hook/useModal';
@@ -14,6 +14,7 @@ function Navbar(){
     const {usuario, nivel} = useSesion();
     const modalLogin = useModal();
     const modalRegister = useModal();
+    const offCanvasNavbar = useModal();
 
     const handleCerrarSesion = async () => {
         try {
@@ -29,7 +30,7 @@ function Navbar(){
     }
 
     const click = () => {
-
+        offCanvasNavbar.openModal();
     }
 
     return(
@@ -74,10 +75,28 @@ function Navbar(){
 
             </header>
 
-            <aside className="listaLectura">
-                <h1>LISTA DE LECTURA</h1>
-
-            </aside>
+            <Offcanvas show={offCanvasNavbar.isOpenModal} onHide={offCanvasNavbar.closeModal} placement={"end"} backdrop="static">
+                <Offcanvas.Header closeButton>
+                    <Offcanvas.Title>
+                        <Link to={"/"} className="OffCanvaslogo">
+                            <i className="ri-home-heart-fill"></i> <span>VIVAHOME</span>
+                        </Link>
+                    </Offcanvas.Title>
+                </Offcanvas.Header>
+                <Offcanvas.Body>
+                <ul className="OffCanvasNavbarApp">
+                    <li>
+                        <Link to={"/"}>CATALOGO</Link>
+                    </li>
+                    <li>
+                        <Link to={"/"}>CATALOGO</Link>
+                    </li>
+                    <li>
+                        <Link to={"/"}>CATALOGO</Link>
+                    </li>
+                </ul>
+                </Offcanvas.Body>
+            </Offcanvas>
             
             {modalLogin.isOpenModal() && <Login showLogin={modalLogin.isOpenModal} handleCloseLogin={modalLogin.closeModal}/>}
             {modalRegister.isOpenModal() && <Register showRegister={modalRegister.isOpenModal} handleCloseRegister={modalRegister.closeModal}/>}

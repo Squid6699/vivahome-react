@@ -37,6 +37,23 @@ header .main{
     font-size: 1.7rem;
 }
 
+.OffCanvaslogo{
+    display: flex;
+    align-items: center;
+}
+
+.OffCanvaslogo i{
+    color: var(--main-color);
+    font-size: 28px;
+    margin-right: 3px;
+}
+
+
+.OffCanvaslogo span{
+    color: var(--text-color);
+    font-size: 1.7rem;
+}
+
 .navbarApp a{
     color: var(--text-color);
     font-size: 1.1rem;
@@ -44,6 +61,26 @@ header .main{
 }
 
 .navbarApp a:hover{
+    color: var(--main-color);
+}
+
+.OffCanvasNavbarApp{
+    display: flex;
+    flex-direction: column;
+}
+
+.OffCanvasNavbarApp a{
+    color: var(--text-color);
+    font-size: 1.1rem;
+    transition: all .50s ease;
+
+}
+
+.OffCanvasNavbarApp li{
+    margin-top: 10px;
+}
+
+.OffCanvasNavbarApp a:hover{
     color: var(--main-color);
 }
 
@@ -95,10 +132,16 @@ header .main{
     transition: all .50s ease;
 }
 
-.bars:hover{
+.bars-btn:hover{
     color: var(--main-color);
     cursor: pointer;
 }
+
+.offcanvas{
+    background-color: var(--bg-color) !important;
+    color: var(--text-color) !important;
+}
+
 
 @media (width < 800px){
     .bars-btn{
