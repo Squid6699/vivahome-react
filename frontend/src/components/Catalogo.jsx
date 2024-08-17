@@ -31,10 +31,10 @@ function Catalogo(){
 
     return(
         <>
-            <Navbar />
+            {/* <Navbar /> */}
             <section className='container'>
                 {isLoading ? (
-                    <span>CARGANDO PROPIEDADES...</span>
+                    <span className='textCatalogo'>CARGANDO PROPIEDADES...</span>
                 ) : (
                 <>
                     {propiedades && propiedades.length > 0 ? 
@@ -59,7 +59,7 @@ function Catalogo(){
                                                         <div>{item.nBanos}</div>
                                                         <div>{item.nRecamaras}</div>
                                                         <div>{item.nEscaleras}</div>
-                                                        <div>{item.metros}</div>
+                                                        <div>{item.metros}<small>m2</small></div>
                                                     </div>
                                                 </>
                                                     
@@ -87,7 +87,7 @@ function Catalogo(){
                             ))}
                         </div>
                         : 
-                        <span>NO HAY PROPIEDADES DISPONIBLES.</span>
+                        <span className='textCatalogo'>NO HAY PROPIEDADES DISPONIBLES.</span>
                     }
                 </>
                 )}
