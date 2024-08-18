@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import "../css/botonera.css";
 
 function Botonera(){
     return(
