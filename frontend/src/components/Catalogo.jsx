@@ -59,7 +59,7 @@ function Catalogo(){
                                                         <div>{item.nBanos}</div>
                                                         <div>{item.nRecamaras}</div>
                                                         <div>{item.nEscaleras}</div>
-                                                        <div>{item.metros}<small>m2</small></div>
+                                                        <div>{item.metros}<small>m²</small></div>
                                                     </div>
                                                 </>
                                                     
@@ -70,7 +70,7 @@ function Catalogo(){
                                                         <div><i><FontAwesomeIcon icon={faRuler}/></i></div>
                                                     </div>
                                                     <div className='text'>
-                                                        <div>{item.metros}</div>
+                                                        <div>{item.metros}<small>m²</small></div>
                                                     </div>
                                                 </>
                                             }
