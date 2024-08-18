@@ -7,6 +7,7 @@ import {useSesion} from "../hook/useSesion.js"
 function Login({showLogin, handleCloseLogin}){
     const {setUsuario, setCorreo, setNivel} = useSesion();
     const [error, setError] = useState(null);
+    const [loading, setLoading] = useState(false);
 
     const handleSubmitLogin = async (e) => {
         e.preventDefault();
@@ -80,6 +81,7 @@ function Login({showLogin, handleCloseLogin}){
         }
     
         try {
+            setLoading(true);
             const response = await fetch("http://localhost:3001/auth/login", {
                 method: "POST",
                 headers: {
@@ -96,6 +98,7 @@ function Login({showLogin, handleCloseLogin}){
                 setTimeout(() =>{
                     setError(null)
                 }, 5000)
+                setLoading(false);
             }
 
             if (data.success){
@@ -105,6 +108,7 @@ function Login({showLogin, handleCloseLogin}){
                 window.location.href = '/';
             }
         }catch(err){
+            setLoading(false);
             setError("OCURRIO UN ERROR AL INTENTAR INICIAR SESION");
             throw new Error("OCURRIO UN ERROR AL INTENTAR INICIAR SESION");
         }
@@ -135,7 +139,7 @@ function Login({showLogin, handleCloseLogin}){
                         </div>
                         <div className="pass-txt"><a href="#">OLVIDASTE LA CONTRASEÑA?</a></div>
                         {error && <b style={{color: "red", display: "flex", justifyContent: "center"}}>{error}</b>}
-                        <input type="submit" name="iniciar" value="INICIAR"/>
+                        {loading ? <button type="submit" name="iniciar"><span class="spinner-border spinner-border-sm" aria-hidden="true"></span> INICIAR</button> : <button type="submit" name="iniciar">INICIAR</button>}
                     </form>
                 </Modal.Body>
             </Modal>

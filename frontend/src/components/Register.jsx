@@ -5,6 +5,7 @@ import { useSesion } from '../hook/useSesion';
 function Register({ showRegister, handleCloseRegister }) {
     const {setUsuario, setCorreo, setNivel} = useSesion();
     const [error, setError] = useState(null);
+    const [loading, setLoading] = useState(false);
 
     const handleSubmitRegister = async (e) => {
         e.preventDefault();
@@ -106,6 +107,7 @@ function Register({ showRegister, handleCloseRegister }) {
         }
 
         try {
+            setLoading(true);
             const response = await fetch("http://localhost:3001/auth/register", {
                 method: "POST",
                 headers: {
@@ -122,6 +124,7 @@ function Register({ showRegister, handleCloseRegister }) {
                 setTimeout(() =>{
                     setError(null)
                 }, 5000)
+                setLoading(false);
             }
 
             if (data.success){
@@ -132,6 +135,7 @@ function Register({ showRegister, handleCloseRegister }) {
             }
 
         } catch (error) {
+            setLoading(false);
             setError("OCURRIO UN ERROR AL INTENTAR REGISTRARSE");
             throw new Error("OCURRIO UN ERROR AL INTENTAR REGISTRARSE");
         }
@@ -177,7 +181,8 @@ function Register({ showRegister, handleCloseRegister }) {
                             <div id="mensajeErrorCorreo" className="error error-txt" style={{display: "none"}}>ESE CORREO YA SE ENCUENTRA REGISTRADO</div>
                         </div>
                         {error && <b style={{color: "red", display: "flex", justifyContent: "center"}}>{error}</b>}
-                        <input type="submit" name="iniciarRegistro" value="REGISTRAR"/>
+                        
+                        {loading ? <button type="submit" name="iniciarRegistro"><span class="spinner-border spinner-border-sm" aria-hidden="true"></span> REGISTRAR</button> : <button type="submit" name="iniciarRegistro">REGISTRAR</button>}
                     </form>
                 </Modal.Body>
             </Modal>
