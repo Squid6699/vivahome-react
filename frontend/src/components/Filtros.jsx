@@ -4,9 +4,9 @@ import "../css/filtros.css"
 function Filtros(){
     return(
         <>
-            <section className='container-filtros'>
+            <aside className='container-filtros'>
                 <div className='filtros'>AQUI VAN LOS FILTROS</div>
-            </section>
+            </aside>
         </>
     );
 }

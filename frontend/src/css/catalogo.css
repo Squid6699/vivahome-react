@@ -1,15 +1,15 @@
 .catalogo{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 300px));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 250px));
     gap: 16px;
-    justify-content: center;
+    /* justify-content: center; */
     text-align: center;
     padding-top: 90px;
 }
 
 .catalogo img{
     height: 234px;
-    width: 298px;
+    width: 248px;
 }
 
 .card{
@@ -25,22 +25,22 @@
     padding-top: 20%;
 }
 
-.container .catalogo .card-text .icons{
+.catalogo .card-text .icons{
     display: grid;
     grid-template-columns: auto auto auto auto auto;
 }
 
-.container .catalogo .card-text .tipo{
+.catalogo .card-text .tipo{
     margin-top: 10px;
     text-align: center;
 }
 
-.container .catalogo .card-text .precio{
+.catalogo .card-text .precio{
     margin-top: 10px;
     text-align: center;
 }
 
-.container .catalogo i{
+.catalogo i{
     color: var(--main-color) !important;
 }
 

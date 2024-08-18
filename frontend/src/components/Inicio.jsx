@@ -10,10 +10,9 @@ function Inicio(){
     return(
         <>
             <Navbar />
-            <section className='container'>
+            <section className='containerApp'>
                 <Filtros/>
                 <Catalogo/>
-                
             </section>
             
         </>
