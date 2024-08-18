@@ -43,8 +43,6 @@ function Navbar(){
                 <ul className="navbarApp">
                     <li>
                         <Link to={"/"}>CATALOGO</Link>
-                        <Link to={"/"}>CATALOGO</Link>
-                        <Link to={"/"}>CATALOGO</Link>
         
                     </li>
                 </ul>
@@ -85,12 +83,6 @@ function Navbar(){
                 </Offcanvas.Header>
                 <Offcanvas.Body>
                 <ul className="OffCanvasNavbarApp">
-                    <li>
-                        <Link to={"/"}>CATALOGO</Link>
-                    </li>
-                    <li>
-                        <Link to={"/"}>CATALOGO</Link>
-                    </li>
                     <li>
                         <Link to={"/"}>CATALOGO</Link>
                     </li>
