@@ -9,7 +9,7 @@ function Inicio(){
     return(
         <>
             <Navbar />
-            <section className='containerApp' id = "containerApp">
+            <section className='containerApp'>
                 <Filtros/>
                 <Catalogo/>
             </section>

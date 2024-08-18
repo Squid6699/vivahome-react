@@ -5,7 +5,9 @@ function Filtros(){
     return(
         <>
             <aside className='container-filtros'>
-                <div className='filtros'>AQUI VAN LOS FILTROS</div>
+                <div className='filtros'>
+                    AQUI VAN LOS FILTROS
+                </div>
             </aside>
         </>
     );
