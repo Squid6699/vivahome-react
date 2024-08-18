@@ -1,11 +1,14 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFilter } from '@fortawesome/free-solid-svg-icons';
 import "../css/botonera.css";
+import { Button } from 'react-bootstrap';
 
 function Botonera(){
     return(
         <>
             <section className='tags'>
-                <div>AQUI VAN LOS BOTONES DE FILTROS Y MAPA</div>
+                <Button className='botonesStyle'><FontAwesomeIcon icon={faFilter}/> FILTROS</Button>
             </section>
         </>
     );
