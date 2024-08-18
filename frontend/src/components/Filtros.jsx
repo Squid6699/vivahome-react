@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCar, faStreetView } from '@fortawesome/free-solid-svg-icons';
+import { faBath, faBed, faCar, faPlay, faStairs, faStop, faStreetView } from '@fortawesome/free-solid-svg-icons';
 import {Button} from "react-bootstrap"
 import "../css/filtros.css"
 
@@ -11,52 +11,52 @@ function Filtros(){
                 <div className='filtros'>
                     <form className="formulario formularioFiltros">
                         <h5>FILTROS</h5>
-                        <div class="field filtroUbicacion">
-                            <div class="input-area">
+                        <div className="field filtroUbicacion">
+                            <div className="input-area">
                                 <input type = "text" id="filtroUbicacion" name = "filtroUbicacion" placeholder = "UBICACION"/>
                                 <i className='icon'><FontAwesomeIcon icon={faStreetView}/></i>
                             </div>
                         </div>
 
-                        <div class="field filtroAutos">
-                            <div class="input-area">
+                        <div className="field filtroAutos">
+                            <div className="input-area">
                                 <input type="number" id="filtroAutos" name="filtroAutos" placeholder = "AUTOS"/>
                                 <i className='icon'><FontAwesomeIcon icon={faCar}/></i>
                             </div>
                         </div>
 
-                        <div class="field fitroBaños">
-                            <div class="input-area">
+                        <div className="field fitroBaños">
+                            <div className="input-area">
                                 <input type="number" id="fitroBaños" name="fitroBaños" placeholder = "BAÑOS"/>
-                                <i class="icon fa-solid fa-bath"></i>
+                                <i className='icon'><FontAwesomeIcon icon={faBath}/></i>
                             </div>
                         </div>
 
-                        <div class="field filtroHabitaciones">
-                            <div class="input-area">
+                        <div className="field filtroHabitaciones">
+                            <div className="input-area">
                                 <input type="number" id="filtroHabitaciones" name="filtroHabitaciones" placeholder = "HABITACIONES" />
-                                <i class="icon fa-solid fa-bed"></i>
+                                <i className='icon'><FontAwesomeIcon icon={faBed}/></i>
                             </div>
                         </div>
 
-                        <div class="field filtroEscaleras">
-                            <div class="input-area">
+                        <div className="field filtroEscaleras">
+                            <div className="input-area">
                                 <input type="number" id="filtroEscaleras" name="filtroEscaleras" placeholder = "ESCALERAS"/>
-                                <i class="icon fa-solid fa-stairs"></i>
+                                <i className='icon'><FontAwesomeIcon icon={faStairs}/></i>
                             </div>
                         </div>
 
-                        <div class="field filtroMetrosCuadrados">
-                            <div class="input-area">
+                        <div className="field filtroMetrosCuadrados">
+                            <div className="input-area">
                                 <input type="number" id="filtroMetrosCuadrados" name="filtroMetrosCuadrados" placeholder = "METROS²"/>
-                                <i class="icon ri-ruler-2-fill"></i>
+                                <i className="icon ri-ruler-2-fill"></i>
                             </div>
                         </div>
 
-                        <div class="field fitroTipo">
-                            <div class="input-area">
+                        <div className="field fitroTipo">
+                            <div className="input-area">
                                 <select id="fitroTipo" name="fitroTipo" placeholder = "TIPO">
-                                    <option value="" selected disabled>TIPO DE PROPIEDAD</option>
+                                    <option value="" disabled>TIPO DE PROPIEDAD</option>
                                     <option value="VENTA">VENTA</option>
                                     <option value="RENTA">RENTA</option>
                                     <option value="TERRENO">TERRENO</option>
@@ -64,17 +64,17 @@ function Filtros(){
                             </div>
                         </div>
 
-                        <div class="field filtroPrecioInicial">
-                            <div class="input-area">
+                        <div className="field filtroPrecioInicial">
+                            <div className="input-area">
                                 <input type="number" id="filtroPrecioInicial" name="filtroPrecioInicial" placeholder="$ INICIAL"/>
-                                <i class="icon fa-solid fa-play"></i>
+                                <i className='icon'><FontAwesomeIcon icon={faPlay}/></i>
                             </div>
                         </div>
 
-                        <div class="field filtroPrecioFinal">
-                            <div class="input-area">
+                        <div className="field filtroPrecioFinal">
+                            <div className="input-area">
                                 <input type="number" id="filtroPrecioFinal" name="filtroPrecioFinal" placeholder="$ FINAL" />
-                                <i class="icon fa-solid fa-stop"></i>
+                                <i className='icon'><FontAwesomeIcon icon={faStop}/></i>
                             </div>
                         </div>
 

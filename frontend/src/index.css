@@ -53,15 +53,15 @@ ul{
 }
 
 .botonesStyle{
-    color: var(--text-color);
-    box-shadow: 0px 0px 20px rgba(0.0, 0.0, 0.0, 0.2);
-    background: var(--bg-color);
-    border: var(--main-color) solid 1px;
+    color: var(--text-color) !important;
+    box-shadow: 0px 0px 20px rgba(0.0, 0.0, 0.0, 0.2) !important;
+    background: var(--bg-color) !important;
+    border: var(--main-color) solid 1px !important;
 }
 
 .botonesStyle:hover{
-    background: var(--main-color);
-    border: var(--main-color) solid 1px;
+    background: var(--main-color) !important;
+    border: var(--main-color) solid 1px !important;
 }
 
 .botonesStyle:active{
