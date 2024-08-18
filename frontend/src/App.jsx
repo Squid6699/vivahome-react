@@ -1,4 +1,4 @@
-import Catalogo from "./components/Catalogo"
+import Inicio from "./components/Inicio"
 import Propiedad from "./components/Propiedad"
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 
@@ -8,7 +8,7 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element = {<Catalogo/>}/>
+          <Route path="/" element = {<Inicio/>}/>
           <Route path="/propiedad/:id" element = {<Propiedad/>}/>
         </Routes>
       </BrowserRouter>

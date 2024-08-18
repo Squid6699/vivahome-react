@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import "../css/propiedad.css";
-import Catalogo from "./Catalogo"
+import Catalogo from "./Inicio"
 import { Button, Carousel, Modal } from 'react-bootstrap';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useQuery } from "react-query";

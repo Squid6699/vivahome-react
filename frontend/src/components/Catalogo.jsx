@@ -1,13 +1,11 @@
 import React, { useEffect } from 'react'
+import "../css/catalogo.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCar, faBath, faBed, faStairs, faRuler, faEye } from '@fortawesome/free-solid-svg-icons';
-import Navbar from "../components/Navbar.jsx"
-import "../css/catalogo.css"
 import { useQuery } from "react-query";
 import { Link } from 'react-router-dom';
 
 function Catalogo(){
-
     const { data: propiedades, isLoading, refetch } = useQuery("propiedades", obtenerPropiedades);
 
     useEffect(() => {
@@ -31,8 +29,7 @@ function Catalogo(){
 
     return(
         <>
-            <Navbar />
-            <section className='container'>
+            <section className='container-catalogo'>
                 {isLoading ? (
                     <span className='textCatalogo'>CARGANDO PROPIEDADES...</span>
                 ) : (
@@ -64,7 +61,6 @@ function Catalogo(){
                                                 </>
                                                     
                                                 :
-
                                                 <>
                                                     <div className='icon'>
                                                         <div><i><FontAwesomeIcon icon={faRuler}/></i></div>
