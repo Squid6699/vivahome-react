@@ -1,6 +1,8 @@
 .containerApp{
     display: flex;
     padding-top: 90px;
+    gap: 20px;
+    margin-left: 10px;
 }
 
 .container-catalogo {
@@ -9,5 +11,6 @@
 
 .container-filtros{
     min-width: 200px;
+    max-width: 350px;
     flex-grow: 1;
 }

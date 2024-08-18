@@ -2,3 +2,68 @@
     position: sticky;
     top: 90px;
 }
+
+.formularioFiltros{
+    display: grid;
+    column-gap: 5px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "titulo titulo"
+        "ubicacion ubicacion"
+        "autos baños"
+        "habitaciones escaleras"
+        "metros tipoPropiedad"
+        "rangoPrecioInicial rangoPrecioFinal"
+    ;
+}
+
+.formularioFiltros h5{
+    grid-area: titulo;
+    justify-self: center;
+}
+
+.filtroUbicacion{
+    grid-area: ubicacion;
+    justify-self: center;
+    justify-self: stretch;
+}
+
+.filtroAutos{
+    grid-area: autos;
+    justify-self: center;
+}
+
+.fitroBaños{
+    grid-area: baños;
+    justify-self: center;
+}
+
+.filtroHabitaciones{
+    grid-area: habitaciones;
+    justify-self: center;
+}
+
+.filtroEscaleras{
+    grid-area: escaleras;
+    justify-self: center;
+}
+
+.filtroMetrosCuadrados{
+    grid-area: metros;
+    justify-self: center;
+}
+
+.fitroTipo{
+    grid-area: tipoPropiedad;
+    justify-self: center;
+}
+
+.filtroPrecioInicial{
+    grid-area: rangoPrecioInicial;
+    justify-self: center;
+}
+
+.filtroPrecioFinal{
+    grid-area: rangoPrecioFinal;
+    justify-self: center;
+}
