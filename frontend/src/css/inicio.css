@@ -1,16 +1,30 @@
 .containerApp{
-    display: flex;
+    display: grid;
+    grid-template-columns: 300px 1fr;
     padding-top: 90px;
     gap: 20px;
     margin-left: 10px;
+    grid-template-areas:
+    ". botones"
+    "filtros catalogo"
+    ;
+}
+
+.containerApp.ocultar-filtros {
+    display: flex;
+    flex-direction: column;
 }
 
 .container-catalogo {
-    flex-grow: 5;
+    grid-area: catalogo
 }
 
 .container-filtros{
+    grid-area: filtros;
     min-width: 200px;
     max-width: 350px;
-    flex-grow: 1;
+}
+
+.botones{
+    grid-area: botones;
 }
