@@ -1,31 +1,38 @@
 import React, { useState } from 'react'
 import "../css/inicio.css"
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFilter } from '@fortawesome/free-solid-svg-icons';
 import Navbar from "./Navbar.jsx"
 import Filtros from './Filtros.jsx';
 import Catalogo from './Catalogo.jsx';
 import { Button } from 'react-bootstrap';
 
 function Inicio(){
-    const [mostrarFiltros, setMostrarFiltros] = useState(window.localStorage.getItem("filtros") === "true" || false);
+    const [mostrarFiltros, setMostrarFiltros] = useState(false);
 
     const toggleFiltros = () => {
         setMostrarFiltros(!mostrarFiltros);
-        window.localStorage.setItem("filtros", !mostrarFiltros);
     };
 
     return(
         <>
             <Navbar />
-            <section className={`containerApp ${!mostrarFiltros ? 'ocultar-filtros' : ''}`}>
-                <section className='botones'>
-                    <Button className='botonesStyle' onClick={toggleFiltros}>
-                        {mostrarFiltros ? 'OCULTAR FILTROS' : 'MOSTRAR FILTROS'}
-                    </Button>
-                </section>
-                {mostrarFiltros && <Filtros/>}
-                <Catalogo/>
+            <section className="containerApp">
+                {mostrarFiltros && <Filtros show={mostrarFiltros} handleCloseFiltros={toggleFiltros}/>}
+                
+                <div className="containerAppCatalogo">
+                    <div className='botonera'>
+                        <Button className='botonesStyle' onClick={toggleFiltros}>
+                            <FontAwesomeIcon icon={faFilter}/> FILTROS
+                        </Button>
+                    </div>
+                </div>
+                <div className="containerAppCatalogo">
+                    <Catalogo/>
+                </div>
+
             </section>
+            
             
         </>
     );
