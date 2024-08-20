@@ -26,8 +26,6 @@ function Inicio(){
                             <FontAwesomeIcon icon={faFilter}/> FILTROS
                         </Button>
                     </div>
-                </div>
-                <div className="containerAppCatalogo">
                     <Catalogo/>
                 </div>
 

@@ -5,12 +5,8 @@
 
 .containerAppCatalogo{
     display: flex;
-    justify-content: center;
-}
-
-.containerAppBotonera{
-    display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .botonera{
