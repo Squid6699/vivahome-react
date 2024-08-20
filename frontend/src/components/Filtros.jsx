@@ -6,6 +6,10 @@ import "../css/filtros.css"
 
 function Filtros({show, handleCloseFiltros}){
 
+    const handleSubmitFiltros = (e) => {
+        e.preventDefault();
+        
+    }
 
     return(
         <>
@@ -14,7 +18,7 @@ function Filtros({show, handleCloseFiltros}){
                 <Offcanvas.Body>
                     <aside className='container-filtros'>
                         <div className='filtros'>
-                            <form className="formulario formularioFiltros">
+                            <form className="formulario formularioFiltros" onSubmit={handleSubmitFiltros}>
                                 <h5>FILTROS</h5>
                                 <div className="field filtroUbicacion">
                                     <div className="input-area">
@@ -25,35 +29,35 @@ function Filtros({show, handleCloseFiltros}){
 
                                 <div className="field filtroAutos">
                                     <div className="input-area">
-                                        <input type="number" id="filtroAutos" name="filtroAutos" placeholder = "AUTOS"/>
+                                        <input type="number" id="filtroAutos" name="filtroAutos" placeholder = "AUTOS" min={0}/>
                                         <i className='icon'><FontAwesomeIcon icon={faCar}/></i>
                                     </div>
                                 </div>
 
                                 <div className="field fitroBaños">
                                     <div className="input-area">
-                                        <input type="number" id="fitroBaños" name="fitroBaños" placeholder = "BAÑOS"/>
+                                        <input type="number" id="fitroBaños" name="fitroBaños" placeholder = "BAÑOS" min={0}/>
                                         <i className='icon'><FontAwesomeIcon icon={faBath}/></i>
                                     </div>
                                 </div>
 
                                 <div className="field filtroHabitaciones">
                                     <div className="input-area">
-                                        <input type="number" id="filtroHabitaciones" name="filtroHabitaciones" placeholder = "HABITACIONES" />
+                                        <input type="number" id="filtroHabitaciones" name="filtroHabitaciones" placeholder = "HABITACIONES" min={0} />
                                         <i className='icon'><FontAwesomeIcon icon={faBed}/></i>
                                     </div>
                                 </div>
 
                                 <div className="field filtroEscaleras">
                                     <div className="input-area">
-                                        <input type="number" id="filtroEscaleras" name="filtroEscaleras" placeholder = "ESCALERAS"/>
+                                        <input type="number" id="filtroEscaleras" name="filtroEscaleras" placeholder = "ESCALERAS" min={0}/>
                                         <i className='icon'><FontAwesomeIcon icon={faStairs}/></i>
                                     </div>
                                 </div>
 
                                 <div className="field filtroMetrosCuadrados">
                                     <div className="input-area">
-                                        <input type="number" id="filtroMetrosCuadrados" name="filtroMetrosCuadrados" placeholder = "METROS²"/>
+                                        <input type="number" id="filtroMetrosCuadrados" name="filtroMetrosCuadrados" placeholder = "METROS²" min={0}/>
                                         <i className="icon ri-ruler-2-fill"></i>
                                     </div>
                                 </div>
@@ -71,19 +75,19 @@ function Filtros({show, handleCloseFiltros}){
 
                                 <div className="field filtroPrecioInicial">
                                     <div className="input-area">
-                                        <input type="number" id="filtroPrecioInicial" name="filtroPrecioInicial" placeholder="$ INICIAL"/>
+                                        <input type="number" id="filtroPrecioInicial" name="filtroPrecioInicial" placeholder="$ INICIAL" min={0}/>
                                         <i className='icon'><FontAwesomeIcon icon={faPlay}/></i>
                                     </div>
                                 </div>
 
                                 <div className="field filtroPrecioFinal">
                                     <div className="input-area">
-                                        <input type="number" id="filtroPrecioFinal" name="filtroPrecioFinal" placeholder="$ FINAL" />
+                                        <input type="number" id="filtroPrecioFinal" name="filtroPrecioFinal" placeholder="$ FINAL" min={0}/>
                                         <i className='icon'><FontAwesomeIcon icon={faStop}/></i>
                                     </div>
                                 </div>
 
-                                <Button className="botonesStyle">APLICAR</Button>
+                                <Button type="submit" className="botonesStyle">APLICAR</Button>
                                 <Button className="botonesStyle">LIMPIAR</Button>
 
                             </form>
