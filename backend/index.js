@@ -11,6 +11,7 @@ import { routerObtenerPropiedades } from "./routes/obtenerPropiedades.js";
 import { routerLogout } from "./routes/logout.js";
 import { routePropiedad } from "./routes/propiedad.js";
 import { routeAgendarCita } from "./routes/agendarCita.js";
+import { routeFiltros } from "./routes/Filtro.js";
 
 const app = express();
 
@@ -46,6 +47,8 @@ app.use("/obtenerpropiedades", routerObtenerPropiedades);
 app.use("/logout", routerLogout);
 app.use("/propiedad", routePropiedad);
 app.use("/agendarcita", routeAgendarCita);
+app.use("/filtrarpropiedades", routeFiltros);
+
 
 
 app.listen(3001, () => {
