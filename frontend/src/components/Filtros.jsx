@@ -6,6 +6,7 @@ import "../css/filtros.css"
 
 function Filtros({show, closeModal, handleFilters, removeFilters}){
 
+    
     const handleSubmitFiltros = (e) => {
         e.preventDefault();
         var ubicacion = document.getElementById("filtroUbicacion").value;
