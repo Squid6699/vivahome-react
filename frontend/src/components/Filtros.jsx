@@ -4,7 +4,7 @@ import { faBath, faBed, faCar, faPlay, faStairs, faStop, faStreetView } from '@f
 import {Button, Offcanvas} from "react-bootstrap"
 import "../css/filtros.css"
 
-function Filtros({show, handleCloseFiltros, handleFilters, removeFilters}){
+function Filtros({show, closeModal, handleFilters, removeFilters}){
 
     const handleSubmitFiltros = (e) => {
         e.preventDefault();
@@ -33,7 +33,7 @@ function Filtros({show, handleCloseFiltros, handleFilters, removeFilters}){
 
     return(
         <>
-            <Offcanvas show={show} onHide={handleCloseFiltros}>
+            <Offcanvas show={show} onHide={closeModal}>
                 <Offcanvas.Header closeButton></Offcanvas.Header>
                 <Offcanvas.Body>
                     <aside className='container-filtros'>
@@ -85,7 +85,7 @@ function Filtros({show, handleCloseFiltros, handleFilters, removeFilters}){
                                 <div className="field fitroTipo">
                                     <div className="input-area">
                                         <select id="fitroTipo" name="fitroTipo" placeholder = "TIPO">
-                                            <option value="" selected>TIPO DE PROPIEDAD</option>
+                                            <option value="" defaultValue={""}>TIPO DE PROPIEDAD</option>
                                             <option value="Venta">VENTA</option>
                                             <option value="Renta">RENTA</option>
                                             <option value="Terreno">TERRENO</option>

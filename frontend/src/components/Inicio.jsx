@@ -7,13 +7,11 @@ import Filtros from './Filtros.jsx';
 import Catalogo from './Catalogo.jsx';
 import { Button } from 'react-bootstrap';
 import { useQuery } from "react-query";
+import { useModal } from '../hook/useModal.js';
 
 function Inicio(){
-    const [mostrarFiltros, setMostrarFiltros] = useState(false);
-
-    const toggleFiltros = () => {
-        setMostrarFiltros(!mostrarFiltros);
-    };
+    const { data: propiedades, isLoading, refetch, isRefetching } = useQuery("propiedades", obtenerPropiedades);
+    const {isOpenModal, openModal, closeModal} = useModal();
 
     const INITIAL_FILTERS = {
         ubicacion: "",
@@ -28,20 +26,6 @@ function Inicio(){
     }
 
     const [filters, setFilters] = useState(INITIAL_FILTERS);
-
-    const handleFilters = (f) => {
-        setFilters(f);
-    }
-
-    const removeFilters = () => {
-        setFilters(INITIAL_FILTERS);
-    }
-
-    const { data: propiedades, isLoading, refetch, isRefetching } = useQuery("propiedades", obtenerPropiedades);
-
-    useEffect(() => {
-        refetch();
-    },[filters]);
 
     async function obtenerPropiedades() {
         try {
@@ -58,15 +42,28 @@ function Inicio(){
         }
     }
 
+    const handleFilters = (f) => {
+        setFilters(f);
+    }
+
+    const removeFilters = () => {
+        setFilters(INITIAL_FILTERS);
+    }
+
+
+    useEffect(() => {
+        refetch();
+    },[filters]);
+
     return(
         <>
             <Navbar />
             <section className="containerApp">
-                {mostrarFiltros && <Filtros show={mostrarFiltros} handleCloseFiltros={toggleFiltros} handleFilters={handleFilters} removeFilters={removeFilters}/>}
+                {isOpenModal && <Filtros show={isOpenModal} closeModal = {closeModal} handleFilters={handleFilters} removeFilters={removeFilters}/>}
                 
                 <div className="containerAppCatalogo">
                     <div className='botonera'>
-                        <Button className='botonesStyle' onClick={toggleFiltros}>
+                        <Button className='botonesStyle' onClick={openModal}>
                             <FontAwesomeIcon icon={faFilter}/> FILTROS
                         </Button>
                     </div>
