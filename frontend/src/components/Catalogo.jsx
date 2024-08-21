@@ -4,8 +4,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCar, faBath, faBed, faStairs, faRuler, faEye } from '@fortawesome/free-solid-svg-icons';
 import { useQuery } from "react-query";
 import { Link } from 'react-router-dom';
+import { useFilters } from '../hook/useFilters';
 
 function Catalogo(){
+    const {filters} = useFilters();
     const { data: propiedades, isLoading, refetch } = useQuery("propiedades", obtenerPropiedades);
 
     useEffect(() => {
@@ -14,7 +16,7 @@ function Catalogo(){
 
     async function obtenerPropiedades() {
         try {
-            const response = await fetch("http://localhost:3001/obtenerpropiedades");
+            const response = await fetch(`http://localhost:3001/filtrarpropiedades?ubicacion=${filters.ubicacion}&autos=${filters.autos}&banos=${banos}&habitacion=${filters.habitacion}&escaleras=${filters.escaleras}&metros=${filters.metros}&tipo=${filters.tipo}&pInicial=${filters.pInicial}&pFinal=${filters.pFinal}`);
             const data = await response.json();
 
             if (data.success){

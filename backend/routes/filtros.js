@@ -5,10 +5,9 @@ export const routeFiltros = express.Router();
 
 routeFiltros.get("/", async (req, res) => {
     const { ubicacion, autos, banos, habitacion, escaleras, metros, tipo, pInicial, pFinal} = req.query;
-
     try {
         const filtros = {
-            ...(ubicacion && { direccion: new RegExp(ubicacion, 'i') }),
+            ...(ubicacion.trim && { direccion: new RegExp(ubicacion, 'i') }),
             
             ...(autos && { nAutos: autos }),
             

@@ -11,7 +11,7 @@ import { routerObtenerPropiedades } from "./routes/obtenerPropiedades.js";
 import { routerLogout } from "./routes/logout.js";
 import { routePropiedad } from "./routes/propiedad.js";
 import { routeAgendarCita } from "./routes/agendarCita.js";
-import { routeFiltros } from "./routes/filtro.js";
+import { routeFiltros } from "./routes/filtros.js";
 
 const app = express();
 

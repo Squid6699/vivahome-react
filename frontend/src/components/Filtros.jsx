@@ -3,9 +3,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBath, faBed, faCar, faPlay, faStairs, faStop, faStreetView } from '@fortawesome/free-solid-svg-icons';
 import {Button, Offcanvas} from "react-bootstrap"
 import "../css/filtros.css"
+import { useFilters } from "../hook/useFilters.js"
 
 function Filtros({show, handleCloseFiltros}){
-
+    const {handleFilters, removeFilters} = useFilters();
 
     const handleSubmitFiltros = (e) => {
         e.preventDefault();
@@ -13,12 +14,23 @@ function Filtros({show, handleCloseFiltros}){
         var autos = document.getElementById("filtroAutos").value;
         var banos = document.getElementById("fitroBaños").value;
         var habitacion = document.getElementById("filtroHabitaciones").value;
+        var escaleras = document.getElementById("filtroEscaleras").value;
         var metros = document.getElementById("filtroMetrosCuadrados").value;
         var tipo = document.getElementById("fitroTipo").value;
         var pInicial = document.getElementById("filtroPrecioInicial").value;
         var fInicial = document.getElementById("filtroPrecioFinal").value;
 
-        
+        handleFilters({
+            ubicacion,
+            autos,
+            banos,
+            habitacion,
+            escaleras,
+            metros,
+            tipo, 
+            pInicial,
+            fInicial
+        });
     }
 
     return(
@@ -98,7 +110,7 @@ function Filtros({show, handleCloseFiltros}){
                                 </div>
 
                                 <Button type="submit" className="botonesStyle">APLICAR</Button>
-                                <Button className="botonesStyle">LIMPIAR</Button>
+                                <Button className="botonesStyle" onClick={() => removeFilters()}>LIMPIAR</Button>
 
                             </form>
                         </div>

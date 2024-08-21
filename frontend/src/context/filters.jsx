@@ -4,26 +4,33 @@ export const FiltersContext = createContext();
 
 export function FiltersProvider({children}){
 
-    const [filters, setFilters] = useState({
+    const INITIAL_FILTERS = {
         ubicacion: "",
         autos: null,
         banos: null,
         habitacion: null,
         escaleras: null,
         metros: null,
-        tipo: "VENTA",
+        tipo: "",
         pInicial: null,
         pFinal: null
-    });
+    }
 
-    const handleFilters = (field, e) => {
-        setFilters(prevState => [{...prevState, field: e}])
+    const [filters, setFilters] = useState(INITIAL_FILTERS);
+
+    const handleFilters = (f) => {
+        setFilters(f);
+    }
+
+    const removeFilters = () => {
+        setFilters(INITIAL_FILTERS);
     }
 
     return(
         <FiltersContext.Provider value={{
             filters,
-            handleFilters
+            handleFilters,
+            removeFilters
         }}>{children}</FiltersContext.Provider>
     );
 }

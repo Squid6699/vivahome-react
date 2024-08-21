@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { FiltersContext } from "../context/filters";
 
-export function useSesion(){
+export function useFilters(){
     const context = useContext(FiltersContext);
 
     if (context === undefined){
