@@ -66,5 +66,1070 @@
         "disponible": "DISPONIBLE", 
         "ayudaVendedor": true, 
         "idUsuario": "ObjectId(66bae8808f484ab553e9193e)"
+    },
+
+    {
+        "direccion": "Constituyente Adalberto Tejeda 1117, Buenos Aires, 80199 Culiacán Rosales, Sin.", 
+        "nAutos": 2, 
+        "nBanos": 1, 
+        "nRecamaras": 3, 
+        "nEscaleras": 0, 
+        "tipo": "Venta", 
+        "metros": "99", 
+        "precio": 1395000.00, 
+        "descripcion": "¡Descubre tu nuevo hogar! Esta encantadora casa de 99 m² de terreno y 62.99 m² de construcción te ofrece todo lo que necesitas para vivir cómodamente. Con 2 recámaras y 1 baño, es el espacio perfecto para ti y tu familia. Además, cuenta con 2 estacionamientos, así que no tendrás que preocuparte por el espacio para tus vehículos. Entre sus amenidades, esta casa acepta mascotas, tiene un cuarto de servicio, aire acondicionado y un tinaco para asegurar el suministro de agua. También se permite fumar, y cuenta con un patio de lavado, ideal para mantener todo en orden. Las facilidades para adultos mayores y la cocina equipada e integral hacen de esta propiedad una opción práctica y funcional. Además, el calentador de agua te garantiza comodidad en todo momento. No dejes pasar esta oportunidad de vivir en un lugar que lo tiene todo. ¡Ven y conoce tu futuro hogar!", 
+        "fotoPrincipal": "https://img10.naventcdn.com/avisos/resize/18/01/44/29/11/34/1200x1200/1479702527.jpg", 
+        "fotos": [
+            {
+                "nameHabitacion": "Habitacion 1",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/29/11/34/1200x1200/1479700869.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/29/11/34/1200x1200/1479700865.jpg"
+            },
+            {
+                "nameHabitacion": "Habitacion 2",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/00/91/40/26/37/1200x1200/1121033946.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/29/11/34/1200x1200/1479700866.jpg"
+            },
+            {   
+                "nameHabitacion": "Habitacion 3",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/29/11/34/1200x1200/1479700867.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/29/11/34/1200x1200/1479700863.jpg"
+            }
+        ],
+        "fechaPublicacion": "2024-03-16T00:00:00.000+00:00",
+        "autorizada": true, 
+        "disponible": "DISPONIBLE", 
+        "ayudaVendedor": true, 
+        "idUsuario": "ObjectId(66bae8808f484ab553e9193e)"
+    },
+
+    {
+        "direccion": "Manuel J. Clouthier y o Av. Internacional 1018, Independencia, 80190 Culiacán Rosales, Sin.", 
+        "nAutos": 1, 
+        "nBanos": 3, 
+        "nRecamaras": 2, 
+        "nEscaleras": 1, 
+        "tipo": "Venta", 
+        "metros": "150", 
+        "precio": 2300000.00, 
+        "descripcion": "EXCELENTE CASA DE DOS PLANTAS EN ESQUINA SOBRE AVENIDA PRINCIPAL TODO LOS NECESARIO PARA UNA FAMILIA, AREA DE TERRAZA MUY AMPLIA EN UN TERCER PISO, AREA DE LAVADO, ACABADOS APLANADOS FLOTEADOS CON PINTURA VINILICA EN BUEN ESTADO FISICO, TODO EL SUELO DE LA CASA ESTA RECUBIERTO CON VITROPISO, COCHERA PARA UN AUTO CUENTA CON AGUA, ENERGIA ELECTRICA, DRENAJE, TRANSPORTE URBANO, PAVIMENTO ASFALTICO, TELEFONO, ALUMBRADO PUBLICO, VIGILANCIA POLICIACA, RECOLECCION DE BASURA, ESCUELAS, CENTRO COMERCIALES EN UN ENTORNO DE 1 KM, SUPERMECADO LEY, IGLESIAS, TALLERES DE DIVERSAS ESPECIALIDADES, 10 SE ENCUENTRA EL PARQUE 87 Y A 15 MINUTOS DEL CENTRO.", 
+        "fotoPrincipal": "https://img10.naventcdn.com/avisos/resize/18/01/44/25/91/72/1200x1200/1478945760.jpg", 
+        "fotos": [
+            {
+                "nameHabitacion": "Habitacion 1",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/25/91/72/1200x1200/1478945754.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/25/91/72/1200x1200/1478945756.jpg"
+            },
+            {
+                "nameHabitacion": "Habitacion 2",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/25/91/72/1200x1200/1478945750.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/25/91/72/1200x1200/1478945759.jpg"
+            },
+            {   
+                "nameHabitacion": "Habitacion 3",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/25/91/72/1200x1200/1478945748.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/25/91/72/1200x1200/1478945747.jpg"
+            },
+            {   
+                "nameHabitacion": "Habitacion 4",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/25/91/72/1200x1200/1478945761.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/25/91/72/1200x1200/1478945753.jpg"
+            }
+        ],
+        "fechaPublicacion": "2024-03-16T00:00:00.000+00:00",
+        "autorizada": true, 
+        "disponible": "DISPONIBLE", 
+        "ayudaVendedor": true, 
+        "idUsuario": "ObjectId(66bae8808f484ab553e9193e)"
+    },
+
+    {
+        "direccion": "Lago de Chapala 1389, Las Quintas, 80060 Culiacán Rosales, Sin.", 
+        "nAutos": 5, 
+        "nBanos": 4, 
+        "nRecamaras": 4, 
+        "nEscaleras": 2, 
+        "tipo": "Venta", 
+        "metros": "320", 
+        "precio": 14000000.00, 
+        "descripcion": "3 plantas. Residencia con sistema de seguridad y puertas de seguridad", 
+        "fotoPrincipal": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527163.jpg", 
+        "fotos": [
+            {
+                "nameHabitacion": "Habitacion 1",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527166.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527162.jpg"
+            },
+            {
+                "nameHabitacion": "Habitacion 2",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527162.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527162.jpg"
+            },
+            {   
+                "nameHabitacion": "Habitacion 3",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527165.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527167.jpg"
+            },
+            {   
+                "nameHabitacion": "Habitacion 4",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527175.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527177.jpg"
+            },
+            {   
+                "nameHabitacion": "Habitacion 5",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527174.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527170.jpg"
+            }
+        ],
+        "fechaPublicacion": "2024-03-16T00:00:00.000+00:00",
+        "autorizada": true, 
+        "disponible": "DISPONIBLE", 
+        "ayudaVendedor": true, 
+        "idUsuario": "ObjectId(66bae8808f484ab553e9193e)"
+    },
+
+    {
+        "direccion": "Blvrd Dr Mora 1304, Las Quintas, 80060 Culiacán Rosales, Sin.", 
+        "nAutos": 5, 
+        "nBanos": 2, 
+        "nRecamaras": 3, 
+        "nEscaleras": 2, 
+        "tipo": "Renta", 
+        "metros": "249", 
+        "precio": 3070000.00, 
+        "descripcion": "Casa habitación sobre el Blvd.Manuel Estrada con vocación comercial con gran flujo vehicular y peatonal al lado de locales comerciales, consta de dos niveles, cochera techada con portón eléctrico para 5 autos, sala, comedor, cocina integral.", 
+        "fotoPrincipal": "https://img10.naventcdn.com/avisos/resize/18/01/43/54/84/34/1200x1200/1461839766.jpg", 
+        "fotos": [
+            {
+                "nameHabitacion": "Habitacion 1",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/00/90/61/35/83/1200x1200/1100580191.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/00/90/61/35/83/1200x1200/1100580195.jpg"
+            },
+            {
+                "nameHabitacion": "Habitacion 2",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/00/90/61/35/83/1200x1200/1100580208.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/00/90/61/35/83/1200x1200/1100580198.jpg"
+            },
+            {
+                "nameHabitacion": "Habitacion 3",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/00/90/61/35/83/1200x1200/1100580206.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/00/90/61/35/83/1200x1200/1100580192.jpg"
+            }
+        ],
+        "fechaPublicacion": "2024-03-16T00:00:00.000+00:00",
+        "autorizada": true, 
+        "disponible": "DISPONIBLE", 
+        "ayudaVendedor": true, 
+        "idUsuario": "ObjectId(66bae8808f484ab553e9193e)"
+    },
+    {
+        "direccion": "Belisario Domínguez 1124, Las Quintas, 80060 Culiacán Rosales, Sin.", 
+        "nAutos": 2, 
+        "nBanos": 2, 
+        "nRecamaras": 3, 
+        "nEscaleras": 1, 
+        "tipo": "Renta", 
+        "metros": "32", 
+        "precio": 1.00, 
+        "descripcion": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore rerum molestias quis distinctio quia dignissimos reiciendis, voluptas amet consequatur hic modi impedit dicta facilis ipsum tenetur consequuntur voluptatem quam dolorum? Lorem, ipsum dolo Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore rerum molestias quis distinctio quia dignissimos reiciendis, voluptas amet consequatur hic modi impedit dicta facilis ipsum tenetur consequuntur voluptatem quam dolorum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore rerum molestias quis distinctio quia dignissimos reiciendis, voluptas amet consequatur hic modi impedit dicta facilis ipsum tenetur consequuntur voluptatem quam dolorum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore rerum molestias quis distinctio quia dignissimos reiciendis, voluptas amet consequatur hic modi impedit dicta facilis ipsum tenetur consequuntur voluptatem quam dolorum?", 
+        "fotoPrincipal": "https://img10.naventcdn.com/avisos/resize/18/01/43/52/72/15/1200x1200/1461233569.jpg", 
+        "fotos": [
+            {
+                "nameHabitacion": "Habitacion 1",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/00/91/40/26/37/1200x1200/1121033933.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/00/91/40/26/37/1200x1200/1121033948.jpg"
+            },
+            {
+                "nameHabitacion": "Habitacion 2",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/00/91/40/26/37/1200x1200/1121033946.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/00/91/40/26/37/1200x1200/1121033951.jpg"
+            },
+            {
+                "nameHabitacion": "Habitacion 3",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/00/91/40/26/37/1200x1200/1121033950.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/00/91/40/26/37/1200x1200/1121033943.jpg"
+            }
+        ],
+        "fechaPublicacion": "2024-03-16T00:00:00.000+00:00",
+        "autorizada": true, 
+        "disponible": "DISPONIBLE", 
+        "ayudaVendedor": true, 
+        "idUsuario": "ObjectId(66bae8808f484ab553e9193e)"
+    },
+
+    {
+        "direccion": "Calle Gral. Angel Flores 1023, Las Quintas, 80060 Culiacán Rosales, Sin..", 
+        "nAutos": 2, 
+        "nBanos": 1, 
+        "nRecamaras": 3, 
+        "nEscaleras": 0, 
+        "tipo": "Venta", 
+        "metros": "99", 
+        "precio": 1395000.00, 
+        "descripcion": "¡Descubre tu nuevo hogar! Esta encantadora casa de 99 m² de terreno y 62.99 m² de construcción te ofrece todo lo que necesitas para vivir cómodamente. Con 2 recámaras y 1 baño, es el espacio perfecto para ti y tu familia. Además, cuenta con 2 estacionamientos, así que no tendrás que preocuparte por el espacio para tus vehículos. Entre sus amenidades, esta casa acepta mascotas, tiene un cuarto de servicio, aire acondicionado y un tinaco para asegurar el suministro de agua. También se permite fumar, y cuenta con un patio de lavado, ideal para mantener todo en orden. Las facilidades para adultos mayores y la cocina equipada e integral hacen de esta propiedad una opción práctica y funcional. Además, el calentador de agua te garantiza comodidad en todo momento. No dejes pasar esta oportunidad de vivir en un lugar que lo tiene todo. ¡Ven y conoce tu futuro hogar!", 
+        "fotoPrincipal": "https://img10.naventcdn.com/avisos-va/vamx-pt10-ads/4a/1200x1200/4a718224-17b8-49ba-bcba-ba5eea6bebf8", 
+        "fotos": [
+            {
+                "nameHabitacion": "Habitacion 1",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/29/11/34/1200x1200/1479700869.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/29/11/34/1200x1200/1479700865.jpg"
+            },
+            {
+                "nameHabitacion": "Habitacion 2",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/00/91/40/26/37/1200x1200/1121033946.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/29/11/34/1200x1200/1479700866.jpg"
+            },
+            {   
+                "nameHabitacion": "Habitacion 3",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/29/11/34/1200x1200/1479700867.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/29/11/34/1200x1200/1479700863.jpg"
+            }
+        ],
+        "fechaPublicacion": "2024-03-16T00:00:00.000+00:00",
+        "autorizada": true, 
+        "disponible": "DISPONIBLE", 
+        "ayudaVendedor": true, 
+        "idUsuario": "ObjectId(66bae8808f484ab553e9193e)"
+    },
+
+    {
+        "direccion": "Calle Benito Juarez 1094, Las Vegas, 80090 Culiacán Rosales, Sin.", 
+        "nAutos": 1, 
+        "nBanos": 3, 
+        "nRecamaras": 2, 
+        "nEscaleras": 1, 
+        "tipo": "Venta", 
+        "metros": "150", 
+        "precio": 2300000.00, 
+        "descripcion": "EXCELENTE CASA DE DOS PLANTAS EN ESQUINA SOBRE AVENIDA PRINCIPAL TODO LOS NECESARIO PARA UNA FAMILIA, AREA DE TERRAZA MUY AMPLIA EN UN TERCER PISO, AREA DE LAVADO, ACABADOS APLANADOS FLOTEADOS CON PINTURA VINILICA EN BUEN ESTADO FISICO, TODO EL SUELO DE LA CASA ESTA RECUBIERTO CON VITROPISO, COCHERA PARA UN AUTO CUENTA CON AGUA, ENERGIA ELECTRICA, DRENAJE, TRANSPORTE URBANO, PAVIMENTO ASFALTICO, TELEFONO, ALUMBRADO PUBLICO, VIGILANCIA POLICIACA, RECOLECCION DE BASURA, ESCUELAS, CENTRO COMERCIALES EN UN ENTORNO DE 1 KM, SUPERMECADO LEY, IGLESIAS, TALLERES DE DIVERSAS ESPECIALIDADES, 10 SE ENCUENTRA EL PARQUE 87 Y A 15 MINUTOS DEL CENTRO.", 
+        "fotoPrincipal": "https://img10.naventcdn.com/avisos/resize/18/00/66/07/68/03/1200x1200/354450831.jpg", 
+        "fotos": [
+            {
+                "nameHabitacion": "Habitacion 1",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/25/91/72/1200x1200/1478945754.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/25/91/72/1200x1200/1478945756.jpg"
+            },
+            {
+                "nameHabitacion": "Habitacion 2",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/25/91/72/1200x1200/1478945750.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/25/91/72/1200x1200/1478945759.jpg"
+            },
+            {   
+                "nameHabitacion": "Habitacion 3",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/25/91/72/1200x1200/1478945748.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/25/91/72/1200x1200/1478945747.jpg"
+            },
+            {   
+                "nameHabitacion": "Habitacion 4",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/25/91/72/1200x1200/1478945761.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/25/91/72/1200x1200/1478945753.jpg"
+            }
+        ],
+        "fechaPublicacion": "2024-03-16T00:00:00.000+00:00",
+        "autorizada": true, 
+        "disponible": "DISPONIBLE", 
+        "ayudaVendedor": true, 
+        "idUsuario": "ObjectId(66bae8808f484ab553e9193e)"
+    },
+
+    {
+        "direccion": "Av. Teniente Juan de la Barrera Nte. 3104 C, 6 de Enero, 80010 Culiacán Rosales, Sin.", 
+        "nAutos": 5, 
+        "nBanos": 4, 
+        "nRecamaras": 4, 
+        "nEscaleras": 2, 
+        "tipo": "Venta", 
+        "metros": "320", 
+        "precio": 14000000.00, 
+        "descripcion": "3 plantas. Residencia con sistema de seguridad y puertas de seguridad", 
+        "fotoPrincipal": "https://img10.naventcdn.com/avisos/resize/18/01/44/26/77/56/1200x1200/1479157289.jpg", 
+        "fotos": [
+            {
+                "nameHabitacion": "Habitacion 1",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527166.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527162.jpg"
+            },
+            {
+                "nameHabitacion": "Habitacion 2",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527162.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527162.jpg"
+            },
+            {   
+                "nameHabitacion": "Habitacion 3",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527165.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527167.jpg"
+            },
+            {   
+                "nameHabitacion": "Habitacion 4",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527175.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527177.jpg"
+            },
+            {   
+                "nameHabitacion": "Habitacion 5",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527174.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527170.jpg"
+            }
+        ],
+        "fechaPublicacion": "2024-03-16T00:00:00.000+00:00",
+        "autorizada": true, 
+        "disponible": "DISPONIBLE", 
+        "ayudaVendedor": true, 
+        "idUsuario": "ObjectId(66bae8808f484ab553e9193e)"
+    },
+
+    {
+        "direccion": "Av Dr Ruperto Paliza 1029, Guadalupe, 80220 Culiacán Rosales, Sin.", 
+        "nAutos": 2, 
+        "nBanos": 4, 
+        "nRecamaras": 3, 
+        "nEscaleras": 1, 
+        "tipo": "Venta", 
+        "metros": "55", 
+        "precio": 3.00, 
+        "descripcion": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore rerum molestias quis distinctio quia dignissimm dolorum?", 
+        "fotoPrincipal": "https://img10.naventcdn.com/avisos/resize/18/00/90/61/35/83/1200x1200/1100580205.jpg", 
+        "fotos": [
+            {
+                "nameHabitacion": "Habitacion 1",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/00/90/61/35/83/1200x1200/1100580191.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/00/90/61/35/83/1200x1200/1100580195.jpg"
+            },
+            {
+                "nameHabitacion": "Habitacion 2",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/00/90/61/35/83/1200x1200/1100580208.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/00/90/61/35/83/1200x1200/1100580198.jpg"
+            },
+            {
+                "nameHabitacion": "Habitacion 3",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/00/90/61/35/83/1200x1200/1100580206.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/00/90/61/35/83/1200x1200/1100580192.jpg"
+            }
+        ],
+        "fechaPublicacion": "2024-03-16T00:00:00.000+00:00",
+        "autorizada": true, 
+        "disponible": "DISPONIBLE", 
+        "ayudaVendedor": true, 
+        "idUsuario": "ObjectId(66bae8808f484ab553e9193e)"
+    },
+    {
+        "direccion": "Bouelvard Sta. Fe 2457, Santa Fe, Sta Fe, 80029 Culiacán Rosales, Sin.", 
+        "nAutos": 2, 
+        "nBanos": 2, 
+        "nRecamaras": 3, 
+        "nEscaleras": 1, 
+        "tipo": "Renta", 
+        "metros": "32", 
+        "precio": 1.00, 
+        "descripcion": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore rerum molestias quis distinctio quia dignissimos reiciendis, voluptas amet consequatur hic modi impedit dicta facilis ipsum tenetur consequuntur voluptatem quam dolorum? Lorem, ipsum dolo Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore rerum molestias quis distinctio quia dignissimos reiciendis, voluptas amet consequatur hic modi impedit dicta facilis ipsum tenetur consequuntur voluptatem quam dolorum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore rerum molestias quis distinctio quia dignissimos reiciendis, voluptas amet consequatur hic modi impedit dicta facilis ipsum tenetur consequuntur voluptatem quam dolorum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore rerum molestias quis distinctio quia dignissimos reiciendis, voluptas amet consequatur hic modi impedit dicta facilis ipsum tenetur consequuntur voluptatem quam dolorum?", 
+        "fotoPrincipal": "https://img10.naventcdn.com/avisos/resize/18/00/91/40/26/37/1200x1200/1121033945.jpg", 
+        "fotos": [
+            {
+                "nameHabitacion": "Habitacion 1",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/00/91/40/26/37/1200x1200/1121033933.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/00/91/40/26/37/1200x1200/1121033948.jpg"
+            },
+            {
+                "nameHabitacion": "Habitacion 2",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/00/91/40/26/37/1200x1200/1121033946.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/00/91/40/26/37/1200x1200/1121033951.jpg"
+            },
+            {
+                "nameHabitacion": "Habitacion 3",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/00/91/40/26/37/1200x1200/1121033950.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/00/91/40/26/37/1200x1200/1121033943.jpg"
+            }
+        ],
+        "fechaPublicacion": "2024-03-16T00:00:00.000+00:00",
+        "autorizada": true, 
+        "disponible": "DISPONIBLE", 
+        "ayudaVendedor": true, 
+        "idUsuario": "ObjectId(66bae8808f484ab553e9193e)"
+    },
+
+    {
+        "direccion": "Constituyente Adalberto Tejeda 1117, Buenos Aires, 80199 Culiacán Rosales, Sin.", 
+        "nAutos": 2, 
+        "nBanos": 1, 
+        "nRecamaras": 3, 
+        "nEscaleras": 0, 
+        "tipo": "Venta", 
+        "metros": "99", 
+        "precio": 1395000.00, 
+        "descripcion": "¡Descubre tu nuevo hogar! Esta encantadora casa de 99 m² de terreno y 62.99 m² de construcción te ofrece todo lo que necesitas para vivir cómodamente. Con 2 recámaras y 1 baño, es el espacio perfecto para ti y tu familia. Además, cuenta con 2 estacionamientos, así que no tendrás que preocuparte por el espacio para tus vehículos. Entre sus amenidades, esta casa acepta mascotas, tiene un cuarto de servicio, aire acondicionado y un tinaco para asegurar el suministro de agua. También se permite fumar, y cuenta con un patio de lavado, ideal para mantener todo en orden. Las facilidades para adultos mayores y la cocina equipada e integral hacen de esta propiedad una opción práctica y funcional. Además, el calentador de agua te garantiza comodidad en todo momento. No dejes pasar esta oportunidad de vivir en un lugar que lo tiene todo. ¡Ven y conoce tu futuro hogar!", 
+        "fotoPrincipal": "https://img10.naventcdn.com/avisos/resize/18/01/44/29/11/34/1200x1200/1479702527.jpg", 
+        "fotos": [
+            {
+                "nameHabitacion": "Habitacion 1",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/29/11/34/1200x1200/1479700869.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/29/11/34/1200x1200/1479700865.jpg"
+            },
+            {
+                "nameHabitacion": "Habitacion 2",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/00/91/40/26/37/1200x1200/1121033946.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/29/11/34/1200x1200/1479700866.jpg"
+            },
+            {   
+                "nameHabitacion": "Habitacion 3",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/29/11/34/1200x1200/1479700867.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/29/11/34/1200x1200/1479700863.jpg"
+            }
+        ],
+        "fechaPublicacion": "2024-03-16T00:00:00.000+00:00",
+        "autorizada": true, 
+        "disponible": "DISPONIBLE", 
+        "ayudaVendedor": true, 
+        "idUsuario": "ObjectId(66bae8808f484ab553e9193e)"
+    },
+
+    {
+        "direccion": "Manuel J. Clouthier y o Av. Internacional 1018, Independencia, 80190 Culiacán Rosales, Sin.", 
+        "nAutos": 1, 
+        "nBanos": 3, 
+        "nRecamaras": 2, 
+        "nEscaleras": 1, 
+        "tipo": "Venta", 
+        "metros": "150", 
+        "precio": 2300000.00, 
+        "descripcion": "EXCELENTE CASA DE DOS PLANTAS EN ESQUINA SOBRE AVENIDA PRINCIPAL TODO LOS NECESARIO PARA UNA FAMILIA, AREA DE TERRAZA MUY AMPLIA EN UN TERCER PISO, AREA DE LAVADO, ACABADOS APLANADOS FLOTEADOS CON PINTURA VINILICA EN BUEN ESTADO FISICO, TODO EL SUELO DE LA CASA ESTA RECUBIERTO CON VITROPISO, COCHERA PARA UN AUTO CUENTA CON AGUA, ENERGIA ELECTRICA, DRENAJE, TRANSPORTE URBANO, PAVIMENTO ASFALTICO, TELEFONO, ALUMBRADO PUBLICO, VIGILANCIA POLICIACA, RECOLECCION DE BASURA, ESCUELAS, CENTRO COMERCIALES EN UN ENTORNO DE 1 KM, SUPERMECADO LEY, IGLESIAS, TALLERES DE DIVERSAS ESPECIALIDADES, 10 SE ENCUENTRA EL PARQUE 87 Y A 15 MINUTOS DEL CENTRO.", 
+        "fotoPrincipal": "https://img10.naventcdn.com/avisos/resize/18/01/44/25/91/72/1200x1200/1478945760.jpg", 
+        "fotos": [
+            {
+                "nameHabitacion": "Habitacion 1",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/25/91/72/1200x1200/1478945754.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/25/91/72/1200x1200/1478945756.jpg"
+            },
+            {
+                "nameHabitacion": "Habitacion 2",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/25/91/72/1200x1200/1478945750.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/25/91/72/1200x1200/1478945759.jpg"
+            },
+            {   
+                "nameHabitacion": "Habitacion 3",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/25/91/72/1200x1200/1478945748.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/25/91/72/1200x1200/1478945747.jpg"
+            },
+            {   
+                "nameHabitacion": "Habitacion 4",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/25/91/72/1200x1200/1478945761.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/25/91/72/1200x1200/1478945753.jpg"
+            }
+        ],
+        "fechaPublicacion": "2024-03-16T00:00:00.000+00:00",
+        "autorizada": true, 
+        "disponible": "DISPONIBLE", 
+        "ayudaVendedor": true, 
+        "idUsuario": "ObjectId(66bae8808f484ab553e9193e)"
+    },
+
+    {
+        "direccion": "Lago de Chapala 1389, Las Quintas, 80060 Culiacán Rosales, Sin.", 
+        "nAutos": 5, 
+        "nBanos": 4, 
+        "nRecamaras": 4, 
+        "nEscaleras": 2, 
+        "tipo": "Venta", 
+        "metros": "320", 
+        "precio": 14000000.00, 
+        "descripcion": "3 plantas. Residencia con sistema de seguridad y puertas de seguridad", 
+        "fotoPrincipal": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527163.jpg", 
+        "fotos": [
+            {
+                "nameHabitacion": "Habitacion 1",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527166.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527162.jpg"
+            },
+            {
+                "nameHabitacion": "Habitacion 2",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527162.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527162.jpg"
+            },
+            {   
+                "nameHabitacion": "Habitacion 3",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527165.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527167.jpg"
+            },
+            {   
+                "nameHabitacion": "Habitacion 4",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527175.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527177.jpg"
+            },
+            {   
+                "nameHabitacion": "Habitacion 5",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527174.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527170.jpg"
+            }
+        ],
+        "fechaPublicacion": "2024-03-16T00:00:00.000+00:00",
+        "autorizada": true, 
+        "disponible": "DISPONIBLE", 
+        "ayudaVendedor": true, 
+        "idUsuario": "ObjectId(66bae8808f484ab553e9193e)"
+    },
+
+    {
+        "direccion": "Blvrd Dr Mora 1304, Las Quintas, 80060 Culiacán Rosales, Sin.", 
+        "nAutos": 5, 
+        "nBanos": 2, 
+        "nRecamaras": 3, 
+        "nEscaleras": 2, 
+        "tipo": "Renta", 
+        "metros": "249", 
+        "precio": 3070000.00, 
+        "descripcion": "Casa habitación sobre el Blvd.Manuel Estrada con vocación comercial con gran flujo vehicular y peatonal al lado de locales comerciales, consta de dos niveles, cochera techada con portón eléctrico para 5 autos, sala, comedor, cocina integral.", 
+        "fotoPrincipal": "https://img10.naventcdn.com/avisos/resize/18/01/43/54/84/34/1200x1200/1461839766.jpg", 
+        "fotos": [
+            {
+                "nameHabitacion": "Habitacion 1",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/00/90/61/35/83/1200x1200/1100580191.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/00/90/61/35/83/1200x1200/1100580195.jpg"
+            },
+            {
+                "nameHabitacion": "Habitacion 2",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/00/90/61/35/83/1200x1200/1100580208.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/00/90/61/35/83/1200x1200/1100580198.jpg"
+            },
+            {
+                "nameHabitacion": "Habitacion 3",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/00/90/61/35/83/1200x1200/1100580206.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/00/90/61/35/83/1200x1200/1100580192.jpg"
+            }
+        ],
+        "fechaPublicacion": "2024-03-16T00:00:00.000+00:00",
+        "autorizada": true, 
+        "disponible": "DISPONIBLE", 
+        "ayudaVendedor": true, 
+        "idUsuario": "ObjectId(66bae8808f484ab553e9193e)"
+    },
+    {
+        "direccion": "Belisario Domínguez 1124, Las Quintas, 80060 Culiacán Rosales, Sin.", 
+        "nAutos": 2, 
+        "nBanos": 2, 
+        "nRecamaras": 3, 
+        "nEscaleras": 1, 
+        "tipo": "Renta", 
+        "metros": "32", 
+        "precio": 1.00, 
+        "descripcion": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore rerum molestias quis distinctio quia dignissimos reiciendis, voluptas amet consequatur hic modi impedit dicta facilis ipsum tenetur consequuntur voluptatem quam dolorum? Lorem, ipsum dolo Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore rerum molestias quis distinctio quia dignissimos reiciendis, voluptas amet consequatur hic modi impedit dicta facilis ipsum tenetur consequuntur voluptatem quam dolorum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore rerum molestias quis distinctio quia dignissimos reiciendis, voluptas amet consequatur hic modi impedit dicta facilis ipsum tenetur consequuntur voluptatem quam dolorum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore rerum molestias quis distinctio quia dignissimos reiciendis, voluptas amet consequatur hic modi impedit dicta facilis ipsum tenetur consequuntur voluptatem quam dolorum?", 
+        "fotoPrincipal": "https://img10.naventcdn.com/avisos/resize/18/01/43/52/72/15/1200x1200/1461233569.jpg", 
+        "fotos": [
+            {
+                "nameHabitacion": "Habitacion 1",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/00/91/40/26/37/1200x1200/1121033933.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/00/91/40/26/37/1200x1200/1121033948.jpg"
+            },
+            {
+                "nameHabitacion": "Habitacion 2",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/00/91/40/26/37/1200x1200/1121033946.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/00/91/40/26/37/1200x1200/1121033951.jpg"
+            },
+            {
+                "nameHabitacion": "Habitacion 3",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/00/91/40/26/37/1200x1200/1121033950.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/00/91/40/26/37/1200x1200/1121033943.jpg"
+            }
+        ],
+        "fechaPublicacion": "2024-03-16T00:00:00.000+00:00",
+        "autorizada": true, 
+        "disponible": "DISPONIBLE", 
+        "ayudaVendedor": true, 
+        "idUsuario": "ObjectId(66bae8808f484ab553e9193e)"
+    },
+
+    {
+        "direccion": "Calle Gral. Angel Flores 1023, Las Quintas, 80060 Culiacán Rosales, Sin..", 
+        "nAutos": 2, 
+        "nBanos": 1, 
+        "nRecamaras": 3, 
+        "nEscaleras": 0, 
+        "tipo": "Venta", 
+        "metros": "99", 
+        "precio": 1395000.00, 
+        "descripcion": "¡Descubre tu nuevo hogar! Esta encantadora casa de 99 m² de terreno y 62.99 m² de construcción te ofrece todo lo que necesitas para vivir cómodamente. Con 2 recámaras y 1 baño, es el espacio perfecto para ti y tu familia. Además, cuenta con 2 estacionamientos, así que no tendrás que preocuparte por el espacio para tus vehículos. Entre sus amenidades, esta casa acepta mascotas, tiene un cuarto de servicio, aire acondicionado y un tinaco para asegurar el suministro de agua. También se permite fumar, y cuenta con un patio de lavado, ideal para mantener todo en orden. Las facilidades para adultos mayores y la cocina equipada e integral hacen de esta propiedad una opción práctica y funcional. Además, el calentador de agua te garantiza comodidad en todo momento. No dejes pasar esta oportunidad de vivir en un lugar que lo tiene todo. ¡Ven y conoce tu futuro hogar!", 
+        "fotoPrincipal": "https://img10.naventcdn.com/avisos-va/vamx-pt10-ads/4a/1200x1200/4a718224-17b8-49ba-bcba-ba5eea6bebf8", 
+        "fotos": [
+            {
+                "nameHabitacion": "Habitacion 1",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/29/11/34/1200x1200/1479700869.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/29/11/34/1200x1200/1479700865.jpg"
+            },
+            {
+                "nameHabitacion": "Habitacion 2",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/00/91/40/26/37/1200x1200/1121033946.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/29/11/34/1200x1200/1479700866.jpg"
+            },
+            {   
+                "nameHabitacion": "Habitacion 3",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/29/11/34/1200x1200/1479700867.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/29/11/34/1200x1200/1479700863.jpg"
+            }
+        ],
+        "fechaPublicacion": "2024-03-16T00:00:00.000+00:00",
+        "autorizada": true, 
+        "disponible": "DISPONIBLE", 
+        "ayudaVendedor": true, 
+        "idUsuario": "ObjectId(66bae8808f484ab553e9193e)"
+    },
+
+    {
+        "direccion": "Calle Benito Juarez 1094, Las Vegas, 80090 Culiacán Rosales, Sin.", 
+        "nAutos": 1, 
+        "nBanos": 3, 
+        "nRecamaras": 2, 
+        "nEscaleras": 1, 
+        "tipo": "Venta", 
+        "metros": "150", 
+        "precio": 2300000.00, 
+        "descripcion": "EXCELENTE CASA DE DOS PLANTAS EN ESQUINA SOBRE AVENIDA PRINCIPAL TODO LOS NECESARIO PARA UNA FAMILIA, AREA DE TERRAZA MUY AMPLIA EN UN TERCER PISO, AREA DE LAVADO, ACABADOS APLANADOS FLOTEADOS CON PINTURA VINILICA EN BUEN ESTADO FISICO, TODO EL SUELO DE LA CASA ESTA RECUBIERTO CON VITROPISO, COCHERA PARA UN AUTO CUENTA CON AGUA, ENERGIA ELECTRICA, DRENAJE, TRANSPORTE URBANO, PAVIMENTO ASFALTICO, TELEFONO, ALUMBRADO PUBLICO, VIGILANCIA POLICIACA, RECOLECCION DE BASURA, ESCUELAS, CENTRO COMERCIALES EN UN ENTORNO DE 1 KM, SUPERMECADO LEY, IGLESIAS, TALLERES DE DIVERSAS ESPECIALIDADES, 10 SE ENCUENTRA EL PARQUE 87 Y A 15 MINUTOS DEL CENTRO.", 
+        "fotoPrincipal": "https://img10.naventcdn.com/avisos/resize/18/00/66/07/68/03/1200x1200/354450831.jpg", 
+        "fotos": [
+            {
+                "nameHabitacion": "Habitacion 1",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/25/91/72/1200x1200/1478945754.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/25/91/72/1200x1200/1478945756.jpg"
+            },
+            {
+                "nameHabitacion": "Habitacion 2",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/25/91/72/1200x1200/1478945750.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/25/91/72/1200x1200/1478945759.jpg"
+            },
+            {   
+                "nameHabitacion": "Habitacion 3",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/25/91/72/1200x1200/1478945748.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/25/91/72/1200x1200/1478945747.jpg"
+            },
+            {   
+                "nameHabitacion": "Habitacion 4",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/25/91/72/1200x1200/1478945761.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/25/91/72/1200x1200/1478945753.jpg"
+            }
+        ],
+        "fechaPublicacion": "2024-03-16T00:00:00.000+00:00",
+        "autorizada": true, 
+        "disponible": "DISPONIBLE", 
+        "ayudaVendedor": true, 
+        "idUsuario": "ObjectId(66bae8808f484ab553e9193e)"
+    },
+
+    {
+        "direccion": "Av. Teniente Juan de la Barrera Nte. 3104 C, 6 de Enero, 80010 Culiacán Rosales, Sin.", 
+        "nAutos": 5, 
+        "nBanos": 4, 
+        "nRecamaras": 4, 
+        "nEscaleras": 2, 
+        "tipo": "Venta", 
+        "metros": "320", 
+        "precio": 14000000.00, 
+        "descripcion": "3 plantas. Residencia con sistema de seguridad y puertas de seguridad", 
+        "fotoPrincipal": "https://img10.naventcdn.com/avisos/resize/18/01/44/26/77/56/1200x1200/1479157289.jpg", 
+        "fotos": [
+            {
+                "nameHabitacion": "Habitacion 1",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527166.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527162.jpg"
+            },
+            {
+                "nameHabitacion": "Habitacion 2",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527162.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527162.jpg"
+            },
+            {   
+                "nameHabitacion": "Habitacion 3",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527165.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527167.jpg"
+            },
+            {   
+                "nameHabitacion": "Habitacion 4",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527175.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527177.jpg"
+            },
+            {   
+                "nameHabitacion": "Habitacion 5",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527174.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527170.jpg"
+            }
+        ],
+        "fechaPublicacion": "2024-03-16T00:00:00.000+00:00",
+        "autorizada": true, 
+        "disponible": "DISPONIBLE", 
+        "ayudaVendedor": true, 
+        "idUsuario": "ObjectId(66bae8808f484ab553e9193e)"
+    },
+
+    {
+        "direccion": "Av Dr Ruperto Paliza 1029, Guadalupe, 80220 Culiacán Rosales, Sin.", 
+        "nAutos": 2, 
+        "nBanos": 4, 
+        "nRecamaras": 3, 
+        "nEscaleras": 1, 
+        "tipo": "Venta", 
+        "metros": "55", 
+        "precio": 3.00, 
+        "descripcion": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore rerum molestias quis distinctio quia dignissimm dolorum?", 
+        "fotoPrincipal": "https://img10.naventcdn.com/avisos/resize/18/00/90/61/35/83/1200x1200/1100580205.jpg", 
+        "fotos": [
+            {
+                "nameHabitacion": "Habitacion 1",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/00/90/61/35/83/1200x1200/1100580191.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/00/90/61/35/83/1200x1200/1100580195.jpg"
+            },
+            {
+                "nameHabitacion": "Habitacion 2",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/00/90/61/35/83/1200x1200/1100580208.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/00/90/61/35/83/1200x1200/1100580198.jpg"
+            },
+            {
+                "nameHabitacion": "Habitacion 3",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/00/90/61/35/83/1200x1200/1100580206.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/00/90/61/35/83/1200x1200/1100580192.jpg"
+            }
+        ],
+        "fechaPublicacion": "2024-03-16T00:00:00.000+00:00",
+        "autorizada": true, 
+        "disponible": "DISPONIBLE", 
+        "ayudaVendedor": true, 
+        "idUsuario": "ObjectId(66bae8808f484ab553e9193e)"
+    },
+    {
+        "direccion": "Bouelvard Sta. Fe 2457, Santa Fe, Sta Fe, 80029 Culiacán Rosales, Sin.", 
+        "nAutos": 2, 
+        "nBanos": 2, 
+        "nRecamaras": 3, 
+        "nEscaleras": 1, 
+        "tipo": "Renta", 
+        "metros": "32", 
+        "precio": 1.00, 
+        "descripcion": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore rerum molestias quis distinctio quia dignissimos reiciendis, voluptas amet consequatur hic modi impedit dicta facilis ipsum tenetur consequuntur voluptatem quam dolorum? Lorem, ipsum dolo Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore rerum molestias quis distinctio quia dignissimos reiciendis, voluptas amet consequatur hic modi impedit dicta facilis ipsum tenetur consequuntur voluptatem quam dolorum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore rerum molestias quis distinctio quia dignissimos reiciendis, voluptas amet consequatur hic modi impedit dicta facilis ipsum tenetur consequuntur voluptatem quam dolorum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore rerum molestias quis distinctio quia dignissimos reiciendis, voluptas amet consequatur hic modi impedit dicta facilis ipsum tenetur consequuntur voluptatem quam dolorum?", 
+        "fotoPrincipal": "https://img10.naventcdn.com/avisos/resize/18/00/91/40/26/37/1200x1200/1121033945.jpg", 
+        "fotos": [
+            {
+                "nameHabitacion": "Habitacion 1",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/00/91/40/26/37/1200x1200/1121033933.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/00/91/40/26/37/1200x1200/1121033948.jpg"
+            },
+            {
+                "nameHabitacion": "Habitacion 2",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/00/91/40/26/37/1200x1200/1121033946.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/00/91/40/26/37/1200x1200/1121033951.jpg"
+            },
+            {
+                "nameHabitacion": "Habitacion 3",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/00/91/40/26/37/1200x1200/1121033950.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/00/91/40/26/37/1200x1200/1121033943.jpg"
+            }
+        ],
+        "fechaPublicacion": "2024-03-16T00:00:00.000+00:00",
+        "autorizada": true, 
+        "disponible": "DISPONIBLE", 
+        "ayudaVendedor": true, 
+        "idUsuario": "ObjectId(66bae8808f484ab553e9193e)"
+    },
+
+    {
+        "direccion": "Constituyente Adalberto Tejeda 1117, Buenos Aires, 80199 Culiacán Rosales, Sin.", 
+        "nAutos": 2, 
+        "nBanos": 1, 
+        "nRecamaras": 3, 
+        "nEscaleras": 0, 
+        "tipo": "Venta", 
+        "metros": "99", 
+        "precio": 1395000.00, 
+        "descripcion": "¡Descubre tu nuevo hogar! Esta encantadora casa de 99 m² de terreno y 62.99 m² de construcción te ofrece todo lo que necesitas para vivir cómodamente. Con 2 recámaras y 1 baño, es el espacio perfecto para ti y tu familia. Además, cuenta con 2 estacionamientos, así que no tendrás que preocuparte por el espacio para tus vehículos. Entre sus amenidades, esta casa acepta mascotas, tiene un cuarto de servicio, aire acondicionado y un tinaco para asegurar el suministro de agua. También se permite fumar, y cuenta con un patio de lavado, ideal para mantener todo en orden. Las facilidades para adultos mayores y la cocina equipada e integral hacen de esta propiedad una opción práctica y funcional. Además, el calentador de agua te garantiza comodidad en todo momento. No dejes pasar esta oportunidad de vivir en un lugar que lo tiene todo. ¡Ven y conoce tu futuro hogar!", 
+        "fotoPrincipal": "https://img10.naventcdn.com/avisos/resize/18/01/44/29/11/34/1200x1200/1479702527.jpg", 
+        "fotos": [
+            {
+                "nameHabitacion": "Habitacion 1",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/29/11/34/1200x1200/1479700869.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/29/11/34/1200x1200/1479700865.jpg"
+            },
+            {
+                "nameHabitacion": "Habitacion 2",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/00/91/40/26/37/1200x1200/1121033946.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/29/11/34/1200x1200/1479700866.jpg"
+            },
+            {   
+                "nameHabitacion": "Habitacion 3",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/29/11/34/1200x1200/1479700867.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/29/11/34/1200x1200/1479700863.jpg"
+            }
+        ],
+        "fechaPublicacion": "2024-03-16T00:00:00.000+00:00",
+        "autorizada": true, 
+        "disponible": "DISPONIBLE", 
+        "ayudaVendedor": true, 
+        "idUsuario": "ObjectId(66bae8808f484ab553e9193e)"
+    },
+
+    {
+        "direccion": "Manuel J. Clouthier y o Av. Internacional 1018, Independencia, 80190 Culiacán Rosales, Sin.", 
+        "nAutos": 1, 
+        "nBanos": 3, 
+        "nRecamaras": 2, 
+        "nEscaleras": 1, 
+        "tipo": "Venta", 
+        "metros": "150", 
+        "precio": 2300000.00, 
+        "descripcion": "EXCELENTE CASA DE DOS PLANTAS EN ESQUINA SOBRE AVENIDA PRINCIPAL TODO LOS NECESARIO PARA UNA FAMILIA, AREA DE TERRAZA MUY AMPLIA EN UN TERCER PISO, AREA DE LAVADO, ACABADOS APLANADOS FLOTEADOS CON PINTURA VINILICA EN BUEN ESTADO FISICO, TODO EL SUELO DE LA CASA ESTA RECUBIERTO CON VITROPISO, COCHERA PARA UN AUTO CUENTA CON AGUA, ENERGIA ELECTRICA, DRENAJE, TRANSPORTE URBANO, PAVIMENTO ASFALTICO, TELEFONO, ALUMBRADO PUBLICO, VIGILANCIA POLICIACA, RECOLECCION DE BASURA, ESCUELAS, CENTRO COMERCIALES EN UN ENTORNO DE 1 KM, SUPERMECADO LEY, IGLESIAS, TALLERES DE DIVERSAS ESPECIALIDADES, 10 SE ENCUENTRA EL PARQUE 87 Y A 15 MINUTOS DEL CENTRO.", 
+        "fotoPrincipal": "https://img10.naventcdn.com/avisos/resize/18/01/44/25/91/72/1200x1200/1478945760.jpg", 
+        "fotos": [
+            {
+                "nameHabitacion": "Habitacion 1",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/25/91/72/1200x1200/1478945754.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/25/91/72/1200x1200/1478945756.jpg"
+            },
+            {
+                "nameHabitacion": "Habitacion 2",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/25/91/72/1200x1200/1478945750.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/25/91/72/1200x1200/1478945759.jpg"
+            },
+            {   
+                "nameHabitacion": "Habitacion 3",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/25/91/72/1200x1200/1478945748.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/25/91/72/1200x1200/1478945747.jpg"
+            },
+            {   
+                "nameHabitacion": "Habitacion 4",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/25/91/72/1200x1200/1478945761.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/25/91/72/1200x1200/1478945753.jpg"
+            }
+        ],
+        "fechaPublicacion": "2024-03-16T00:00:00.000+00:00",
+        "autorizada": true, 
+        "disponible": "DISPONIBLE", 
+        "ayudaVendedor": true, 
+        "idUsuario": "ObjectId(66bae8808f484ab553e9193e)"
+    },
+
+    {
+        "direccion": "Lago de Chapala 1389, Las Quintas, 80060 Culiacán Rosales, Sin.", 
+        "nAutos": 5, 
+        "nBanos": 4, 
+        "nRecamaras": 4, 
+        "nEscaleras": 2, 
+        "tipo": "Venta", 
+        "metros": "320", 
+        "precio": 14000000.00, 
+        "descripcion": "3 plantas. Residencia con sistema de seguridad y puertas de seguridad", 
+        "fotoPrincipal": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527163.jpg", 
+        "fotos": [
+            {
+                "nameHabitacion": "Habitacion 1",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527166.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527162.jpg"
+            },
+            {
+                "nameHabitacion": "Habitacion 2",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527162.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527162.jpg"
+            },
+            {   
+                "nameHabitacion": "Habitacion 3",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527165.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527167.jpg"
+            },
+            {   
+                "nameHabitacion": "Habitacion 4",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527175.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527177.jpg"
+            },
+            {   
+                "nameHabitacion": "Habitacion 5",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527174.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527170.jpg"
+            }
+        ],
+        "fechaPublicacion": "2024-03-16T00:00:00.000+00:00",
+        "autorizada": true, 
+        "disponible": "DISPONIBLE", 
+        "ayudaVendedor": true, 
+        "idUsuario": "ObjectId(66bae8808f484ab553e9193e)"
+    },
+
+    {
+        "direccion": "Blvrd Dr Mora 1304, Las Quintas, 80060 Culiacán Rosales, Sin.", 
+        "nAutos": 5, 
+        "nBanos": 2, 
+        "nRecamaras": 3, 
+        "nEscaleras": 2, 
+        "tipo": "Renta", 
+        "metros": "249", 
+        "precio": 3070000.00, 
+        "descripcion": "Casa habitación sobre el Blvd.Manuel Estrada con vocación comercial con gran flujo vehicular y peatonal al lado de locales comerciales, consta de dos niveles, cochera techada con portón eléctrico para 5 autos, sala, comedor, cocina integral.", 
+        "fotoPrincipal": "https://img10.naventcdn.com/avisos/resize/18/01/43/54/84/34/1200x1200/1461839766.jpg", 
+        "fotos": [
+            {
+                "nameHabitacion": "Habitacion 1",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/00/90/61/35/83/1200x1200/1100580191.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/00/90/61/35/83/1200x1200/1100580195.jpg"
+            },
+            {
+                "nameHabitacion": "Habitacion 2",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/00/90/61/35/83/1200x1200/1100580208.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/00/90/61/35/83/1200x1200/1100580198.jpg"
+            },
+            {
+                "nameHabitacion": "Habitacion 3",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/00/90/61/35/83/1200x1200/1100580206.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/00/90/61/35/83/1200x1200/1100580192.jpg"
+            }
+        ],
+        "fechaPublicacion": "2024-03-16T00:00:00.000+00:00",
+        "autorizada": true, 
+        "disponible": "DISPONIBLE", 
+        "ayudaVendedor": true, 
+        "idUsuario": "ObjectId(66bae8808f484ab553e9193e)"
+    },
+    {
+        "direccion": "Belisario Domínguez 1124, Las Quintas, 80060 Culiacán Rosales, Sin.", 
+        "nAutos": 2, 
+        "nBanos": 2, 
+        "nRecamaras": 3, 
+        "nEscaleras": 1, 
+        "tipo": "Renta", 
+        "metros": "32", 
+        "precio": 1.00, 
+        "descripcion": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore rerum molestias quis distinctio quia dignissimos reiciendis, voluptas amet consequatur hic modi impedit dicta facilis ipsum tenetur consequuntur voluptatem quam dolorum? Lorem, ipsum dolo Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore rerum molestias quis distinctio quia dignissimos reiciendis, voluptas amet consequatur hic modi impedit dicta facilis ipsum tenetur consequuntur voluptatem quam dolorum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore rerum molestias quis distinctio quia dignissimos reiciendis, voluptas amet consequatur hic modi impedit dicta facilis ipsum tenetur consequuntur voluptatem quam dolorum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore rerum molestias quis distinctio quia dignissimos reiciendis, voluptas amet consequatur hic modi impedit dicta facilis ipsum tenetur consequuntur voluptatem quam dolorum?", 
+        "fotoPrincipal": "https://img10.naventcdn.com/avisos/resize/18/01/43/52/72/15/1200x1200/1461233569.jpg", 
+        "fotos": [
+            {
+                "nameHabitacion": "Habitacion 1",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/00/91/40/26/37/1200x1200/1121033933.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/00/91/40/26/37/1200x1200/1121033948.jpg"
+            },
+            {
+                "nameHabitacion": "Habitacion 2",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/00/91/40/26/37/1200x1200/1121033946.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/00/91/40/26/37/1200x1200/1121033951.jpg"
+            },
+            {
+                "nameHabitacion": "Habitacion 3",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/00/91/40/26/37/1200x1200/1121033950.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/00/91/40/26/37/1200x1200/1121033943.jpg"
+            }
+        ],
+        "fechaPublicacion": "2024-03-16T00:00:00.000+00:00",
+        "autorizada": true, 
+        "disponible": "DISPONIBLE", 
+        "ayudaVendedor": true, 
+        "idUsuario": "ObjectId(66bae8808f484ab553e9193e)"
+    },
+
+    {
+        "direccion": "Calle Gral. Angel Flores 1023, Las Quintas, 80060 Culiacán Rosales, Sin..", 
+        "nAutos": 2, 
+        "nBanos": 1, 
+        "nRecamaras": 3, 
+        "nEscaleras": 0, 
+        "tipo": "Venta", 
+        "metros": "99", 
+        "precio": 1395000.00, 
+        "descripcion": "¡Descubre tu nuevo hogar! Esta encantadora casa de 99 m² de terreno y 62.99 m² de construcción te ofrece todo lo que necesitas para vivir cómodamente. Con 2 recámaras y 1 baño, es el espacio perfecto para ti y tu familia. Además, cuenta con 2 estacionamientos, así que no tendrás que preocuparte por el espacio para tus vehículos. Entre sus amenidades, esta casa acepta mascotas, tiene un cuarto de servicio, aire acondicionado y un tinaco para asegurar el suministro de agua. También se permite fumar, y cuenta con un patio de lavado, ideal para mantener todo en orden. Las facilidades para adultos mayores y la cocina equipada e integral hacen de esta propiedad una opción práctica y funcional. Además, el calentador de agua te garantiza comodidad en todo momento. No dejes pasar esta oportunidad de vivir en un lugar que lo tiene todo. ¡Ven y conoce tu futuro hogar!", 
+        "fotoPrincipal": "https://img10.naventcdn.com/avisos-va/vamx-pt10-ads/4a/1200x1200/4a718224-17b8-49ba-bcba-ba5eea6bebf8", 
+        "fotos": [
+            {
+                "nameHabitacion": "Habitacion 1",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/29/11/34/1200x1200/1479700869.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/29/11/34/1200x1200/1479700865.jpg"
+            },
+            {
+                "nameHabitacion": "Habitacion 2",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/00/91/40/26/37/1200x1200/1121033946.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/29/11/34/1200x1200/1479700866.jpg"
+            },
+            {   
+                "nameHabitacion": "Habitacion 3",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/29/11/34/1200x1200/1479700867.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/29/11/34/1200x1200/1479700863.jpg"
+            }
+        ],
+        "fechaPublicacion": "2024-03-16T00:00:00.000+00:00",
+        "autorizada": true, 
+        "disponible": "DISPONIBLE", 
+        "ayudaVendedor": true, 
+        "idUsuario": "ObjectId(66bae8808f484ab553e9193e)"
+    },
+
+    {
+        "direccion": "Calle Benito Juarez 1094, Las Vegas, 80090 Culiacán Rosales, Sin.", 
+        "nAutos": 1, 
+        "nBanos": 3, 
+        "nRecamaras": 2, 
+        "nEscaleras": 1, 
+        "tipo": "Venta", 
+        "metros": "150", 
+        "precio": 2300000.00, 
+        "descripcion": "EXCELENTE CASA DE DOS PLANTAS EN ESQUINA SOBRE AVENIDA PRINCIPAL TODO LOS NECESARIO PARA UNA FAMILIA, AREA DE TERRAZA MUY AMPLIA EN UN TERCER PISO, AREA DE LAVADO, ACABADOS APLANADOS FLOTEADOS CON PINTURA VINILICA EN BUEN ESTADO FISICO, TODO EL SUELO DE LA CASA ESTA RECUBIERTO CON VITROPISO, COCHERA PARA UN AUTO CUENTA CON AGUA, ENERGIA ELECTRICA, DRENAJE, TRANSPORTE URBANO, PAVIMENTO ASFALTICO, TELEFONO, ALUMBRADO PUBLICO, VIGILANCIA POLICIACA, RECOLECCION DE BASURA, ESCUELAS, CENTRO COMERCIALES EN UN ENTORNO DE 1 KM, SUPERMECADO LEY, IGLESIAS, TALLERES DE DIVERSAS ESPECIALIDADES, 10 SE ENCUENTRA EL PARQUE 87 Y A 15 MINUTOS DEL CENTRO.", 
+        "fotoPrincipal": "https://img10.naventcdn.com/avisos/resize/18/00/66/07/68/03/1200x1200/354450831.jpg", 
+        "fotos": [
+            {
+                "nameHabitacion": "Habitacion 1",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/25/91/72/1200x1200/1478945754.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/25/91/72/1200x1200/1478945756.jpg"
+            },
+            {
+                "nameHabitacion": "Habitacion 2",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/25/91/72/1200x1200/1478945750.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/25/91/72/1200x1200/1478945759.jpg"
+            },
+            {   
+                "nameHabitacion": "Habitacion 3",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/25/91/72/1200x1200/1478945748.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/25/91/72/1200x1200/1478945747.jpg"
+            },
+            {   
+                "nameHabitacion": "Habitacion 4",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/25/91/72/1200x1200/1478945761.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/25/91/72/1200x1200/1478945753.jpg"
+            }
+        ],
+        "fechaPublicacion": "2024-03-16T00:00:00.000+00:00",
+        "autorizada": true, 
+        "disponible": "DISPONIBLE", 
+        "ayudaVendedor": true, 
+        "idUsuario": "ObjectId(66bae8808f484ab553e9193e)"
+    },
+
+    {
+        "direccion": "Av. Teniente Juan de la Barrera Nte. 3104 C, 6 de Enero, 80010 Culiacán Rosales, Sin.", 
+        "nAutos": 5, 
+        "nBanos": 4, 
+        "nRecamaras": 4, 
+        "nEscaleras": 2, 
+        "tipo": "Venta", 
+        "metros": "320", 
+        "precio": 14000000.00, 
+        "descripcion": "3 plantas. Residencia con sistema de seguridad y puertas de seguridad", 
+        "fotoPrincipal": "https://img10.naventcdn.com/avisos/resize/18/01/44/26/77/56/1200x1200/1479157289.jpg", 
+        "fotos": [
+            {
+                "nameHabitacion": "Habitacion 1",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527166.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527162.jpg"
+            },
+            {
+                "nameHabitacion": "Habitacion 2",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527162.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527162.jpg"
+            },
+            {   
+                "nameHabitacion": "Habitacion 3",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527165.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527167.jpg"
+            },
+            {   
+                "nameHabitacion": "Habitacion 4",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527175.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527177.jpg"
+            },
+            {   
+                "nameHabitacion": "Habitacion 5",
+                "img1": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527174.jpg",
+                "img2": "https://img10.naventcdn.com/avisos/resize/18/01/44/11/05/52/1200x1200/1475527170.jpg"
+            }
+        ],
+        "fechaPublicacion": "2024-03-16T00:00:00.000+00:00",
+        "autorizada": true, 
+        "disponible": "DISPONIBLE", 
+        "ayudaVendedor": true, 
+        "idUsuario": "ObjectId(66bae8808f484ab553e9193e)"
     }
 ]
