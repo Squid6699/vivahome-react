@@ -5,6 +5,7 @@ export const routeFiltros = express.Router();
 
 routeFiltros.get("/", async (req, res) => {
     const { ubicacion, autos, banos, habitacion, escaleras, metros, tipo, pInicial, pFinal} = req.query;
+
     try {
         const filtros = {
             ...(ubicacion.trim && { direccion: new RegExp(ubicacion, 'i') }),
@@ -22,11 +23,13 @@ routeFiltros.get("/", async (req, res) => {
             ...(tipo && { tipo: tipo }),
             
             ...(pInicial && pFinal && { precio: { $gte: pInicial, $lte: pFinal } }),
+
+            autorizada: true,
         };
 
         const propiedadesFiltradas = await Propiedades.find(filtros);
 
-        if (propiedadesFiltradas){
+        if (propiedadesFiltradas.length > 0){
             return res.json({success: true, propiedades: propiedadesFiltradas});
         }else{
             return res.json({success: false, error: "NO HAY PROPIEDADES DISPONIBLES"})

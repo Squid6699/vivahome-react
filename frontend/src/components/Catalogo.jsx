@@ -2,37 +2,14 @@ import React, { useEffect } from 'react'
 import "../css/catalogo.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCar, faBath, faBed, faStairs, faRuler, faEye } from '@fortawesome/free-solid-svg-icons';
-import { useQuery } from "react-query";
 import { Link } from 'react-router-dom';
-import { useFilters } from '../hook/useFilters';
 
-function Catalogo(){
-    const {filters} = useFilters();
-    const { data: propiedades, isLoading, refetch } = useQuery("propiedades", obtenerPropiedades);
-
-    useEffect(() => {
-        refetch();
-    },[refetch]);
-
-    async function obtenerPropiedades() {
-        try {
-            const response = await fetch(`http://localhost:3001/filtrarpropiedades?ubicacion=${filters.ubicacion}&autos=${filters.autos}&banos=${banos}&habitacion=${filters.habitacion}&escaleras=${filters.escaleras}&metros=${filters.metros}&tipo=${filters.tipo}&pInicial=${filters.pInicial}&pFinal=${filters.pFinal}`);
-            const data = await response.json();
-
-            if (data.success){
-                return(data.propiedades);
-            }else{
-                return [];
-            }
-        } catch (error) {
-            throw new Error("OCURRIO UN ERROR");
-        }
-    }
-
+function Catalogo({isLoading, isRefetching, propiedades}){
+    
     return(
         <>
             <section className='container-catalogo'>
-                {isLoading ? (
+                {isLoading || isRefetching ? (
                     <span className='textCatalogo'>CARGANDO PROPIEDADES...</span>
                 ) : (
                 <>
@@ -45,7 +22,7 @@ function Catalogo(){
                                         <h6>{item.direccion}</h6>
                                         <div className="card-text">
                                             {
-                                                item.tipo === "Venta" 
+                                                item.tipo !== "Terreno" 
                                                 ?
                                                 <>
                                                     <div className='icons'>

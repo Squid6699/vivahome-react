@@ -3,10 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBath, faBed, faCar, faPlay, faStairs, faStop, faStreetView } from '@fortawesome/free-solid-svg-icons';
 import {Button, Offcanvas} from "react-bootstrap"
 import "../css/filtros.css"
-import { useFilters } from "../hook/useFilters.js"
 
-function Filtros({show, handleCloseFiltros}){
-    const {handleFilters, removeFilters} = useFilters();
+function Filtros({show, handleCloseFiltros, handleFilters, removeFilters}){
 
     const handleSubmitFiltros = (e) => {
         e.preventDefault();
@@ -87,10 +85,10 @@ function Filtros({show, handleCloseFiltros}){
                                 <div className="field fitroTipo">
                                     <div className="input-area">
                                         <select id="fitroTipo" name="fitroTipo" placeholder = "TIPO">
-                                            <option value="" disabled>TIPO DE PROPIEDAD</option>
-                                            <option value="VENTA">VENTA</option>
-                                            <option value="RENTA">RENTA</option>
-                                            <option value="TERRENO">TERRENO</option>
+                                            <option value="" selected>TIPO DE PROPIEDAD</option>
+                                            <option value="Venta">VENTA</option>
+                                            <option value="Renta">RENTA</option>
+                                            <option value="Terreno">TERRENO</option>
                                         </select>
                                     </div>
                                 </div>
