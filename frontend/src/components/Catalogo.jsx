@@ -4,12 +4,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCar, faBath, faBed, faStairs, faRuler, faEye } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 
-function Catalogo({isLoading, isRefetching, propiedades}){
+function Catalogo({isLoading, propiedades}){
     
     return(
         <>
             <section className='container-catalogo'>
-                {isLoading || isRefetching ? (
+                {isLoading ? (
                     <span className='textCatalogo'>CARGANDO PROPIEDADES...</span>
                 ) : (
                 <>
