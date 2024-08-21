@@ -6,8 +6,18 @@ import "../css/filtros.css"
 
 function Filtros({show, handleCloseFiltros}){
 
+
     const handleSubmitFiltros = (e) => {
         e.preventDefault();
+        var ubicacion = document.getElementById("filtroUbicacion").value;
+        var autos = document.getElementById("filtroAutos").value;
+        var banos = document.getElementById("fitroBaños").value;
+        var habitacion = document.getElementById("filtroHabitaciones").value;
+        var metros = document.getElementById("filtroMetrosCuadrados").value;
+        var tipo = document.getElementById("fitroTipo").value;
+        var pInicial = document.getElementById("filtroPrecioInicial").value;
+        var fInicial = document.getElementById("filtroPrecioFinal").value;
+
         
     }
 
