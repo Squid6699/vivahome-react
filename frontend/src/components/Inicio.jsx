@@ -5,13 +5,15 @@ import { faFilter } from '@fortawesome/free-solid-svg-icons';
 import Navbar from "./Navbar.jsx"
 import Filtros from './Filtros.jsx';
 import Catalogo from './Catalogo.jsx';
-import { Button } from 'react-bootstrap';
+import { Button, Pagination } from 'react-bootstrap';
 import { useQuery } from "react-query";
 import { useModal } from '../hook/useModal.js';
 
 function Inicio(){
     const { data: propiedades, isLoading, refetch, isRefetching } = useQuery("propiedades", obtenerPropiedades);
     const {isOpenModal, openModal, closeModal} = useModal();
+    const [pagina, setPagina] = useState(1);
+    const [totalPaginas, setTotalPaginas] = useState(0);
 
     const INITIAL_FILTERS = {
         ubicacion: "",
@@ -29,10 +31,11 @@ function Inicio(){
 
     async function obtenerPropiedades() {
         try {
-            const response = await fetch(`http://localhost:3001/filtrarpropiedades?ubicacion=${filters.ubicacion}&autos=${filters.autos}&banos=${filters.banos}&habitacion=${filters.habitacion}&escaleras=${filters.escaleras}&metros=${filters.metros}&tipo=${filters.tipo}&pInicial=${filters.pInicial}&pFinal=${filters.pFinal}`);
+            const response = await fetch(`http://localhost:3001/filtrarpropiedades?ubicacion=${filters.ubicacion}&autos=${filters.autos}&banos=${filters.banos}&habitacion=${filters.habitacion}&escaleras=${filters.escaleras}&metros=${filters.metros}&tipo=${filters.tipo}&pInicial=${filters.pInicial}&pFinal=${filters.pFinal}&pagina=${pagina}`);
             const data = await response.json();
 
             if (data.success){
+                setTotalPaginas(data.paginas)
                 return(data.propiedades);
             }else{
                 return [];
@@ -53,7 +56,16 @@ function Inicio(){
 
     useEffect(() => {
         refetch();
-    },[filters]);
+    },[filters, pagina]);
+
+    let items = [];
+    for (let number = 1; number <= totalPaginas; number++) {
+        items.push(
+            <Pagination.Item key={number} active={number === pagina} onClick={() => setPagina(number)}>
+                {number}
+            </Pagination.Item>,
+        );
+    }
 
     return(
         <>
@@ -70,8 +82,13 @@ function Inicio(){
                     <Catalogo isLoading={isLoading} isRefetching={isRefetching} propiedades={propiedades}/>
                 </div>
 
+                <Pagination>
+                    <Pagination.Prev onClick={() => setPagina(pagina-1)} disabled = {pagina === 1}/>
+                        {items}
+                    <Pagination.Next onClick={() => setPagina(pagina+1)} disabled = {pagina === totalPaginas}/>
+                </Pagination>
+
             </section>
-            
             
         </>
     );

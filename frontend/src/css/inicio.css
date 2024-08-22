@@ -13,3 +13,17 @@
     width: 75%;
 }
 
+.pagination {
+    justify-content: center;
+    margin-top: 10px;
+    position: sticky;
+    bottom: 0;
+    background-color: var(--bg-color);
+    --bs-pagination-color: var(--text-color) !important;
+    --bs-pagination-bg: var(--bg-color) !important;
+    --bs-pagination-border-width: none !important;
+    --bs-pagination-hover-color: var(--text-color) !important;
+    --bs-pagination-hover-bg: var(--main-color) !important;
+    --bs-pagination-active-bg: var(--main-color) !important;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
