@@ -24,7 +24,7 @@ function Inicio(){
         metros: "",
         tipo: "",
         pInicial: "",
-        pFinal: "",
+        pFinal: ""
     }
 
     const [filters, setFilters] = useState(INITIAL_FILTERS);
@@ -71,7 +71,7 @@ function Inicio(){
         <>
             <Navbar />
             <section className="containerApp">
-                {isOpenModal && <Filtros show={isOpenModal} closeModal = {closeModal} handleFilters={handleFilters} removeFilters={removeFilters}/>}
+                {isOpenModal && <Filtros show={isOpenModal} closeModal = {closeModal} handleFilters={handleFilters} removeFilters={removeFilters} filters={filters}/>}
                 
                 <div className="containerAppCatalogo">
                     <div className='botonera'>
