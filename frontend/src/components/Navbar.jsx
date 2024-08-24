@@ -6,7 +6,7 @@ import Register from './Register';
 import {useSesion} from "../hook/useSesion"
 import { Dropdown, Offcanvas } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faPowerOff, faBars } from '@fortawesome/free-solid-svg-icons';
+import { faUser, faPowerOff, faBars, faEye, faCalendarDays, faTicket, faCartShopping, faCircleCheck, faPlus, faUpload, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import { useModal } from '../hook/useModal';
 
 function Navbar(){
@@ -51,12 +51,31 @@ function Navbar(){
                     {usuario ? 
                     <>
                         <Dropdown>
-                            <span>Bienvenido/a {usuario} </span>  
+                            <span style={{marginRight: "10px"}}>BIENVENIDO/A {usuario.toUpperCase()} </span>
                             <Dropdown.Toggle variant="success">
                                 <FontAwesomeIcon icon={faUser}/>
                             </Dropdown.Toggle>
 
                             <Dropdown.Menu>
+                                <Dropdown.Item><FontAwesomeIcon icon={faUpload}/> PUBLICAR PROPIEDAD</Dropdown.Item>
+                                <Dropdown.Item><FontAwesomeIcon icon={faEye}/> TUS PROPIEDADES</Dropdown.Item>
+                                <Dropdown.Item><FontAwesomeIcon icon={faCalendarDays}/> CITAS AGENDADAS</Dropdown.Item>
+                                <Dropdown.Item><FontAwesomeIcon icon={faTicket}/> SOLICITAR AYUDA DE VENDEDOR</Dropdown.Item>
+
+                                {nivel === 2 && <>
+                                    <Dropdown.Item><FontAwesomeIcon icon={faPaperPlane}/> PROPIEDADES ASIGNADAS</Dropdown.Item>
+                                    <Dropdown.Item><FontAwesomeIcon icon={faUpload}/> SUBIR FOTO</Dropdown.Item>
+                                </>}
+
+                                {nivel === 3 && <>
+                                    <Dropdown.Item><FontAwesomeIcon icon={faPlus}/> DAR DE ALTA VENDEDOR</Dropdown.Item>
+                                    <Dropdown.Item><FontAwesomeIcon icon={faPlus}/> DAR DE ALTA ADMINISTRADORES</Dropdown.Item>
+                                    <Dropdown.Item><FontAwesomeIcon icon={faCircleCheck}/> AUTORIZAR PROPIEDADES</Dropdown.Item>
+                                    <Dropdown.Item><FontAwesomeIcon icon={faTicket}/> ASIGNAR VENDEDOR</Dropdown.Item>
+                                    <Dropdown.Item><FontAwesomeIcon icon={faCartShopping}/> PROPIEDADES VENDIDAS</Dropdown.Item>
+
+
+                                </>}
                                 <Dropdown.Item onClick={() => handleCerrarSesion()}><FontAwesomeIcon icon={faPowerOff}/> CERRAR SESION</Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown>
