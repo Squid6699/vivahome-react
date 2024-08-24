@@ -8,6 +8,7 @@ import { Dropdown, Offcanvas } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faPowerOff, faBars, faEye, faCalendarDays, faTicket, faCartShopping, faCircleCheck, faPlus, faUpload, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import { useModal } from '../hook/useModal';
+import VerPropiedadesPublicadas from './VerPropiedadesPublicadas';
 
 function Navbar(){
 
@@ -15,6 +16,7 @@ function Navbar(){
     const modalLogin = useModal();
     const modalRegister = useModal();
     const offCanvasNavbar = useModal();
+    const tusPropiedades = useModal();
 
     const handleCerrarSesion = async () => {
         try {
@@ -58,7 +60,7 @@ function Navbar(){
 
                             <Dropdown.Menu>
                                 <Dropdown.Item><FontAwesomeIcon icon={faUpload}/> PUBLICAR PROPIEDAD</Dropdown.Item>
-                                <Dropdown.Item><FontAwesomeIcon icon={faEye}/> TUS PROPIEDADES</Dropdown.Item>
+                                <Dropdown.Item  onClick={() => tusPropiedades.openModal()}><FontAwesomeIcon icon={faEye}/> TUS PROPIEDADES</Dropdown.Item>
                                 <Dropdown.Item><FontAwesomeIcon icon={faCalendarDays}/> CITAS AGENDADAS</Dropdown.Item>
                                 <Dropdown.Item><FontAwesomeIcon icon={faTicket}/> SOLICITAR AYUDA DE VENDEDOR</Dropdown.Item>
 
@@ -111,6 +113,7 @@ function Navbar(){
             
             {modalLogin.isOpenModal() && <Login showLogin={modalLogin.isOpenModal} handleCloseLogin={modalLogin.closeModal}/>}
             {modalRegister.isOpenModal() && <Register showRegister={modalRegister.isOpenModal} handleCloseRegister={modalRegister.closeModal}/>}
+            {tusPropiedades.isOpenModal() && <VerPropiedadesPublicadas showPropiedades={tusPropiedades.isOpenModal} handleClosePropiedades={tusPropiedades.closeModal}/>}
 
         </>
     );
