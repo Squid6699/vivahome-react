@@ -50,7 +50,7 @@ const PropiedadesSchema = mongoose.Schema({
         default: false
     },
     idUsuario: {
-        type: mongoose.Schema.Types.ObjectId,
+        type: mongoose.Schema.Types.String,
         ref: 'Usuario',
         required: true
     }
