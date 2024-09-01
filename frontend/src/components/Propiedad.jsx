@@ -9,6 +9,7 @@ import { faCalendarDays } from '@fortawesome/free-solid-svg-icons';
 import { useSesion } from '../hook/useSesion';
 import { useModal } from "../hook/useModal";
 import  Cita  from "../components/Cita";
+import { HOST } from '../../config';
 
 function Propiedad(){
     const {correo} = useSesion();
@@ -35,7 +36,7 @@ function Propiedad(){
 
     async function obtenerPropiedad() {
         try {
-            const response = await fetch(`http://localhost:3001/propiedad/${id}`);
+            const response = await fetch(`${HOST}propiedad/${id}`);
             const data = await response.json();
 
             if (data.success){

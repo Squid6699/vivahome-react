@@ -8,6 +8,7 @@ import Catalogo from './Catalogo.jsx';
 import { Button, Pagination } from 'react-bootstrap';
 import { useQuery } from "react-query";
 import { useModal } from '../hook/useModal.js';
+import { HOST } from '../../config.js';
 
 function Inicio(){
     const { data: propiedades, isLoading, refetch, isRefetching } = useQuery("propiedades", obtenerPropiedades);
@@ -31,7 +32,7 @@ function Inicio(){
 
     async function obtenerPropiedades() {
         try {
-            const response = await fetch(`http://localhost:3001/filtrarpropiedades?ubicacion=${filters.ubicacion}&autos=${filters.autos}&banos=${filters.banos}&habitacion=${filters.habitacion}&escaleras=${filters.escaleras}&metros=${filters.metros}&tipo=${filters.tipo}&pInicial=${filters.pInicial}&pFinal=${filters.pFinal}&pagina=${pagina}`);
+            const response = await fetch(`${HOST}filtrarpropiedades?ubicacion=${filters.ubicacion}&autos=${filters.autos}&banos=${filters.banos}&habitacion=${filters.habitacion}&escaleras=${filters.escaleras}&metros=${filters.metros}&tipo=${filters.tipo}&pInicial=${filters.pInicial}&pFinal=${filters.pFinal}&pagina=${pagina}`);
             const data = await response.json();
 
             if (data.success){

@@ -9,6 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faPowerOff, faBars, faEye, faCalendarDays, faTicket, faCartShopping, faCircleCheck, faPlus, faUpload, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import { useModal } from '../hook/useModal';
 import VerPropiedadesPublicadas from './VerPropiedadesPublicadas';
+import { HOST } from '../../config';
 
 function Navbar(){
 
@@ -20,7 +21,7 @@ function Navbar(){
 
     const handleCerrarSesion = async () => {
         try {
-            const response = await fetch("http://localhost:3001/logout", {
+            const response = await fetch(HOST+"logout", {
                 credentials: 'include'
             });
             const data = await response.json();

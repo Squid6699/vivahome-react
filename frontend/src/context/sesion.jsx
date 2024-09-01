@@ -1,4 +1,5 @@
 import { createContext, useEffect, useState } from "react";
+import { HOST } from "../../config";
 
 export const SesionContext = createContext();
 
@@ -10,7 +11,7 @@ export function SesionProvider({children}){
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch("http://localhost:3001/", {
+                const response = await fetch(HOST, {
                     method: "POST",
                     headers: {
                         'Content-Type': 'application/json',

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import {Modal} from "react-bootstrap"
+import { HOST } from '../../config';
 
 import {useSesion} from "../hook/useSesion.js"
 
@@ -82,7 +83,7 @@ function Login({showLogin, handleCloseLogin}){
     
         try {
             setLoading(true);
-            const response = await fetch("http://localhost:3001/auth/login", {
+            const response = await fetch(HOST+"auth/login", {
                 method: "POST",
                 headers: {
                     'Content-Type': 'application/json',
@@ -110,7 +111,7 @@ function Login({showLogin, handleCloseLogin}){
         }catch(err){
             setLoading(false);
             setError("OCURRIO UN ERROR AL INTENTAR INICIAR SESION");
-            throw new Error("OCURRIO UN ERROR AL INTENTAR INICIAR SESION");
+            // throw new Error("OCURRIO UN ERROR AL INTENTAR INICIAR SESION");
         }
     }
 
@@ -139,7 +140,7 @@ function Login({showLogin, handleCloseLogin}){
                         </div>
                         <div className="pass-txt"><a href="#">OLVIDASTE LA CONTRASEÑA?</a></div>
                         {error && <b style={{color: "red", display: "flex", justifyContent: "center"}}>{error}</b>}
-                        {loading ? <button type="submit" name="iniciar"><span class="spinner-border spinner-border-sm" aria-hidden="true"></span> INICIAR</button> : <button type="submit" name="iniciar">INICIAR</button>}
+                        {loading ? <button type="submit" name="iniciar"><span className="spinner-border spinner-border-sm" aria-hidden="true"></span> INICIAR</button> : <button type="submit" name="iniciar">INICIAR</button>}
                     </form>
                 </Modal.Body>
             </Modal>

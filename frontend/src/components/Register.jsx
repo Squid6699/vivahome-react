@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Modal } from "react-bootstrap"
 import { useSesion } from '../hook/useSesion';
+import { HOST } from '../../config';
 
 function Register({ showRegister, handleCloseRegister }) {
     const {setUsuario, setCorreo, setNivel} = useSesion();
@@ -108,7 +109,7 @@ function Register({ showRegister, handleCloseRegister }) {
 
         try {
             setLoading(true);
-            const response = await fetch("http://localhost:3001/auth/register", {
+            const response = await fetch(HOST+"auth/register", {
                 method: "POST",
                 headers: {
                     'Content-Type': 'application/json',
@@ -182,7 +183,7 @@ function Register({ showRegister, handleCloseRegister }) {
                         </div>
                         {error && <b style={{color: "red", display: "flex", justifyContent: "center"}}>{error}</b>}
                         
-                        {loading ? <button type="submit" name="iniciarRegistro"><span class="spinner-border spinner-border-sm" aria-hidden="true"></span> REGISTRAR</button> : <button type="submit" name="iniciarRegistro">REGISTRAR</button>}
+                        {loading ? <button type="submit" name="iniciarRegistro"><span className="spinner-border spinner-border-sm" aria-hidden="true"></span> REGISTRAR</button> : <button type="submit" name="iniciarRegistro">REGISTRAR</button>}
                     </form>
                 </Modal.Body>
             </Modal>
