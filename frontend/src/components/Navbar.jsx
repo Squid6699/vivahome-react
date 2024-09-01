@@ -70,7 +70,7 @@ function Navbar(){
                                     <Dropdown.Item><FontAwesomeIcon icon={faUpload}/> SUBIR FOTO</Dropdown.Item>
                                 </>}
 
-                                {nivel === 3 && <>
+                                {nivel === 1 && <>
                                     <Dropdown.Item><FontAwesomeIcon icon={faPlus}/> DAR DE ALTA VENDEDOR</Dropdown.Item>
                                     <Dropdown.Item><FontAwesomeIcon icon={faPlus}/> DAR DE ALTA ADMINISTRADORES</Dropdown.Item>
                                     <Dropdown.Item><FontAwesomeIcon icon={faCircleCheck}/> AUTORIZAR PROPIEDADES</Dropdown.Item>
