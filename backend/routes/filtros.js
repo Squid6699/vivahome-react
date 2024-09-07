@@ -6,7 +6,7 @@ export const routeFiltros = express.Router();
 routeFiltros.get("/", async (req, res) => {
     const { ubicacion, autos, banos, habitacion, escaleras, metros, tipo, pInicial, pFinal, pagina} = req.query;
 
-    const limit = 50;
+    const limit = 48;
     const skip = (pagina - 1) * limit;
     try {
         const filtros = {
