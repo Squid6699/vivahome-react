@@ -13,6 +13,7 @@ import { routePropiedad } from "./routes/propiedad.js";
 import { routeAgendarCita } from "./routes/agendarCita.js";
 import { routeFiltros } from "./routes/filtros.js";
 import { routePropiedadesPublicadas } from "./routes/verPropiedadesPublicadas.js";
+import { routeMisPropiedades } from "./routes/misPropiedades.js";
 
 const app = express();
 
@@ -50,6 +51,7 @@ app.use("/propiedad", routePropiedad);
 app.use("/agendarcita", routeAgendarCita);
 app.use("/filtrarpropiedades", routeFiltros);
 app.use("/propiedadespublicadas", routePropiedadesPublicadas);
+app.use("/mispropiedades", routeMisPropiedades);
 
 
 app.listen(3001, () => {
