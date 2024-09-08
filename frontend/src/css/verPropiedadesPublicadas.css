@@ -48,6 +48,31 @@
 .catalogo-misPropiedades .card-text .autorizado{
     margin-top: 10px;
     text-align: center;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 2px;
+}
+
+.catalogo-misPropiedades .card-text .disponible{
+    margin-top: 10px;
+    text-align: center;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 2px;
+}
+
+.catalogo-misPropiedades .card-text .vendida{
+    margin-top: 10px;
+    text-align: center;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 2px;
 }
 
 .catalogo-misPropiedades i{

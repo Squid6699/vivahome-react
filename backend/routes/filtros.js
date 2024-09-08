@@ -27,6 +27,7 @@ routeFiltros.get("/", async (req, res) => {
             ...(pInicial && pFinal && { precio: { $gte: pInicial, $lte: pFinal } }),
 
             autorizada: true,
+            disponible: "DISPONIBLE",
         };
 
         const totalPropiedades = await Propiedades.countDocuments(filtros);

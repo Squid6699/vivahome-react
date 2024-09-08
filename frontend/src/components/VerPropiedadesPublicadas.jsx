@@ -80,8 +80,11 @@ function VerPropiedadesPublicadas({showPropiedades, handleClosePropiedades}){
                                                         </>
                                                     }
                                                     <div className='estado'><span>ESTADO</span></div>
-                                                    {item.autorizada ? }
-                                                    {/* <div className='autorizado'>{item.precio.$numberDecimal}</div> */}
+
+                                                    {!item.autorizada && <span className='autorizado'>NO AUTORIZADA</span>}
+                                                    {item.disponible === "DISPONIBLE" && <span className='disponible'>DISPONIBLE</span>}
+                                                    {item.disponible === "VENDIDA" && <span className='vendida'>VENDIDA</span>}
+
                                                 </div>
                                             </div>
                                             <div className='card-footer'>
