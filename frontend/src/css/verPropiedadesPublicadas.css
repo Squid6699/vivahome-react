@@ -40,12 +40,12 @@
     grid-template-columns: auto auto auto auto auto;
 }
 
-.catalogo-misPropiedades .card-text .tipo{
+.catalogo-misPropiedades .card-text .estado{
     margin-top: 10px;
     text-align: center;
 }
 
-.catalogo-misPropiedades .card-text .precio{
+.catalogo-misPropiedades .card-text .autorizado{
     margin-top: 10px;
     text-align: center;
 }

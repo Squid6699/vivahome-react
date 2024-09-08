@@ -79,8 +79,9 @@ function VerPropiedadesPublicadas({showPropiedades, handleClosePropiedades}){
                                                             </div>
                                                         </>
                                                     }
-                                                    <div className='tipo'>{item.tipo.toUpperCase()}</div>
-                                                    <div className='precio'>${item.precio.$numberDecimal}</div>
+                                                    <div className='estado'><span>ESTADO</span></div>
+                                                    {item.autorizada ? }
+                                                    {/* <div className='autorizado'>{item.precio.$numberDecimal}</div> */}
                                                 </div>
                                             </div>
                                             <div className='card-footer'>
