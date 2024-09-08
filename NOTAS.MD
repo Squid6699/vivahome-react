@@ -16,3 +16,8 @@ NIVEL ADMINISTRADOR
 NIVEL VENDEDOR
 -PROPIEDADES ASIGNADAS
 -SUBIR FOTO
+
+
+
+QUITAR ObjectId en misPropiedades.js
+Cambiar de string a ObjectId en el schema de Propiedades

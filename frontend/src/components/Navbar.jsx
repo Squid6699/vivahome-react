@@ -61,7 +61,7 @@ function Navbar(){
 
                             <Dropdown.Menu>
                                 <Dropdown.Item><FontAwesomeIcon icon={faUpload}/> PUBLICAR PROPIEDAD</Dropdown.Item>
-                                <Dropdown.Item  onClick={() => tusPropiedades.openModal()}><FontAwesomeIcon icon={faEye}/> TUS PROPIEDADES</Dropdown.Item>
+                                <Dropdown.Item  onClick={() => tusPropiedades.openModal()}><FontAwesomeIcon icon={faEye}/> MIS PROPIEDADES</Dropdown.Item>
                                 <Dropdown.Item><FontAwesomeIcon icon={faCalendarDays}/> CITAS AGENDADAS</Dropdown.Item>
                                 <Dropdown.Item><FontAwesomeIcon icon={faTicket}/> SOLICITAR AYUDA DE VENDEDOR</Dropdown.Item>
 
