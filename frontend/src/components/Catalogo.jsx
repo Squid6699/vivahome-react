@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import "../css/catalogo.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCar, faBath, faBed, faStairs, faRuler, faEye } from '@fortawesome/free-solid-svg-icons';
