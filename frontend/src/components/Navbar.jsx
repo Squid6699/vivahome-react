@@ -19,6 +19,14 @@ function Navbar(){
     const offCanvasNavbar = useModal();
     const tusPropiedades = useModal();
 
+    const handleCloseModalTusPropiedades = () => {
+        tusPropiedades.closeModal();
+    }
+
+    const handleShowModalTusPropiedades = () => {
+        tusPropiedades.openModal();
+    }
+
     const handleCerrarSesion = async () => {
         try {
             const response = await fetch(HOST+"logout", {
@@ -114,7 +122,7 @@ function Navbar(){
             
             {modalLogin.isOpenModal() && <Login showLogin={modalLogin.isOpenModal} handleCloseLogin={modalLogin.closeModal}/>}
             {modalRegister.isOpenModal() && <Register showRegister={modalRegister.isOpenModal} handleCloseRegister={modalRegister.closeModal}/>}
-            {tusPropiedades.isOpenModal() && <VerPropiedadesPublicadas showPropiedades={tusPropiedades.isOpenModal} handleClosePropiedades={tusPropiedades.closeModal}/>}
+            {tusPropiedades.isOpenModal && <VerPropiedadesPublicadas showPropiedades={tusPropiedades.isOpenModal()} handleShowPropiedades={handleShowModalTusPropiedades} handleClosePropiedades={handleCloseModalTusPropiedades}/>}
 
         </>
     );

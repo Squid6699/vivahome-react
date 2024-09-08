@@ -1,13 +1,29 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Modal } from 'react-bootstrap';
 import { HOST } from '../../config';
 import { useQuery } from 'react-query';
 import "../css/VerPropiedadesPublicadas.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBath, faBed, faCar, faEye, faRuler, faStairs } from '@fortawesome/free-solid-svg-icons';
+import VerPropiedadesPublicadasVer from './VerPropiedadesPublicadasVer';
 
-function VerPropiedadesPublicadas({showPropiedades, handleClosePropiedades}){
+function VerPropiedadesPublicadas({showPropiedades, handleShowPropiedades, handleClosePropiedades}){
     const { data: misPropiedades, isLoading, refetch, isRefetching } = useQuery("MisPropiedades", obtenerMisPropiedades);
+
+    const [showVerPropiedadesVer, setShowPropiedadesVer] = useState(false);
+    const [showVerPropiedadData, setShowVerPropiedadData] = useState([]);
+
+    const handleShowVerPropiedadesVer = (data) => {
+        handleClosePropiedades();
+        setShowPropiedadesVer(true);
+        setShowVerPropiedadData(data);
+    }
+
+    const handleCloseVerPropiedadesVer = () => {
+        setShowPropiedadesVer(false);
+        setShowVerPropiedadData([]);
+        handleShowPropiedades();
+    }
 
     useEffect(() => {
         refetch();
@@ -88,7 +104,7 @@ function VerPropiedadesPublicadas({showPropiedades, handleClosePropiedades}){
                                                 </div>
                                             </div>
                                             <div className='card-footer'>
-                                                <span><i><FontAwesomeIcon icon={faEye}/></i> VER</span>
+                                                <span onClick={() => handleShowVerPropiedadesVer(item)} style={{cursor: 'pointer'}}><i><FontAwesomeIcon icon={faEye}/></i> VER</span>
                                             </div>
                                         </div>
                                     ))}
@@ -101,6 +117,7 @@ function VerPropiedadesPublicadas({showPropiedades, handleClosePropiedades}){
                     </section>
                 </Modal.Body>
             </Modal>
+            {showVerPropiedadesVer && <VerPropiedadesPublicadasVer showVerPropiedadesVer={showVerPropiedadesVer} handleCloseVerPropiedades={handleCloseVerPropiedadesVer} propiedad={showVerPropiedadData}/>}
         </>
     );
 }
