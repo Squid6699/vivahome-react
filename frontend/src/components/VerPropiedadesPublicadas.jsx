@@ -49,7 +49,7 @@ function VerPropiedadesPublicadas({showPropiedades, handleShowPropiedades, handl
 
     return(
         <>
-            <Modal show={showPropiedades} fullscreen = {true} scrollable = {true} onHide={handleClosePropiedades} backdrop="static" keyboard={false} >
+            <Modal show={showPropiedades} size='xl' scrollable = {true} onHide={handleClosePropiedades} backdrop="static" keyboard={false} >
                 <Modal.Header closeButton>
                     <Modal.Title>MIS PROPIEDADES</Modal.Title>
                 </Modal.Header>
