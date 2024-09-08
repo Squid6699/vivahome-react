@@ -1,0 +1,54 @@
+.card-text .icons{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-items: center;
+}
+
+
+.card-text .tipo{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.card-text .precio{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.card-text .descripcion{
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.icons i{
+    color: var(--main-color) !important;
+}
+
+.card-text .estado{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.card-text .autorizado{
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 2px;
+}
+
+.card .card-body .card-text .disponible{
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 2px;
+}
+
+.card-text .vendida{
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 2px;
+}
