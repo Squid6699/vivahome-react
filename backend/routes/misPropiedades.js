@@ -36,7 +36,7 @@ routeMisPropiedades.get("/", async (req, res) => {
                 return res.json({success: false, error: "ERROR AL OBTENER DATOS DEL USUARIO"})
             }
     
-            const propiedades = await Propiedades.find({idUsuario: "ObjectId("+idUsuario._id+")"});
+            const propiedades = await Propiedades.find({idUsuario: idUsuario._id});
     
             if (propiedades.length > 0){
                 return res.json({success: true, propiedades: propiedades});

@@ -32,7 +32,6 @@
     display: flex;
     color: var(--text-color) !important;
     justify-content: center;
-    padding-top: 20%;
 }
 
 .catalogo-misPropiedades .card-text .icons{

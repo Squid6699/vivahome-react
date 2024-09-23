@@ -2,7 +2,7 @@
 -FILTROS. ✅
 -PAGINACION. ✅
 -PUBLICAR PROPIEDAD
--VER TUS PROPIEDADES (con estado de DISPONIBLE, NO AUTORIZADA O VENDIDA).
+-VER TUS PROPIEDADES (con estado de DISPONIBLE, NO AUTORIZADA O VENDIDA). ✅
 -VER CITAS AGENDADAS.
 -SOLICITAR AYUDA DE VENDEDOR.
 
@@ -21,3 +21,7 @@ NIVEL VENDEDOR
 
 QUITAR ObjectId en misPropiedades.js
 Cambiar de string a ObjectId en el schema de Propiedades
+
+
+const propiedades = await Propiedades.find({idUsuario: "ObjectId("+idUsuario._id+")"});
+const propiedades = await Propiedades.find({idUsuario: idUsuario._id});
