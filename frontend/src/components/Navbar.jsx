@@ -10,6 +10,7 @@ import { faUser, faPowerOff, faBars, faEye, faCalendarDays, faTicket, faCartShop
 import { useModal } from '../hook/useModal';
 import VerPropiedadesPublicadas from './VerPropiedadesPublicadas';
 import { HOST } from '../../config';
+import PublicarPropiedad from './PublicarPropiedad';
 
 function Navbar(){
 
@@ -18,6 +19,7 @@ function Navbar(){
     const modalRegister = useModal();
     const offCanvasNavbar = useModal();
     const tusPropiedades = useModal();
+    const publicarPropiedad = useModal();
 
     const handleCloseModalTusPropiedades = () => {
         tusPropiedades.closeModal();
@@ -25,6 +27,14 @@ function Navbar(){
 
     const handleShowModalTusPropiedades = () => {
         tusPropiedades.openModal();
+    }
+
+    const handleShowModalPublicarPropiedades = () => {
+        publicarPropiedad.openModal();
+    }
+
+    const handleCloseModalPublicarPropiedades = () => {
+        publicarPropiedad.closeModal();
     }
 
     const handleCerrarSesion = async () => {
@@ -68,8 +78,8 @@ function Navbar(){
                             </Dropdown.Toggle>
 
                             <Dropdown.Menu>
-                                <Dropdown.Item><FontAwesomeIcon icon={faUpload}/> PUBLICAR PROPIEDAD</Dropdown.Item>
-                                <Dropdown.Item  onClick={() => tusPropiedades.openModal()}><FontAwesomeIcon icon={faEye}/> MIS PROPIEDADES</Dropdown.Item>
+                                <Dropdown.Item onClick={() => handleShowModalPublicarPropiedades()}><FontAwesomeIcon icon={faUpload}/> PUBLICAR PROPIEDAD</Dropdown.Item>
+                                <Dropdown.Item onClick={() => handleShowModalTusPropiedades()}><FontAwesomeIcon icon={faEye}/> MIS PROPIEDADES</Dropdown.Item>
                                 <Dropdown.Item><FontAwesomeIcon icon={faCalendarDays}/> CITAS AGENDADAS</Dropdown.Item>
                                 <Dropdown.Item><FontAwesomeIcon icon={faTicket}/> SOLICITAR AYUDA DE VENDEDOR</Dropdown.Item>
 
@@ -122,6 +132,7 @@ function Navbar(){
             
             {modalLogin.isOpenModal() && <Login showLogin={modalLogin.isOpenModal} handleCloseLogin={modalLogin.closeModal}/>}
             {modalRegister.isOpenModal() && <Register showRegister={modalRegister.isOpenModal} handleCloseRegister={modalRegister.closeModal}/>}
+            {publicarPropiedad.isOpenModal && <PublicarPropiedad showPublicarPropiedad={publicarPropiedad.isOpenModal()} handleCloseModalPublicarPropiedades={handleCloseModalPublicarPropiedades} />}
             {tusPropiedades.isOpenModal && <VerPropiedadesPublicadas showPropiedades={tusPropiedades.isOpenModal()} handleShowPropiedades={handleShowModalTusPropiedades} handleClosePropiedades={handleCloseModalTusPropiedades}/>}
 
         </>
